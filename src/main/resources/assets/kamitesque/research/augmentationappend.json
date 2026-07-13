@@ -1,17 +1,31 @@
 {
   "entries" :[
     {
-      "key": "KT_MEGALOMANIA",
-      "name": "research.TCA_BASESCENTMIXING.title",
-      "icons": [ "aromara:textures/research/r_basescentmixing.png"],
+      "key": "KT_PARADIGMSHIFT",
+      "name": "research.KT_PARADIGMSHIFT.title",
+      "icons": [ "kamitesque:augment_eye;1;0"],
       "category": "THAUMIC_AUGMENTATION",
-      "parents": [ "ZENITH_BASE" ],
+      "parents": [ "IMPETUS" ,"ZENITH", "!TWOND_CORRUPTION_AVATAR"],
       "meta": [ "ROUND", "SPIKY", "HIDDEN" ],
-      "location": [ 10,10 ],
+      "location": [ 18,4 ],
 
       "stages": [
         {
-          "text": "research.KT_MEGALOMANIA.text.stage.1"
+          "text": "research.KT_PARADIGMSHIFT.text.stage.1",
+          "recipes": ["kamitesque:augment_eye"],
+          "required_research":["!EYES"]
+        },
+        {
+          "text": "research.KT_PARADIGMSHIFT.text.stage.2",
+          "required_knowledge":["THEORY;ELDRITCH;3", "THEORY;AUROMANCY;1"],
+          "required_research":["!KEY"],
+          "recipes": ["kamitesque:glyph_tablet"],
+          "required_craft": ["kamitesque:glyph_tablet"],
+          "warp": 5
+        },
+        {
+          "text": "research.KT_PARADIGMSHIFT.text.stage.3",
+          "recipes": ["kamitesque:glyph_tablet"]
         }
       ]
     }

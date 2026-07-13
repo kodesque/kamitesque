@@ -3,11 +3,11 @@
         {
         "key": "KT_MEGALOMANIA",
         "name": "research.KT_MEGALOMANIA.title",
-        "icons": [ "aromara:textures/research/r_basescentmixing.png"],
+        "icons": [ "kamitesque:textures/research/r_megalomania.png"],
         "category": "ZENITH",
-        "parents": [ "ZENITH_BASE" ],
+        "parents": [ "KT_PARADIGMSHIFT" ],
         "meta": [ "ROUND", "SPIKY", "HIDDEN" ],
-        "location": [ 10,10 ],
+        "location": [ 0,5 ],
         
         "stages": [
                 {

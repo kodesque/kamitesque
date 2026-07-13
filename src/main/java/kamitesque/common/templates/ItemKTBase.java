@@ -80,8 +80,8 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
     @Override
     public ModelResourceLocation getCustomModelResourceLocation(String variant) {
         if (variant.equals(this.BASE_NAME))
-            return new ModelResourceLocation("aromara:" + this.BASE_NAME);
-        return new ModelResourceLocation("aromara:" + this.BASE_NAME, variant);
+            return new ModelResourceLocation("kamitesque:" + this.BASE_NAME);
+        return new ModelResourceLocation("kamitesque:" + this.BASE_NAME, variant);
     }
 
 }

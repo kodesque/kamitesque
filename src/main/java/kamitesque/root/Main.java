@@ -13,9 +13,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
 @Mod(modid = Main.MODID, dependencies =
-        "required-after:thaumcraft;" +
-        "required-after:thaumic-augmentation;" +
-        "required-after:kami-reborn;" +
+//        "required-after:thaumcraft;" +
+//        "required-after:thaumic-augmentation;" +
+//        "required-after:kami-reborn;" +
         "after:new-crimson-revelations;" +
 //        "required-after:thaumic-isorropia-kedition;" +
         "after:thaumic-tinkerer-reborn;" +
@@ -51,6 +51,7 @@ public class Main {
     public void init(FMLInitializationEvent event) {
 
         KTResearch.initResearch();
+        KTResearch.initScans();
     }
 
     @EventHandler

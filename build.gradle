@@ -112,7 +112,7 @@ dependencies {
     modImplementation('curse.maven:thaumictweaker-1341797:7523519')
 //
     modImplementation('curse.maven:thaumic-wonders-unofficial-1307741:8212971')
-//    modImplementation('curse.maven:thaumic-isorropia-kedition-1159671:7573756')
+//    modCompileOnly('curse.maven:thaumic-isorropia-kedition-1159671:7573756')
     modImplementation('curse.maven:planar-artifice-reflected-1549278:8377612')
     modImplementation('curse.maven:new-crimson-revelations-1025633:8139449')
     modImplementation('curse.maven:thaumic-tinkerer-reborn-1549287:8377758')
@@ -120,9 +120,11 @@ dependencies {
     modImplementation('curse.maven:kami-reborn-1549296:8407097')
 
     modImplementation('curse.maven:thaumic-bases-unofficial-293406:7582987')
-//    modImplementation('curse.maven:thaumic-forever-1089575:8273196')
+//    modCompileOnly('curse.maven:thaumic-forever-1089575:8273196')
     modImplementation('curse.maven:geckolib-388172:4020277')
     modImplementation('curse.maven:thaumic-attempts-1378341:8207361')
+
+
 
     modRuntimeOnly('curse.maven:scalar-1012168:7689740')
     modRuntimeOnly('curse.maven:fugue-1005815:8403977')
