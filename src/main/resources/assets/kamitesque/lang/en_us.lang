@@ -1,0 +1,21 @@
+#ITEMS
+item.kamitesque.debug.name=Icon
+
+item.kamitesque.pure_shard.name=Pure Shard
+item.kamitesque.cerebral_pearls.name=Cerebral Pearls
+
+item.kamitesque.augment_eye.name=Aided Eye Augment
+item.kamitesque.augment_discharger.name=Discharger Augment
+
+item.kamitesque.seal_printed.name=Printed Seal
+item.kamitesque.glyph_tablet.name=Reconstructed Tablet
+
+#BLOCKS
+
+#RESEARCHES
+
+research.KT_MEGALOMANIA.title=Megalomania
+research.KT_MEGALOMANIA.title.subtitle=I yearn for more
+research.KT_MEGALOMANIA.text.stage.1=
+
+# TOOLTIPS

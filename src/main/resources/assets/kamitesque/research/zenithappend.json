@@ -1,0 +1,19 @@
+{
+    "entries" :[
+        {
+        "key": "KT_MEGALOMANIA",
+        "name": "research.KT_MEGALOMANIA.title",
+        "icons": [ "aromara:textures/research/r_basescentmixing.png"],
+        "category": "ZENITH",
+        "parents": [ "ZENITH_BASE" ],
+        "meta": [ "ROUND", "SPIKY", "HIDDEN" ],
+        "location": [ 10,10 ],
+        
+        "stages": [
+                {
+                    "text": "research.KT_MEGALOMANIA.text.stage.1"
+                }
+            ]
+        }
+    ]
+}
