@@ -1,12 +1,11 @@
 package kamitesque.common.templates;
 
+import kamitesque.init.KTItems;
 import kamitesque.root.Main;
 import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
 import thaumcraft.common.config.ConfigItems;
 import thaumcraft.common.items.IThaumcraftItems;
 
@@ -23,6 +22,7 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
         //        this.setCreativeTab(Main.TABTCA);
         this.setNoRepair();
         this.setHasSubtypes(variants.length > 1);
+
         this.BASE_NAME = name;
         if (variants.length == 0) {
             this.VARIANTS = new String[] { name };
@@ -35,6 +35,8 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
             this.VARIANTS_META[m] = m;
         }
         ConfigItems.ITEM_VARIANT_HOLDERS.add(this);
+
+        KTItems.ITEMS.add(this);
     }
 
     public String getUnlocalizedName(ItemStack itemStack) {
@@ -43,8 +45,8 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
         return super.getUnlocalizedNameInefficiently(itemStack);
     }
 
-    @Override
-    public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
+//    @Override
+//    public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
         //        if (tab == Main.TABTCA || tab == CreativeTabs.SEARCH) {
         //            if (!this.getHasSubtypes()) {
         //                super.getSubItems(tab, items);
@@ -55,7 +57,7 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
         //                }
         //            }
         //        }
-    }
+//    }
 
     @Override
     public Item getItem() {

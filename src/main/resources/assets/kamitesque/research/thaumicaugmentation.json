@@ -1,0 +1,36 @@
+{
+  "entries" :[
+    {
+      "key": "KT_ANCIENTS",
+      "name": "research.KT_ANCIENTS.title",
+      "icons": [ "kamitesque:augment_eye;1;0"],
+      "category": "THAUMIC_AUGMENTATION",
+      "parents": [ "IMPETUS" ,"ZENITH", "!TWOND_CORRUPTION_AVATAR"],
+      "meta": [ "ROUND", "SPIKY", "HIDDEN" ],
+      "location": [ 18,4 ],
+
+      "stages": [
+        {
+          "text": "research.KT_ANCIENTS.text.stage.1"
+        },
+        {
+          "text": "research.KT_ANCIENTS.text.stage.2",
+          "required_knowledge":["THEORY;ARTIFICE;1"],
+          "recipes": ["kamitesque:pure_shard", "kamitesque:pure_shard-1","kamitesque:augment_eye"],
+          "required_research":["!EYES"]
+        },
+        {
+          "text": "research.KT_ANCIENTS.text.stage.3",
+          "required_knowledge":["THEORY;ELDRITCH;3", "THEORY;AUROMANCY;1"],
+          "required_research":["!KEY"],
+          "recipes": ["kamitesque:glyph_tablet"]
+        },
+        {
+          "text": "research.KT_ANCIENTS.text.stage.4",
+          "required_craft": ["kamitesque:glyph_tablet"],
+          "warp": 5
+        }
+      ]
+    }
+  ]
+}

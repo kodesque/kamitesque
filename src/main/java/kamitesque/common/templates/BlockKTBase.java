@@ -1,5 +1,6 @@
 package kamitesque.common.templates;
 
+import kamitesque.init.KTBlocks;
 import kamitesque.root.Main;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -17,6 +18,8 @@ public class BlockKTBase extends Block {
         super(material);
         this.setRegistryName(Main.MODID, name);
         this.setTranslationKey(Main.MODID + "." + name);
+
+        KTBlocks.BLOCKS.add(this);
         //        this.setCreativeTab(Main.TABTCA);
     }
 

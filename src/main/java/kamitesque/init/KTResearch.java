@@ -15,8 +15,8 @@ public class KTResearch {
 
     public static void initResearch() {
 
-        registerResearchLocation(new ResourceLocation("kamitesque:research/zenithappend"));
-        registerResearchLocation(new ResourceLocation("kamitesque:research/augmentationappend"));
+        registerResearchLocation(new ResourceLocation("kamitesque:research/zenith"));
+        registerResearchLocation(new ResourceLocation("kamitesque:research/thaumicaugmentation"));
 
     }
 

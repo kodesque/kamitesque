@@ -1,6 +1,7 @@
 package kamitesque.root;
 
 import kamitesque.init.KTEntities;
+import kamitesque.init.KTItems;
 import kamitesque.init.KTResearch;
 import kamitesque.init.KTTiles;
 import kamitesque.network.proxy.CommonProxy;
@@ -49,6 +50,8 @@ public class Main {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
+
+        KTItems.fillCreativeTab();
 
         KTResearch.initResearch();
         KTResearch.initScans();

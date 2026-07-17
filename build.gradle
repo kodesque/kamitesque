@@ -97,19 +97,19 @@ dependencies {
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     }
 
-    modImplementation('curse.maven:mixin-booter-419286:8397819')
-    modImplementation('curse.maven:configanytime-870276:5212709')
+    modRuntimeOnly('curse.maven:mixin-booter-419286:8397819')
+    modRuntimeOnly('curse.maven:configanytime-870276:5212709')
     modImplementation('curse.maven:thaumicapi-1533287:8304846')
-    modImplementation('curse.maven:expanded-events-1396395:8204032')
+    modRuntimeOnly('curse.maven:expanded-events-1396395:8204032')
 
-    modImplementation('curse.maven:had-enough-items-557549:7515497')
-    modImplementation('curse.maven:thaumic-information-1590952:8405531')
+    modRuntimeOnly('curse.maven:had-enough-items-557549:7515497')
+    modRuntimeOnly('curse.maven:thaumic-information-1590952:8405531')
 
     modImplementation('curse.maven:thaumcraft-223628:2629023')
     modImplementation('curse.maven:baubles-227083:2518667')
     modImplementation('curse.maven:thaumic-augmentation-319441:6047659')
-    modImplementation('curse.maven:thaumcraftfix-1069346:7288369')
-    modImplementation('curse.maven:thaumictweaker-1341797:7523519')
+    modRuntimeOnly('curse.maven:thaumcraftfix-1069346:7288369')
+    modRuntimeOnly('curse.maven:thaumictweaker-1341797:7523519')
 //
     modImplementation('curse.maven:thaumic-wonders-unofficial-1307741:8212971')
 //    modCompileOnly('curse.maven:thaumic-isorropia-kedition-1159671:7573756')
@@ -121,7 +121,7 @@ dependencies {
 
     modImplementation('curse.maven:thaumic-bases-unofficial-293406:7582987')
 //    modCompileOnly('curse.maven:thaumic-forever-1089575:8273196')
-    modImplementation('curse.maven:geckolib-388172:4020277')
+    modRuntimeOnly('curse.maven:geckolib-388172:4020277')
     modImplementation('curse.maven:thaumic-attempts-1378341:8207361')
 
 

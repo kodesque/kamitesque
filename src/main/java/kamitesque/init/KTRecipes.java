@@ -4,6 +4,7 @@ import kamitesque.common.recipes.RecipeAugmentAdd;
 import kamitesque.common.recipes.RecipeAugmentRemove;
 import kamitesque.common.recipes.RecipeSealPrint;
 import kamitesque.root.Main;
+import mod.emt.kami.registry.ModItemsKAMI;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,10 +16,11 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.blocks.BlocksTC;
+import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
-import thecodex6824.thaumicaugmentation.api.TAItems;
+import thecodex6824.thaumicaugmentation.api.TABlocks;
 
 public class KTRecipes {
 
@@ -30,7 +32,7 @@ public class KTRecipes {
                 new ResourceLocation("kamitesque:augment_eye"),
                 new ShapedArcaneRecipe(
                         baseGroup,
-                        "KT_MEGALOMANIA",
+                        "KT_ANCIENTS",
                         25,
                         new AspectList().add(Aspect.AIR, 2),
                         new ItemStack(KTItems.augment_eye),
@@ -44,11 +46,15 @@ public class KTRecipes {
                         'Q',
                         new ItemStack(ItemsTC.quicksilver),
                         'I',
-                        new ItemStack(TAItems.MATERIAL, 1, 5),
+                        new ItemStack(KTItems.pure_shard),
                         'E',
                         new ItemStack(Items.ENDER_EYE)
                 )
         );
+
+    }
+
+    public static void initInfusion(IForgeRegistry<IRecipe> iForgeRegistry) {
 
         ItemStack[] sealStacks = new ItemStack[4];
         for (int i = 0; i < 4; i++) {
@@ -59,7 +65,7 @@ public class KTRecipes {
 
         ThaumcraftApi.addInfusionCraftingRecipe(
                 new ResourceLocation("kamitesque:glyph_tablet"),
-                new InfusionRecipe("KT_MEGALOMANIA",
+                new InfusionRecipe("KT_BASE",
                         new ItemStack (KTItems.glyph_tablet),
                         8,
                         new AspectList().add(Aspect.MIND, 50).add(Aspect.FIRE, 50).add(Aspect.ELDRITCH, 100),
@@ -80,11 +86,31 @@ public class KTRecipes {
 
     }
 
-    public static void initInfusion(IForgeRegistry<IRecipe> iForgeRegistry) {
-
-    }
-
     public static void initCrucible(IForgeRegistry<IRecipe> iForgeRegistry) {
+
+        ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:ichorflame_nitor"),
+                new CrucibleRecipe("KT_ICHORFLAME",
+                        new ItemStack(KTBlocks.ichorflame_nitor, 4),
+                        new ItemStack(ModItemsKAMI.ICHOR),
+                        new AspectList().merge(Aspect.ALCHEMY, 30).merge(Aspect.AVERSION, 30).merge(Aspect.SENSES, 30))
+        );
+
+        ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:pure_shard"),
+                new CrucibleRecipe("KT_ANCIENTS",
+                        new ItemStack(KTItems.pure_shard, 2),
+                        new ItemStack(TABlocks.STRANGE_CRYSTAL),
+                        new AspectList().merge(Aspect.ENTROPY, 30))
+        );
+
+        ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:pure_shard-1"),
+                new CrucibleRecipe("KT_ANCIENTS",
+                        new ItemStack(KTItems.pure_shard, 2),
+                        new ItemStack(KTItems.pure_shard),
+                        new AspectList().merge(Aspect.AURA, 50).merge(Aspect.CRYSTAL, 50))
+        );
 
     }
 
