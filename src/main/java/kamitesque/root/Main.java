@@ -1,7 +1,6 @@
 package kamitesque.root;
 
 import kamitesque.init.KTEntities;
-import kamitesque.init.KTItems;
 import kamitesque.init.KTResearch;
 import kamitesque.init.KTTiles;
 import kamitesque.network.proxy.CommonProxy;
@@ -14,16 +13,16 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
 @Mod(modid = Main.MODID, dependencies =
-//        "required-after:thaumcraft;" +
-//        "required-after:thaumic-augmentation;" +
-//        "required-after:kami-reborn;" +
+        "required-after:thaumcraft;" +
+        "required-after:thaumicaugmentation;" +
+        "required-after:kami;" +
         "after:new-crimson-revelations;" +
-//        "required-after:thaumic-isorropia-kedition;" +
-        "after:thaumic-tinkerer-reborn;" +
-        "after:planar-artifice-reflected;" +
-        "after:thaumic-bases-unofficial;" +
-//        "after:thaumic-forever;" +
-        "after:thaumic-attempts",
+//        "required-after:isorropia" +
+        "after:thaumictinkerer;" +
+        "after:planarartifice;" +
+        "after:thaumicbases;" +
+//        "after:thaumicforever;" +
+        "after:thaumicattempts",
         version = Main.VERSION, name = Main.NAME)
 
 public class Main {
@@ -50,8 +49,6 @@ public class Main {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-
-        KTItems.fillCreativeTab();
 
         KTResearch.initResearch();
         KTResearch.initScans();

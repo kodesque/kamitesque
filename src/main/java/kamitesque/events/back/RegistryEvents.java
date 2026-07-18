@@ -1,12 +1,10 @@
 package kamitesque.events.back;
 
-import kamitesque.init.KTBlocks;
-import kamitesque.init.KTEntities;
-import kamitesque.init.KTItems;
-import kamitesque.init.KTRecipes;
+import kamitesque.init.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -34,7 +32,14 @@ public class RegistryEvents {
         KTRecipes.initWorkbench(event.getRegistry());
         KTRecipes.initInfusion(event.getRegistry());
         KTRecipes.initCrucible(event.getRegistry());
+        KTRecipes.initFurnace();
         KTRecipes.initRest(event.getRegistry());
 
+    }
+
+    @SubscribeEvent
+    public static void onSoundRegister(RegistryEvent.Register<SoundEvent> event) {
+
+        KTSounds.initSounds(event.getRegistry());
     }
 }

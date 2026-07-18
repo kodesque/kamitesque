@@ -19,7 +19,6 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
 
         this.setRegistryName(Main.MODID, name);
         this.setTranslationKey(Main.MODID + "." + name);
-        //        this.setCreativeTab(Main.TABTCA);
         this.setNoRepair();
         this.setHasSubtypes(variants.length > 1);
 
@@ -37,6 +36,7 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
         ConfigItems.ITEM_VARIANT_HOLDERS.add(this);
 
         KTItems.ITEMS.add(this);
+
     }
 
     public String getUnlocalizedName(ItemStack itemStack) {

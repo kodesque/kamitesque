@@ -1,0 +1,14 @@
+{
+  "banish": {
+    "category": "players",
+    "sounds": [
+      { "name": "kamitesque:banish", "stream": false }
+    ]
+  },
+  "blazing": {
+    "category": "blocks",
+    "sounds": [
+      { "name": "kamitesque:blazing", "stream": false }
+    ]
+  }
+}

@@ -1,7 +1,11 @@
+# CREATIVE TAB
+itemGroup.KamiTab=KAMI: Reborn & Kamitesque
+
 #ITEMS
 item.kamitesque.debug.name=Icon
 
 item.kamitesque.pure_shard.name=Pure Shard
+item.kamitesque.crystal_cluster.name=Crystal Cluster
 item.kamitesque.cerebral_pearls.name=Cerebral Pearls
 
 item.kamitesque.augment_eye.name=Aided Eye Augment
@@ -9,6 +13,8 @@ item.kamitesque.augment_discharger.name=Discharger Augment
 
 item.kamitesque.seal_printed.name=Printed Seal
 item.kamitesque.glyph_tablet.name=Reconstructed Tablet
+
+item.kamitesque.ichorium_needle.name=Ichorium Needle of the Soulbanisher
 
 #BLOCKS
 
@@ -33,6 +39,30 @@ research.KT_ICHORFLAME.title.subtitle=[KMT] A rather expensive toy
 
 research.KT_ICHORFLAME.text.stage.1=While studying the properties of the substance I call Ichor, I noticed an interesting feature that had previously escaped my attention.<BR>The Ichor's energy potential is immense, yet the balance of aspects within it prevents the substance from heating up and detonating in my pocket.<BR>On the other hand, disrupting it is quite simple - and I already have a theory on how to achieve that. The main thing is to ensure my own safety.
 research.KT_ICHORFLAME.text.stage.2=This isn't quite the result I was counting on. I did manage to shift the balance somewhat, but... what's this? A Nitor?<BR>Well... looks like not every product of thaumaturgy has to defy the laws of physics or drive one mad.<BR>Be that it is may, now I have a massive flame - twice the size of ordinary Nitor, shimmering with seemingly infinite amount of colors.
+
+research.KT_ICHORIUM_NEEDLE.title=Ichorium Needle of the Soulbanisher
+research.KT_ICHORIUM_NEEDLE.title.subtitle=[KMT] Just a mosquito bite
+
+research.KT_ICHORIUM_NEEDLE.text.stage.1=Although Ichor armor renders me almost immune to any external irritants, this world still does contain threats that could cause me considerable trouble.<BR>The very occult nature of Thaumaturgy contributes to this; one cannot always predict what godforsaken monstrosity might emerge from a given experiment.<BR>Clearly, for a researcher of my caliber, wasting one's nerves on trifles is simply undignified. At times, I wish I had something at my disposal capable of banishing an assailant to the darkest corner of reality—a place from which they would most certainly never return.
+research.KT_ICHORIUM_NEEDLE.text.stage.2=A tiny needle crafted from bone coated in Ichor. It turns out this material can not only warp local space but also transport living beings to almost anywhere in the world - even when fashioned into such crude tools.<BR>This "Needle of the Soulbanisher" possesses a specific property: upon striking any living target, it instantly hurls it into the space beneath the Overworld - far enough away for the Void to tear them apart immediately.<BR>Clearly, this cannot be considered an ultimate weapon; at my level of progression, opponents are valued primarily for the resources they yield, and the needle prevents that. Then again, it has a different purpose - one it fulfills admirably.<BR>I forgot to mention: despite being made of Ichor, the item breaks upon use. Or rather... it vanishes into the Void along with the target. Oops!
+
+research.KT_CRYSTALCLUSTER.text.title=Crystal Purification
+
+research.KT_CRYSTALCLUSTER.text.stage.1=The crystals found in the Outer Lands are a vital and valuable resource for the most promising research.<BR>However, the fact that this "ore" does not occur in the Overworld makes hunting for it quite difficult—difficult enough that a 1:1 conversion rate feels like highway robbery.<BR>I have applied the metal cluster creation principle I already know to produce a cluster of this strange crystal. The cost in Aspects is higher, and I require *Vitreous* instead of *Metallum*, but it should be worth it.
+
+research.KT_ENERGYBRANCH.title=Energy Potential
+research.KT_ENERGYBRANCH.text.stage.1=
+
+research.KT_MATERIALBRANCH.title=Structural Properties
+research.KT_MATERIALBRANCH.text.stage.1=
+
+research.KT_SPACEBRANCH.title=Spatial Effects
+research.KT_SPACEBRANCH.text.stage.1=
+
+
+research.!PORTAL.text=Examine an entrance to the darkest abyss
+research.!EYES.text=Examine an obelisk who once saw the void
+research.!KEY.text=Examine an artifact that paves your way
 
 # TOOLTIPS
 

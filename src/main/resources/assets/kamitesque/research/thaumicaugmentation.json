@@ -16,7 +16,7 @@
         {
           "text": "research.KT_ANCIENTS.text.stage.2",
           "required_knowledge":["THEORY;ARTIFICE;1"],
-          "recipes": ["kamitesque:pure_shard", "kamitesque:pure_shard-1","kamitesque:augment_eye"],
+          "recipes": ["kamitesque:pure_shard", "kamitesque:augment_eye"],
           "required_research":["!EYES"]
         },
         {

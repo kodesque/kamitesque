@@ -11,6 +11,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
@@ -84,6 +85,20 @@ public class KTRecipes {
                         new ItemStack(ItemsTC.scribingTools))
         );
 
+        ThaumcraftApi.addInfusionCraftingRecipe(
+                new ResourceLocation("kamitesque:ichorium_needle"),
+                new InfusionRecipe("KT_ICHORIUM_NEEDLE",
+                        new ItemStack (KTItems.ichorium_needle),
+                        5,
+                        new AspectList().add(Aspect.DARKNESS, 16).add(Aspect.TRAP, 16),
+                        new ItemStack(Items.BONE),
+                        "ichor",
+                        "ingotGold",
+                        new ItemStack(ItemsTC.nuggets, 1, 10),
+                        new ItemStack(Items.ENDER_EYE)
+                )
+        );
+
     }
 
     public static void initCrucible(IForgeRegistry<IRecipe> iForgeRegistry) {
@@ -97,6 +112,14 @@ public class KTRecipes {
         );
 
         ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:crystal_cluster"),
+                new CrucibleRecipe("KT_CRYSTALCLUSTER",
+                        new ItemStack(KTItems.crystal_cluster),
+                        new ItemStack(TABlocks.STRANGE_CRYSTAL),
+                        new AspectList().merge(Aspect.ORDER, 30).merge(Aspect.CRYSTAL, 30))
+        );
+
+        ThaumcraftApi.addCrucibleRecipe(
                 new ResourceLocation("kamitesque:pure_shard"),
                 new CrucibleRecipe("KT_ANCIENTS",
                         new ItemStack(KTItems.pure_shard, 2),
@@ -104,19 +127,21 @@ public class KTRecipes {
                         new AspectList().merge(Aspect.ENTROPY, 30))
         );
 
-        ThaumcraftApi.addCrucibleRecipe(
-                new ResourceLocation("kamitesque:pure_shard-1"),
-                new CrucibleRecipe("KT_ANCIENTS",
-                        new ItemStack(KTItems.pure_shard, 2),
-                        new ItemStack(KTItems.pure_shard),
-                        new AspectList().merge(Aspect.AURA, 50).merge(Aspect.CRYSTAL, 50))
-        );
+    }
 
+    public static void initFurnace() {
+        ThaumcraftApi.addSmeltingBonus(KTItems.crystal_cluster, new ItemStack(KTItems.pure_shard, 3));
     }
 
     public static void initRest(IForgeRegistry<IRecipe> iForgeRegistry) {
         iForgeRegistry.register(new RecipeAugmentAdd().setRegistryName(new ResourceLocation(Main.MODID, RecipeAugmentAdd.id)));
         iForgeRegistry.register(new RecipeAugmentRemove().setRegistryName(new ResourceLocation(Main.MODID, RecipeAugmentRemove.id)));
         iForgeRegistry.register(new RecipeSealPrint().setRegistryName(new ResourceLocation(Main.MODID, RecipeSealPrint.id)));
+
+        GameRegistry.addSmelting(
+                KTItems.crystal_cluster,
+                new ItemStack(KTItems.pure_shard),
+                2
+        );
     }
 }

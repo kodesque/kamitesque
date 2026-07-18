@@ -1,0 +1,19 @@
+{
+  "entries" :[
+    {
+      "key": "KT_CRYSTALCLUSTER",
+      "name": "research.KT_CRYSTALCLUSTER.title",
+      "icons": [ "kamitesque:crystal_cluster;1;0"],
+      "category": "ZENITH",
+      "parents": [ "KT_BASE" ],
+      "location": [ 4,5 ],
+
+      "stages": [
+        {
+          "text": "research.KT_CRYSTALCLUSTER.text.stage.1",
+          "recipes": "kamitesque:crystal_cluster"
+        }
+      ]
+    }
+    ]
+}

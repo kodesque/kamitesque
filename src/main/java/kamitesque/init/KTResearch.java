@@ -1,5 +1,6 @@
 package kamitesque.init;
 
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import thaumcraft.api.internal.CommonInternals;
@@ -17,13 +18,18 @@ public class KTResearch {
 
         registerResearchLocation(new ResourceLocation("kamitesque:research/zenith"));
         registerResearchLocation(new ResourceLocation("kamitesque:research/thaumicaugmentation"));
+        registerResearchLocation(new ResourceLocation("kamitesque:research/alchemy"));
 
     }
 
     public static void initScans() {
+
         ScanningManager.addScannableThing(new ScanBlockState("!EYES", TABlocks.CAPSTONE.getDefaultState().withProperty(IObeliskType.OBELISK_TYPE, IObeliskType.ObeliskType.ELDRITCH).withProperty(
                 IAltarBlock.ALTAR, true), true));
+        ScanningManager.addScannableThing(new ScanBlockState("!PORTAL", Blocks.END_PORTAL.getDefaultState(), true));
+
         ScanningManager.addScannableThing(new ScanItem("!KEY", new ItemStack(TAItems.ELDRITCH_LOCK_KEY)));
+
     }
 
     public static void registerResearchLocation(ResourceLocation loc) {

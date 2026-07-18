@@ -1,8 +1,11 @@
 package kamitesque.common.tiles;
 
 import kamitesque.client.fx.FXIchorflame;
+import kamitesque.init.KTSounds;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.SoundCategory;
 import thaumcraft.client.fx.FXDispatcher;
+import thaumcraft.common.lib.SoundsTC;
 import thaumcraft.common.tiles.misc.TileNitor;
 
 import java.awt.*;
@@ -69,11 +72,32 @@ public class TileIchorflameNitor extends TileNitor {
                     );
                 }
             }
+        }
 
-            if (this.count % 5 == 0) {
+        if (this.count % 60 == 0) {
+            this.world.playSound(
+                    null,
+                    this.getPos().getX(),
+                    this.getPos().getY(),
+                    this.getPos().getZ(),
+                    KTSounds.blazing,
+                    SoundCategory.BLOCKS,
+                    1.0F,
+                    1.0F
+            );
+        }
 
-                FXIchorflame.drawNitorCore((double)((float)this.pos.getX() + 0.5F), (double)((float)this.pos.getY() + 0.49F), (double)((float)this.pos.getZ() + 0.5F), (double)0.0F, (double)0.0F, (double)0.0F, this.world);
-            }
+        if (this.count % 8 == 0) {
+            this.world.playSound(
+                    null,
+                    this.getPos().getX(),
+                    this.getPos().getY(),
+                    this.getPos().getZ(),
+                    SoundsTC.jacobs,
+                    SoundCategory.BLOCKS,
+                    0.2F,
+                    1.0F
+            );
         }
     }
 }
