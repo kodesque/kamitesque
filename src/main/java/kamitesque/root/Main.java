@@ -17,18 +17,18 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
         "required-after:thaumicaugmentation;" +
         "required-after:kami;" +
         "after:new-crimson-revelations;" +
-//        "required-after:isorropia" +
+        "after:isorropia" +
         "after:thaumictinkerer;" +
         "after:planarartifice;" +
         "after:thaumicbases;" +
-//        "after:thaumicforever;" +
+        "after:thaumicforever;" +
         "after:thaumicattempts",
         version = Main.VERSION, name = Main.NAME)
 
 public class Main {
     public static final String MODID = "kamitesque";
     public static final String NAME = "Kamitesque";
-    public static final String VERSION = "0.0.1-ALPHA";
+    public static final String VERSION = "0.0.5-ALPHA";
 
     public static SimpleNetworkWrapper packetHandler;
 
