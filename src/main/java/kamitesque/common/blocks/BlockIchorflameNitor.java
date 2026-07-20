@@ -12,6 +12,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
+@SuppressWarnings("deprecation")
 public class BlockIchorflameNitor extends BlockKTTile {
 
     public static final String id = "ichorflame_nitor";

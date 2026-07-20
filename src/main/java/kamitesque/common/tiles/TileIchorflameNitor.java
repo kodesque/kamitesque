@@ -3,6 +3,7 @@ package kamitesque.common.tiles;
 import kamitesque.client.fx.FXIchorflame;
 import kamitesque.init.KTSounds;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.ITickable;
 import net.minecraft.util.SoundCategory;
 import thaumcraft.client.fx.FXDispatcher;
 import thaumcraft.common.lib.SoundsTC;
@@ -10,16 +11,19 @@ import thaumcraft.common.tiles.misc.TileNitor;
 
 import java.awt.*;
 
-public class TileIchorflameNitor extends TileNitor {
+public class TileIchorflameNitor extends TileNitor implements ITickable {
+
+    public static final String id = "ichorflame_nitor";
 
     int count = 0;
 
     public TileIchorflameNitor() {};
 
     public void update() {
-        if (this.world.isRemote) {
 
-            this.count++;
+        this.count++;
+
+        if (this.world.isRemote) {
 
             float hue = (count % 360) / 360.0F;
             Color c = Color.getHSBColor(hue, 1.0F, 1.0F);
@@ -63,7 +67,7 @@ public class TileIchorflameNitor extends TileNitor {
                             y,
                             z,
                             x + dx * radius * 2,
-                            y + dy * radius * 2,
+                            y + dy * radius,
                             z + dz * radius * 2,
                             1.0F,
                             0.4F,
@@ -87,13 +91,13 @@ public class TileIchorflameNitor extends TileNitor {
             );
         }
 
-        if (this.count % 8 == 0) {
+        if (this.count % 80 == 0) {
             this.world.playSound(
                     null,
                     this.getPos().getX(),
                     this.getPos().getY(),
                     this.getPos().getZ(),
-                    SoundsTC.jacobs,
+                    SoundsTC.zap,
                     SoundCategory.BLOCKS,
                     0.2F,
                     1.0F

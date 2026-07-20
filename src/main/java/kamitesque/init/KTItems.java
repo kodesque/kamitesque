@@ -44,7 +44,7 @@ public class KTItems {
         iForgeRegistry.register(cerebral_pearls = new ItemKTBase("cerebral_pearls"));
 
         iForgeRegistry.register(ichorium_needle = new ItemIchoriumNeedle("ichorium_needle"));
-        iForgeRegistry.register(ichorium_needle = new ItemKTBase("crystal_cluster"));
+        iForgeRegistry.register(crystal_cluster = new ItemKTBase("crystal_cluster"));
 
         iForgeRegistry.register(debug = new ItemDebug("debug"));
 

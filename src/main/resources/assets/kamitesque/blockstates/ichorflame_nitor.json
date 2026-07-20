@@ -8,5 +8,8 @@
       "all": "thaumcraft:blocks/nitor"
     },
     "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}]
   }
 }

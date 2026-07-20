@@ -3,6 +3,7 @@ package kamitesque.root;
 import kamitesque.init.KTEntities;
 import kamitesque.init.KTResearch;
 import kamitesque.init.KTTiles;
+import kamitesque.network.packets.KTNetwork;
 import kamitesque.network.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -17,7 +18,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
         "required-after:thaumicaugmentation;" +
         "required-after:kami;" +
         "after:new-crimson-revelations;" +
-        "after:isorropia" +
+        "after:isorropia;" +
         "after:thaumictinkerer;" +
         "after:planarartifice;" +
         "after:thaumicbases;" +
@@ -41,7 +42,7 @@ public class Main {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
 
-        proxy.preInit(event);
+        KTNetwork.preInitPackets();
 
         KTTiles.preInitTiles();
         KTEntities.preInitEntities();

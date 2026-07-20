@@ -116,21 +116,21 @@ public class KTRecipes {
                 new CrucibleRecipe("KT_CRYSTALCLUSTER",
                         new ItemStack(KTItems.crystal_cluster),
                         new ItemStack(TABlocks.STRANGE_CRYSTAL),
-                        new AspectList().merge(Aspect.ORDER, 30).merge(Aspect.CRYSTAL, 30))
+                        new AspectList().merge(Aspect.ORDER, 20).merge(Aspect.CRYSTAL, 20))
         );
 
         ThaumcraftApi.addCrucibleRecipe(
                 new ResourceLocation("kamitesque:pure_shard"),
                 new CrucibleRecipe("KT_ANCIENTS",
-                        new ItemStack(KTItems.pure_shard, 2),
+                        new ItemStack(KTItems.pure_shard),
                         new ItemStack(TABlocks.STRANGE_CRYSTAL),
-                        new AspectList().merge(Aspect.ENTROPY, 30))
+                        new AspectList().merge(Aspect.ENTROPY, 20))
         );
 
     }
 
     public static void initFurnace() {
-        ThaumcraftApi.addSmeltingBonus(KTItems.crystal_cluster, new ItemStack(KTItems.pure_shard, 3));
+        ThaumcraftApi.addSmeltingBonus(KTItems.crystal_cluster, new ItemStack(KTItems.pure_shard, 3), 1.0F);
     }
 
     public static void initRest(IForgeRegistry<IRecipe> iForgeRegistry) {
@@ -140,7 +140,7 @@ public class KTRecipes {
 
         GameRegistry.addSmelting(
                 KTItems.crystal_cluster,
-                new ItemStack(KTItems.pure_shard),
+                new ItemStack(KTItems.pure_shard, 2),
                 2
         );
     }

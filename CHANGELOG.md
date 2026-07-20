@@ -1,11 +1,18 @@
 # Kamitesque Changelog
 
+---
 ## 0.0.5-ALPHA
-### Added
-- 
-### Fixed
--
-### Changed
--
-### Removed
+
+---
+### Added:
+- Ichorium Needle banish animation
+- Ichorium Needle warping modifier
+### Fixed:
+- Nichor overlapping sounds
+- Nichor FXArc incorrect Y multiplier
+- Nichor missing destruction particles
+- Nichor render breaking on world reload
+### Changed:
+- Ichorium Needle texture
+
 ---

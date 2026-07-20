@@ -1,18 +1,25 @@
 package kamitesque.common.items;
 
 import kamitesque.common.templates.ItemKTBase;
-import kamitesque.init.KTSounds;
+import kamitesque.events.front.BanishedEntityEvents;
+import kamitesque.network.packets.KTNetwork;
+import kamitesque.network.packets.PacketFXSmokeBurst;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumParticleTypes;
 import net.minecraft.util.SoundCategory;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.common.IRarity;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import org.jetbrains.annotations.NotNull;
+import thaumcraft.api.items.IWarpingGear;
 import thaumcraft.common.lib.SoundsTC;
 
-public class ItemIchoriumNeedle extends ItemKTBase {
+public class ItemIchoriumNeedle extends ItemKTBase implements IWarpingGear {
 
     public ItemIchoriumNeedle(String name, String... variants) {
         super(name);
@@ -20,50 +27,77 @@ public class ItemIchoriumNeedle extends ItemKTBase {
     }
 
     public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-        if (target instanceof EntityPlayer) {
-            return false;
-        }
 
-        if (target.world.isRemote) {
-            for(int i = 0; i < 2; ++i) {
-                target.world.spawnParticle(EnumParticleTypes.PORTAL, target.posX + (target.world.rand.nextDouble() - (double)0.5F) * (double)target.width, target.posY + target.world.rand.nextDouble() * (double)target.height - (double)0.25F, target.posZ + (target.world.rand.nextDouble() - (double)0.5F) * (double)target.width, (target.world.rand.nextDouble() - (double)0.5F) * (double)2.0F, -target.world.rand.nextDouble(), (target.world.rand.nextDouble() - (double)0.5F) * (double)2.0F, new int[0]);
+        if (!attacker.world.isRemote) {
+
+            if (target instanceof EntityPlayer || BanishedEntityEvents.isBanished(target)) {
+                return false;
             }
-        }
 
-        target.setPosition(0, -1000, 0);
-        stack.damageItem(2, attacker);
+            for (int i = 0; i < 10; i++) {
+                KTNetwork.INSTANCE.sendToAllAround(
+                        new PacketFXSmokeBurst(
+                                target.posX,
+                                target.getEntityBoundingBox().minY + target.height * 0.5,
+                                target.posZ,
+                                0x1c1c1c
+                        ),
+                        new NetworkRegistry.TargetPoint(
+                                attacker.dimension,
+                                target.posX,
+                                target.posY,
+                                target.posZ,
+                                64
+                        ));
+            }
 
-        if (attacker instanceof EntityPlayer) {
+            banish(target);
+            stack.damageItem(2, attacker);
 
-            attacker.world.playSound(
-                    null,
-                    attacker.posX,
-                    attacker.posY,
-                    attacker.posZ,
-                    KTSounds.banish,
-                    SoundCategory.PLAYERS,
-                    1.0F,
-                    1.0F
-            );
+            if (attacker instanceof EntityPlayer) {
 
-            if (!((EntityPlayer) attacker).isCreative()) {
-                attacker.world.playSound(
-                        null,
-                        attacker.posX,
-                        attacker.posY,
-                        attacker.posZ,
-                        SoundsTC.urnbreak,
-                        SoundCategory.PLAYERS,
-                        1.0F,
-                        1.0F
-                );
+                if (!((EntityPlayer) attacker).isCreative()) {
+                    attacker.world.playSound(
+                            null,
+                            attacker.posX,
+                            attacker.posY,
+                            attacker.posZ,
+                            SoundsTC.urnbreak,
+                            SoundCategory.PLAYERS,
+                            1.0F,
+                            1.0F
+                    );
+                }
             }
         }
 
         return true;
     }
 
+    public static void banish(Entity entity) {
+        ((EntityLiving)entity).setNoAI(true);
+        entity.setEntityInvulnerable(true);
+        entity.getEntityData().setBoolean("kamitesque.banished", true);
+        entity.getEntityData().setDouble("kamitesque.banished.particlepos", entity.getEntityBoundingBox().minY);
+
+        if (!entity.onGround) {
+            World world = entity.getEntityWorld();
+
+            BlockPos pos = entity.getPosition();
+
+            BlockPos refPos = new BlockPos(pos.getX(), 0, pos.getY());
+
+            BlockPos keyPos = world.getTopSolidOrLiquidBlock(refPos);
+
+            entity.setPosition(keyPos.getX(), keyPos.getY(), keyPos.getZ());
+        }
+    }
+
     public @NotNull IRarity getForgeRarity(@NotNull ItemStack stack) {
         return EnumRarity.EPIC;
+    }
+
+    public int getWarp(ItemStack itemstack, EntityPlayer player) {
+        return 1;
     }
 }

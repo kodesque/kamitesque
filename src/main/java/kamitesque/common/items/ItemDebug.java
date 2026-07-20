@@ -33,5 +33,9 @@ public class ItemDebug extends ItemKTBase {
         items.add(new ItemStack (KTBlocks.ichorflame_nitor));
 
         items.add(new ItemStack (KTItems.ichorium_needle));
+
+//        for (int i = 0; i < ModItemsKAMI.MOD_ITEMS.size(); i++) {
+//            ModItemsKAMI.MOD_ITEMS.get(i).getSubItems(tab, items);
+//        }
     }
 }
