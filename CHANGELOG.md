@@ -1,5 +1,9 @@
 # Kamitesque Changelog
+## 0.0.6-ALPHA
 
+---
+### Added:
+- Root crystal block & corresponding research
 ---
 ## 0.0.5-ALPHA
 

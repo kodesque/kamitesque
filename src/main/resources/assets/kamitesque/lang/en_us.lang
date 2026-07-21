@@ -5,6 +5,7 @@ itemGroup.KamiTab=KAMI: Reborn & Kamitesque
 item.kamitesque.debug.name=Icon
 
 item.kamitesque.pure_shard.name=Pure Shard
+item.kamitesque.root_seed.name=Root Crystal Seed
 item.kamitesque.crystal_cluster.name=Crystal Cluster
 item.kamitesque.cerebral_pearls.name=Cerebral Pearls
 
@@ -19,6 +20,7 @@ item.kamitesque.ichorium_needle.name=Ichorium Needle of the Voidbanisher
 #BLOCKS
 
 tile.kamitesque.ichorflame_nitor.name=Nichor
+tile.kamitesque.root_crystal.name=Root Crystal
 
 #RESEARCHES
 
@@ -58,6 +60,11 @@ research.KT_MATERIALBRANCH.text.stage.1=This branch of research will focus on th
 
 research.KT_SPACEBRANCH.title=Spatial Effects
 research.KT_SPACEBRANCH.text.stage.1=This branch of research will focus on the interaction between ichor and objects that compromise the integrity of reality - such as void rifts - as well as its inherent ability to warp space.
+
+research.KT_ROOTCRYSTAL.title=Growing Bedrock
+research.KT_ROOTCRYSTAL.title.subtitle=[KMT] As below, so above
+research.KT_ROOTCRYSTAL.text.stage.1=The longer I study Ichor and the notes of obscure authorship that appear here and there in the Thaumonomicon, the more convinced I become of two maxims:<BR>First, the blood of the gods had already been discovered and studied in the past. The credit goes to those Thaumaturges who pioneered this discipline and made the crucial breakthroughs that ultimately led to our modern understanding of most worldly processes.<BR>Second, my formula differs somewhat from the one used to create the items described on the pages I discovered.<BR>One of the most regrettable losses was the ability to shatter bedrock and gain access to that—well... "place" beyond it.<BR>Anyway, these thoughts lead to an idea: since I cannot break the bedrock directly, perhaps I can find a way to get my hands on a fragment of it by other means?
+research.KT_ROOTCRYSTAL.text.stage.2=Things took a much more interesting turn.<BR>Ichor reacts vigorously to any crystalline structures—such as diamond—by spontaneously forming its own crystals around them. I simply needed to add a Void Seed to bring the material's quality closer to that of Bedrock, and a Pure Shard to lock the crystal in an inert state.<BR>Once prepared, the crystal can be "sprouted" by tossing it into a crucible. I deliberately split the process into two stages, as this allowed for a significantly higher yield using the same components.
 
 research.!PORTAL.text=Examine an entrance to the darkest abyss
 research.!EYES.text=Examine an obelisk who once saw the void

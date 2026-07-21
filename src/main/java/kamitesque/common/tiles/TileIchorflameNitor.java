@@ -3,7 +3,6 @@ package kamitesque.common.tiles;
 import kamitesque.client.fx.FXIchorflame;
 import kamitesque.init.KTSounds;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.util.ITickable;
 import net.minecraft.util.SoundCategory;
 import thaumcraft.client.fx.FXDispatcher;
 import thaumcraft.common.lib.SoundsTC;
@@ -11,7 +10,7 @@ import thaumcraft.common.tiles.misc.TileNitor;
 
 import java.awt.*;
 
-public class TileIchorflameNitor extends TileNitor implements ITickable {
+public class TileIchorflameNitor extends TileNitor {
 
     public static final String id = "ichorflame_nitor";
 

@@ -1,0 +1,53 @@
+{
+  "forge_marker" : 1,
+  "defaults" : {
+    "model" : "kamitesque:root_crystal.obj",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+
+    "normal": {"model": "kamitesque:root_crystal.obj"},
+    "inventory":
+    [
+      {
+        "transform" :
+        {
+          "thirdperson_righthand": {
+            "rotation": [75, 45, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [75, 45, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "firstperson_righthand": {
+            "rotation": [0, -135, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "firstperson_lefthand": {
+            "rotation": [0, -135, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "ground": {
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "gui": {
+            "rotation": [30, -135, 0],
+            "scale": [0.6, 0.6, 0.6]
+          },
+          "fixed": {
+            "scale": [0.5, 0.5, 0.5]
+          }
+
+        }
+      }
+    ],
+
+    "grown=false": {
+      "model": "kamitesque:root_crystal.obj"
+    },
+    "grown=true": {
+      "model": "kamitesque:bedrock_raw"
+    }
+  }
+}

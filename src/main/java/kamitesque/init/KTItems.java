@@ -17,6 +17,7 @@ public class KTItems {
     public static Item seal_printed;
     public static Item glyph_tablet;
     public static Item pure_shard;
+    public static Item root_seed;
     public static Item cerebral_pearls;
 
     public static Item augment_eye;
@@ -36,6 +37,7 @@ public class KTItems {
 
         iForgeRegistry.register(augment_eye = new ItemAidedEye("augment_eye"));
         iForgeRegistry.register(pure_shard = new ItemKTBase("pure_shard"));
+        iForgeRegistry.register(root_seed = new ItemKTBase("root_seed"));
 
         iForgeRegistry.register(seal_printed = new ItemKTBase("seal_printed", "tablet", "sigil", "tome", "blade"));
         iForgeRegistry.register(glyph_tablet = new ItemGlyphTablet("glyph_tablet"));

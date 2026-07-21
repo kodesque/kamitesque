@@ -53,6 +53,30 @@ public class KTRecipes {
                 )
         );
 
+        ThaumcraftApi.addArcaneCraftingRecipe(
+                new ResourceLocation("kamitesque:root_seed"),
+                new ShapedArcaneRecipe(
+                        baseGroup,
+                        "KT_ROOTCRYSTAL",
+                        50,
+                        null,
+                        new ItemStack(KTItems.root_seed, 4),
+                        " S ",
+                        "AID",
+                        " C ",
+                        'S',
+                        new ItemStack(ItemsTC.voidSeed),
+                        'A',
+                        "gemAmber",
+                        'I',
+                        "ichor",
+                        'D',
+                        "gemDiamond",
+                        'C',
+                        new ItemStack(KTItems.pure_shard)
+                )
+        );
+
     }
 
     public static void initInfusion(IForgeRegistry<IRecipe> iForgeRegistry) {
@@ -125,6 +149,14 @@ public class KTRecipes {
                         new ItemStack(KTItems.pure_shard),
                         new ItemStack(TABlocks.STRANGE_CRYSTAL),
                         new AspectList().merge(Aspect.ENTROPY, 20))
+        );
+
+        ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:root_seed"),
+                new CrucibleRecipe("KT_ROOTCRYSTAL",
+                        new ItemStack(KTBlocks.root_crystal),
+                        new ItemStack(KTItems.root_seed),
+                        new AspectList().merge(Aspect.LIFE, 16).merge(Aspect.CRAFT, 16).merge(Aspect.ELDRITCH, 16))
         );
 
     }

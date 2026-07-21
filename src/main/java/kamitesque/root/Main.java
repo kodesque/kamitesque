@@ -46,6 +46,8 @@ public class Main {
 
         KTTiles.preInitTiles();
         KTEntities.preInitEntities();
+
+        proxy.preInit(event);
     }
 
     @EventHandler

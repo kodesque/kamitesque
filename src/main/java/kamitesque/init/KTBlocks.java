@@ -1,6 +1,7 @@
 package kamitesque.init;
 
 import kamitesque.common.blocks.BlockIchorflameNitor;
+import kamitesque.common.blocks.BlockRootCrystal;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
@@ -12,13 +13,14 @@ import java.util.List;
 public class KTBlocks {
 
     public static Block ichorflame_nitor;
+    public static Block root_crystal;
 
     public static List<Block> BLOCKS = new ArrayList<Block>();
 
     public static void initBlocks() {
-        //        TCABlocks.arcane_brazier = registerBlock(new BlockArcaneBrazier());
 
         KTBlocks.ichorflame_nitor = registerBlock(new BlockIchorflameNitor());
+        KTBlocks.root_crystal = registerBlock(new BlockRootCrystal());
     }
 
     private static Block registerBlock(Block block, ItemBlock itemBlock) {
