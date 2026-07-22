@@ -29,11 +29,12 @@ public class RegistryEvents {
     @SubscribeEvent
     public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
 
-        KTRecipes.initWorkbench(event.getRegistry());
-        KTRecipes.initInfusion(event.getRegistry());
-        KTRecipes.initCrucible(event.getRegistry());
-        KTRecipes.initFurnace();
         KTRecipes.initRest(event.getRegistry());
+
+        KTRecipes.initWorkbench();
+        KTRecipes.initInfusion();
+        KTRecipes.initCrucible();
+        KTRecipes.initFurnace();
 
     }
 

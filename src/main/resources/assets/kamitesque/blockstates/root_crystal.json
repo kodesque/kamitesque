@@ -43,11 +43,18 @@
       }
     ],
 
-    "grown=false": {
-      "model": "kamitesque:root_crystal.obj"
-    },
-    "grown=true": {
-      "model": "kamitesque:bedrock_raw"
-    }
+    "facing=north,growing=true": { "model": "kamitesque:root_crystal.obj", "x":  90},
+    "facing=south,growing=true": { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 180},
+    "facing=west,growing=true":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 270},
+    "facing=east,growing=true":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 90},
+    "facing=up,growing=true":  { "model": "kamitesque:root_crystal.obj"},
+    "facing=down,growing=true":  { "model": "kamitesque:root_crystal.obj", "x": 180},
+
+    "facing=north,growing=false": { "model": "kamitesque:root_crystal.obj", "x":  90},
+    "facing=south,growing=false": { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 180},
+    "facing=west,growing=false":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 270},
+    "facing=east,growing=false":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 90},
+    "facing=up,growing=false":  { "model": "kamitesque:root_crystal.obj"},
+    "facing=down,growing=false":  { "model": "kamitesque:root_crystal.obj", "x": 180}
   }
 }

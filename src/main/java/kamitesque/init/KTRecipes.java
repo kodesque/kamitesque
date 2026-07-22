@@ -5,6 +5,8 @@ import kamitesque.common.recipes.RecipeAugmentRemove;
 import kamitesque.common.recipes.RecipeSealPrint;
 import kamitesque.root.Main;
 import mod.emt.kami.registry.ModItemsKAMI;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.init.Enchantments;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -17,15 +19,21 @@ import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.blocks.BlocksTC;
+import thaumcraft.api.casters.FocusPackage;
 import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
+import thaumcraft.common.items.casters.ItemFocus;
 import thecodex6824.thaumicaugmentation.api.TABlocks;
+import thecodex6824.thaumicaugmentation.api.TAItems;
+import thecodex6824.thaumicaugmentation.common.item.foci.FocusEffectWard;
+
+import java.util.Collections;
 
 public class KTRecipes {
 
-    public static void initWorkbench(IForgeRegistry<IRecipe> iForgeRegistry) {
+    public static void initWorkbench() {
 
         ResourceLocation baseGroup = new ResourceLocation(Main.MODID, "base");
 
@@ -79,7 +87,7 @@ public class KTRecipes {
 
     }
 
-    public static void initInfusion(IForgeRegistry<IRecipe> iForgeRegistry) {
+    public static void initInfusion() {
 
         ItemStack[] sealStacks = new ItemStack[4];
         for (int i = 0; i < 4; i++) {
@@ -111,7 +119,7 @@ public class KTRecipes {
 
         ThaumcraftApi.addInfusionCraftingRecipe(
                 new ResourceLocation("kamitesque:ichorium_needle"),
-                new InfusionRecipe("KT_ICHORIUM_NEEDLE",
+                new InfusionRecipe("KT_ICHORIUMNEEDLE",
                         new ItemStack (KTItems.ichorium_needle),
                         5,
                         new AspectList().add(Aspect.DARKNESS, 16).add(Aspect.TRAP, 16),
@@ -123,9 +131,42 @@ public class KTRecipes {
                 )
         );
 
+        ItemStack bookProtect = new ItemStack(Items.ENCHANTED_BOOK);
+        EnchantmentHelper.setEnchantments(Collections.singletonMap(Enchantments.PROTECTION, 4), bookProtect);
+        ItemStack bookProtectFire = new ItemStack(Items.ENCHANTED_BOOK);
+        EnchantmentHelper.setEnchantments(Collections.singletonMap(Enchantments.FIRE_PROTECTION, 4), bookProtectFire);
+        ItemStack bookProtectBlast = new ItemStack(Items.ENCHANTED_BOOK);
+        EnchantmentHelper.setEnchantments(Collections.singletonMap(Enchantments.BLAST_PROTECTION, 4), bookProtectBlast);
+        ItemStack bookProtectProj = new ItemStack(Items.ENCHANTED_BOOK);
+        EnchantmentHelper.setEnchantments(Collections.singletonMap(Enchantments.PROJECTILE_PROTECTION, 4), bookProtectProj);
+
+        ItemStack focusWard = new ItemStack(TAItems.FOCUS_ANCIENT);
+        FocusPackage fp_1 = new FocusPackage();
+        FocusEffectWard ward = new FocusEffectWard();
+        fp_1.addNode(ward);
+        ItemFocus.setPackage(focusWard, fp_1);
+
+        ThaumcraftApi.addInfusionCraftingRecipe(
+                new ResourceLocation("kamitesque:persistence_seal"),
+                new InfusionRecipe("KT_PERSISTENCE",
+                        new ItemStack (KTItems.persistence_seal),
+                        6,
+                        new AspectList().add(Aspect.TOOL, 64).add(Aspect.MAGIC, 64),
+                        new ItemStack(ItemsTC.pechWand),
+                        "ichor",
+                        bookProtect,
+                        "plateThaumium",
+                        bookProtectFire,
+                        focusWard,
+                        bookProtectBlast,
+                        "plateThaumium",
+                        bookProtectProj
+                )
+        );
+
     }
 
-    public static void initCrucible(IForgeRegistry<IRecipe> iForgeRegistry) {
+    public static void initCrucible() {
 
         ThaumcraftApi.addCrucibleRecipe(
                 new ResourceLocation("kamitesque:ichorflame_nitor"),
@@ -152,7 +193,7 @@ public class KTRecipes {
         );
 
         ThaumcraftApi.addCrucibleRecipe(
-                new ResourceLocation("kamitesque:root_seed"),
+                new ResourceLocation("kamitesque:root_crystal"),
                 new CrucibleRecipe("KT_ROOTCRYSTAL",
                         new ItemStack(KTBlocks.root_crystal),
                         new ItemStack(KTItems.root_seed),
@@ -162,7 +203,7 @@ public class KTRecipes {
     }
 
     public static void initFurnace() {
-        ThaumcraftApi.addSmeltingBonus(KTItems.crystal_cluster, new ItemStack(KTItems.pure_shard, 3), 1.0F);
+        ThaumcraftApi.addSmeltingBonus(new ItemStack (KTItems.crystal_cluster), new ItemStack(KTItems.pure_shard), 0.10F);
     }
 
     public static void initRest(IForgeRegistry<IRecipe> iForgeRegistry) {

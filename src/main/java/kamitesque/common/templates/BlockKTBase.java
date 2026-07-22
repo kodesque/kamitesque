@@ -20,7 +20,6 @@ public class BlockKTBase extends Block {
         this.setTranslationKey(Main.MODID + "." + name);
 
         KTBlocks.BLOCKS.add(this);
-        //        this.setCreativeTab(Main.TABTCA);
     }
 
     public BlockKTBase(Material mat, String name, SoundType st) {

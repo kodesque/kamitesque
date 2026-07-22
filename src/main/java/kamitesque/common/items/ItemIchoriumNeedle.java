@@ -23,6 +23,7 @@ public class ItemIchoriumNeedle extends ItemKTBase implements IWarpingGear {
 
     public ItemIchoriumNeedle(String name, String... variants) {
         super(name);
+        this.setMaxStackSize(1);
         setMaxDamage(1);
     }
 
@@ -91,6 +92,10 @@ public class ItemIchoriumNeedle extends ItemKTBase implements IWarpingGear {
 
             entity.setPosition(keyPos.getX(), keyPos.getY(), keyPos.getZ());
         }
+    }
+
+    public boolean isEnchantable(@NotNull ItemStack stack) {
+        return false;
     }
 
     public @NotNull IRarity getForgeRarity(@NotNull ItemStack stack) {

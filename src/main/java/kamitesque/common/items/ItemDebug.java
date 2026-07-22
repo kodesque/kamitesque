@@ -14,13 +14,13 @@ public class ItemDebug extends ItemKTBase {
         super(name);
     }
 
-    @Override
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
-        if (tab != Kami.tabKAMI ) return;
+        if (tab != Kami.tabKAMI && tab != CreativeTabs.SEARCH) return;
 
-        items.clear();
+//        items.clear();
 
         items.add(new ItemStack (KTItems.augment_eye));
+        items.add(new ItemStack (KTItems.persistence_seal));
         items.add(new ItemStack (KTItems.pure_shard));
         items.add(new ItemStack (KTItems.crystal_cluster));
 

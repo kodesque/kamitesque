@@ -1,6 +1,5 @@
 package kamitesque.client.renderer.tiles;
 
-import kamitesque.common.blocks.BlockRootCrystal;
 import kamitesque.common.tiles.TileRootCrystal;
 import kamitesque.init.KTBlocks;
 import net.minecraft.block.state.IBlockState;
@@ -13,6 +12,7 @@ import net.minecraft.client.renderer.texture.TextureMap;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import thaumcraft.common.blocks.IBlockFacing;
 
 public class RenderRootCrystal extends TileEntitySpecialRenderer<TileRootCrystal> {
 
@@ -24,14 +24,64 @@ public class RenderRootCrystal extends TileEntitySpecialRenderer<TileRootCrystal
 
         float m = Math.min(1.0F, te.progress / 2400.0F);
 
-        float n = Math.min(1.0F, te.progress / 1200.F);
-
         GlStateManager.translate(x, y , z);
 
-        GlStateManager.translate(0.5F, 0.5F * m, 0.5F);
+
+        switch (te.getWorld().getBlockState(te.getPos()).getValue(IBlockFacing.FACING)) {
+
+            case UP:
+                GlStateManager.translate(
+                        0.5F,
+                        0.5F * m,
+                        0.5F
+                );
+                break;
+
+            case DOWN:
+                GlStateManager.translate(
+                        0.5F,
+                        1.0F - 0.5F * m,
+                        0.5F
+                );
+                break;
+
+            case NORTH:
+                GlStateManager.translate(
+                        0.5F,
+                        0.5F,
+                        1.0F - 0.5F * m
+                );
+                break;
+
+            case SOUTH:
+                GlStateManager.translate(
+                        0.5F,
+                        0.5F,
+                        0.5F * m
+                );
+                break;
+
+            case WEST:
+                GlStateManager.translate(
+                        1.0F - 0.5F * m,
+                        0.5F,
+                        0.5F
+                );
+                break;
+
+            case EAST:
+                GlStateManager.translate(
+                        0.5F * m,
+                        0.5F,
+                        0.5F
+                );
+                break;
+        }
+
+
         GlStateManager.scale(m, m, m);
 
-        IBlockState state = KTBlocks.root_crystal.getDefaultState().withProperty(BlockRootCrystal.GROWN, true);
+        IBlockState state = KTBlocks.bedrock_raw.getDefaultState();
         BlockRendererDispatcher dispatcher = Minecraft.getMinecraft().getBlockRendererDispatcher();
         IBakedModel model = dispatcher.getModelForState(state);
 

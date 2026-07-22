@@ -1,9 +1,6 @@
 package kamitesque.init;
 
-import kamitesque.common.items.ItemAidedEye;
-import kamitesque.common.items.ItemDebug;
-import kamitesque.common.items.ItemGlyphTablet;
-import kamitesque.common.items.ItemIchoriumNeedle;
+import kamitesque.common.items.*;
 import kamitesque.common.templates.ItemKTBase;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -24,6 +21,7 @@ public class KTItems {
     public static Item augment_discharger;
 
     public static Item ichorium_needle;
+    public static Item persistence_seal;
     public static Item ichorium_hoe;
     public static Item awakened_ichorium_hoe;
 
@@ -46,6 +44,7 @@ public class KTItems {
         iForgeRegistry.register(cerebral_pearls = new ItemKTBase("cerebral_pearls"));
 
         iForgeRegistry.register(ichorium_needle = new ItemIchoriumNeedle("ichorium_needle"));
+        iForgeRegistry.register(persistence_seal = new ItemPersistenceSeal("persistence_seal"));
         iForgeRegistry.register(crystal_cluster = new ItemKTBase("crystal_cluster"));
 
         iForgeRegistry.register(debug = new ItemDebug("debug"));

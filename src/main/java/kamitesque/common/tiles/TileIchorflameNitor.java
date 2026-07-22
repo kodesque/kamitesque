@@ -12,8 +12,6 @@ import java.awt.*;
 
 public class TileIchorflameNitor extends TileNitor {
 
-    public static final String id = "ichorflame_nitor";
-
     int count = 0;
 
     public TileIchorflameNitor() {};

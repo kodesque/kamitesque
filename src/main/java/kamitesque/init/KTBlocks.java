@@ -1,5 +1,6 @@
 package kamitesque.init;
 
+import kamitesque.common.blocks.BlockBedrockRaw;
 import kamitesque.common.blocks.BlockIchorflameNitor;
 import kamitesque.common.blocks.BlockRootCrystal;
 import net.minecraft.block.Block;
@@ -14,6 +15,7 @@ public class KTBlocks {
 
     public static Block ichorflame_nitor;
     public static Block root_crystal;
+    public static Block bedrock_raw;
 
     public static List<Block> BLOCKS = new ArrayList<Block>();
 
@@ -21,6 +23,7 @@ public class KTBlocks {
 
         KTBlocks.ichorflame_nitor = registerBlock(new BlockIchorflameNitor());
         KTBlocks.root_crystal = registerBlock(new BlockRootCrystal());
+        KTBlocks.bedrock_raw = registerBlockSpecial(new BlockBedrockRaw());
     }
 
     private static Block registerBlock(Block block, ItemBlock itemBlock) {

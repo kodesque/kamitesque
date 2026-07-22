@@ -16,11 +16,13 @@ item.kamitesque.seal_printed.name=Printed Seal
 item.kamitesque.glyph_tablet.name=Reconstructed Tablet
 
 item.kamitesque.ichorium_needle.name=Ichorium Needle of the Voidbanisher
+item.kamitesque.persistence_seal.name=Persistence Seal
 
 #BLOCKS
 
 tile.kamitesque.ichorflame_nitor.name=Nichor
 tile.kamitesque.root_crystal.name=Root Crystal
+tile.kamitesque.bedrock_raw.name=Raw Bedrock
 
 #RESEARCHES
 
@@ -42,11 +44,11 @@ research.KT_ICHORFLAME.title.subtitle=[KMT] A rather expensive toy
 research.KT_ICHORFLAME.text.stage.1=While studying the properties of the substance I call Ichor, I noticed an interesting feature that had previously escaped my attention.<BR>The Ichor's energy potential is immense, yet the balance of aspects within it prevents the substance from heating up and detonating in my pocket.<BR>On the other hand, disrupting it is quite simple - and I already have a theory on how to achieve that. The main thing is to ensure my own safety.
 research.KT_ICHORFLAME.text.stage.2=This isn't quite the result I was counting on. I did manage to shift the balance somewhat, but... what's this? A Nitor?<BR>Well... looks like not every product of thaumaturgy has to defy the laws of physics or drive one mad.<BR>Be that it is may, now I have a massive flame - twice the size of ordinary Nitor, shimmering with seemingly infinite amount of colors.
 
-research.KT_ICHORIUM_NEEDLE.title=Ichorium Needle of the Voidbanisher
-research.KT_ICHORIUM_NEEDLE.title.subtitle=[KMT] No more than a mosquito bite
+research.KT_ICHORIUMNEEDLE.title=Ichorium Needle of the Voidbanisher
+research.KT_ICHORIUMNEEDLE.title.subtitle=[KMT] No more than a mosquito bite
 
-research.KT_ICHORIUM_NEEDLE.text.stage.1=Although Ichor armor renders me almost immune to any external irritants, this world still does contain threats that could cause me considerable trouble.<BR>The very occult nature of Thaumaturgy contributes to this; one cannot always predict what godforsaken monstrosity might emerge from a given experiment.<BR>Clearly, for a researcher of my caliber, wasting one's nerves on trifles is simply undignified. At times, I wish I had something at my disposal capable of banishing an assailant to the darkest corner of reality—a place from which they would most certainly never return.
-research.KT_ICHORIUM_NEEDLE.text.stage.2=A tiny needle crafted from bone coated in Ichor. It turns out this material can not only warp local space but also transport living beings to almost anywhere in the world - even when fashioned into such crude tools.<BR>This "Needle of the Soulbanisher" possesses a specific property: upon striking any living target, it instantly hurls it into the space beneath the Overworld - far enough away for the Void to tear them apart immediately.<BR>Clearly, this cannot be considered an ultimate weapon; at my level of progression, opponents are valued primarily for the resources they yield, and the needle prevents that. Then again, it has a different purpose - one it fulfills admirably.<BR>I forgot to mention: despite being made of Ichor, the item breaks upon use. Or rather... it vanishes into the Void along with the target. Oops!
+research.KT_ICHORIUMNEEDLE.text.stage.1=Although Ichor armor renders me almost immune to any external irritants, this world still does contain threats that could cause me considerable trouble.<BR>The very occult nature of Thaumaturgy contributes to this; one cannot always predict what godforsaken monstrosity might emerge from a given experiment.<BR>Clearly, for a researcher of my caliber, wasting one's nerves on trifles is simply undignified. At times, I wish I had something at my disposal capable of banishing an assailant to the darkest corner of reality—a place from which they would most certainly never return.
+research.KT_ICHORIUMNEEDLE.text.stage.2=A tiny needle crafted from bone coated in Ichor. It turns out this material can not only warp local space but also transport living beings to almost anywhere in the world - even when fashioned into such crude tools.<BR>This "Needle of the Voidbanisher" possesses a specific property: upon striking any living target, it instantly hurls it into the space beneath the Overworld - far enough away for the Void to tear them apart immediately.<BR>Clearly, this cannot be considered an ultimate weapon; at my level of progression, opponents are valued primarily for the resources they yield, and the needle prevents that. Then again, it has a different purpose - one it fulfills admirably.<BR>I forgot to mention: despite being made of Ichor, the item breaks upon use. Or rather... it vanishes into the Void along with the target. Oops!
 
 research.KT_CRYSTALCLUSTER.title=Crystal Purification
 
@@ -64,7 +66,7 @@ research.KT_SPACEBRANCH.text.stage.1=This branch of research will focus on the i
 research.KT_ROOTCRYSTAL.title=Growing Bedrock
 research.KT_ROOTCRYSTAL.title.subtitle=[KMT] As below, so above
 research.KT_ROOTCRYSTAL.text.stage.1=The longer I study Ichor and the notes of obscure authorship that appear here and there in the Thaumonomicon, the more convinced I become of two maxims:<BR>First, the blood of the gods had already been discovered and studied in the past. The credit goes to those Thaumaturges who pioneered this discipline and made the crucial breakthroughs that ultimately led to our modern understanding of most worldly processes.<BR>Second, my formula differs somewhat from the one used to create the items described on the pages I discovered.<BR>One of the most regrettable losses was the ability to shatter bedrock and gain access to that—well... "place" beyond it.<BR>Anyway, these thoughts lead to an idea: since I cannot break the bedrock directly, perhaps I can find a way to get my hands on a fragment of it by other means?
-research.KT_ROOTCRYSTAL.text.stage.2=Things took a much more interesting turn.<BR>Ichor reacts vigorously to any crystalline structures—such as diamond—by spontaneously forming its own crystals around them. I simply needed to add a Void Seed to bring the material's quality closer to that of Bedrock, and a Pure Shard to lock the crystal in an inert state.<BR>Once prepared, the crystal can be "sprouted" by tossing it into a crucible. I deliberately split the process into two stages, as this allowed for a significantly higher yield using the same components.
+research.KT_ROOTCRYSTAL.text.stage.2=Things took a much more interesting turn.<BR>Ichor reacts vigorously to any crystalline structures - such as diamond - by spontaneously forming its own crystals around them.<BR>I simply needed to add a Void Seed to bring the material's quality closer to that of Bedrock, and a Pure Shard to lock the crystal in an inert state.<BR>Once prepared, the crystal can be "sprouted" by tossing it into a crucible. I deliberately split the process into two stages, as this allowed for a significantly higher yield using the same amount components.
 
 research.!PORTAL.text=Examine an entrance to the darkest abyss
 research.!EYES.text=Examine an obelisk who once saw the void
