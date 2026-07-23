@@ -108,7 +108,7 @@
             "name": "research.KT_ROOTCRYSTAL.title",
             "icons": [ "kamitesque:root_crystal;1;0"],
             "category": "ZENITH",
-            "parents": [ "KT_MATERIALBRANCH" ],
+            "parents": [ "KT_MATERIALBRANCH", "CRYSTALFARMER"],
             "meta": [ "HIDDEN"],
             "location": [ 0,9 ],
 
@@ -120,8 +120,27 @@
                     "text": "research.KT_ROOTCRYSTAL.text.stage.2",
                     "required_knowledge":["OBSERVATION;ARTIFICE;1"],
                     "required_item": ["minecraft:obsidian"],
-                    "required_research": ["CRYSTALFARMER"],
                     "recipes": ["kamitesque:root_seed","kamitesque:root_crystal"]
+                }
+            ]
+        },
+        {
+            "key": "KT_PERSISTENCE",
+            "name": "research.KT_PERSISTENCE.title",
+            "icons": [ "kamitesque:textures/research/r_persistence.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_MATERIALBRANCH", "FOCUS_WARD", "~KAMI_ETERNAL_INFUSION"],
+            "meta": [ "HIDDEN"],
+            "location": [ -1,8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_PERSISTENCE.text.stage.1"
+                },
+                {
+                    "text": "research.KT_PERSISTENCE.text.stage.2",
+                    "required_knowledge":["THEORY;INFUSION;1", "THEORY;AUROMANCY;1"],
+                    "recipes": ["kamitesque:persistence_seal"]
                 }
             ]
         }

@@ -10,14 +10,12 @@ import net.minecraft.util.NonNullList;
 
 public class ItemDebug extends ItemKTBase {
 
-    public ItemDebug(String name) {
-        super(name);
+    public ItemDebug(String name, String... variants) {
+        super(name, variants);
     }
 
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
         if (tab != Kami.tabKAMI && tab != CreativeTabs.SEARCH) return;
-
-//        items.clear();
 
         items.add(new ItemStack (KTItems.augment_eye));
         items.add(new ItemStack (KTItems.persistence_seal));
@@ -37,8 +35,5 @@ public class ItemDebug extends ItemKTBase {
         items.add(new ItemStack (KTItems.root_seed));
         items.add(new ItemStack (KTBlocks.root_crystal));
 
-//        for (int i = 0; i < ModItemsKAMI.MOD_ITEMS.size(); i++) {
-//            ModItemsKAMI.MOD_ITEMS.get(i).getSubItems(tab, items);
-//        }
     }
 }

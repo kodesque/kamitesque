@@ -12,10 +12,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber
 public class RegistryEvents {
 
-    public static void registerEntities() {
-        KTEntities.preInitEntities();
-    }
-
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         KTBlocks.initBlocks();

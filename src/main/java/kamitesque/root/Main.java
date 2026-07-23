@@ -1,7 +1,6 @@
 package kamitesque.root;
 
 import kamitesque.init.KTEntities;
-import kamitesque.init.KTRecipes;
 import kamitesque.init.KTResearch;
 import kamitesque.init.KTTiles;
 import kamitesque.network.packets.KTNetwork;
@@ -12,7 +11,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 
 @Mod(modid = Main.MODID, dependencies =
         "required-after:thaumcraft;" +
@@ -30,9 +28,7 @@ import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
 public class Main {
     public static final String MODID = "kamitesque";
     public static final String NAME = "Kamitesque";
-    public static final String VERSION = "0.0.7-ALPHA";
-
-    public static SimpleNetworkWrapper packetHandler;
+    public static final String VERSION = "0.0.8-ALPHA";
 
     @SidedProxy(clientSide = "kamitesque.network.proxy.ClientProxy", serverSide = "kamitesque.network.proxy.CommonProxy")
     public static CommonProxy proxy;
@@ -59,9 +55,5 @@ public class Main {
     }
 
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
-
-        KTRecipes.initFurnace();
-
-    }
+    public void postInit(FMLPostInitializationEvent event) {}
 }

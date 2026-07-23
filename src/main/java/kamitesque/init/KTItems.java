@@ -27,6 +27,7 @@ public class KTItems {
 
     public static Item crystal_cluster;
 
+    /* "vortex", "wings" */
     public static Item debug;
 
     public static List<Item> ITEMS = new ArrayList<Item>();
@@ -47,7 +48,7 @@ public class KTItems {
         iForgeRegistry.register(persistence_seal = new ItemPersistenceSeal("persistence_seal"));
         iForgeRegistry.register(crystal_cluster = new ItemKTBase("crystal_cluster"));
 
-        iForgeRegistry.register(debug = new ItemDebug("debug"));
+        iForgeRegistry.register(debug = new ItemDebug("debug", "vortex", "wings"));
 
     }
 

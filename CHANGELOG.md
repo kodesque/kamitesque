@@ -1,4 +1,9 @@
 # Kamitesque Changelog
+## 0.0.8-ALPHA
+
+---
+### Added:
+- Seal of Persistence & corresponding research
 ## 0.0.7-ALPHA
 
 ---
