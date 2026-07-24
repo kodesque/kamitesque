@@ -25,7 +25,6 @@ tile.kamitesque.root_crystal.name=Root Crystal
 tile.kamitesque.bedrock_raw.name=Raw Bedrock
 
 #RESEARCHES
-
 research.KT_ANCIENTS.title=The Lost Knowledge
 research.KT_ANCIENTS.title.subtitle=[KMT] Is it future or is it past?
 
@@ -71,14 +70,13 @@ research.KT_ROOTCRYSTAL.text.stage.2=Things took a much more interesting turn.<B
 research.KT_PERSISTENCE.title=Seal of Persistence
 research.KT_PERSISTENCE.title.subtitle=[KTM] Hands off!
 research.KT_PERSISTENCE.text.stage.1=Discovering that Ichor could be used to reinforce armor and weapons made from other materials marked a significant milestone in my research. Yet, I cannot say I am entirely satisfied with the result.<BR>It feels somewhat... unconvincing. Yes, technically, the items become indestructible when used for their intended purpose; no matter how carelessly I handle them or how hard the rock I’m breaking, the material holds firm.<BR>But what happens if the weapon slips from my grasp? What if it gets knocked out, or I drop it - or if I were to die?<BR>No, the worst-case scenario isn't losing a priceless piece of gear to fire or an explosion... the worst thing would be for someone else to get their hands on it. For someone to dare touch the very thing I have strived so long to create.
-research.KT_PERSISTENCE.text,stage.2=I already had all the necessary substances and their properties at hand; the only question was finding the right way to combine them.<BR>I discovered another intriguing trait of Primal Pearls: they can literally melt down imbued foci, effectively embedding the spell structure directly into the item being infused. The result is something akin to an enchantment, but far more stable and permanent.<BR>The only issue is that the concentration of such potent magic places a heavy strain on the operator's psyche. Simply put, carrying items infused with foci would cause me to slowly but inevitably lose my mind.<BR>Anyway, the recipe I’ve noted on this page yields the so-called Seal of Persistence. To use it, I must hold any non-block item in my off-hand and hold down the right mouse button while the seal is in my main hand.<BR>The process consumes several observation points from the Infusion category, along with two more from other random ones.<BR>An item bearing persistence cannot be blown up, burned, or otherwise destroyed. It will not dissappear from the world like items left lying around for too long. Furthermore, anyone other than myself who attempts to pick it up will be brutally blinded and burned alive.
+research.KT_PERSISTENCE.text.stage.2=I already had all the necessary substances and their properties at hand; the only question was finding the right way to combine them.<BR>I discovered another intriguing trait of Primal Pearls: they can literally melt down imbued foci, effectively embedding the spell structure directly into the item being infused. The result is something akin to an enchantment, but far more stable and permanent.<BR>The only issue is that the concentration of such potent magic places a heavy strain on the operator's psyche. Simply put, carrying items infused with foci would cause me to slowly but inevitably lose my mind.<BR>Anyway, the recipe I’ve noted on this page yields the so-called Seal of Persistence. To use it, I must hold any non-block item in my off-hand and hold down the right mouse button while the seal is in my main hand.<BR>This process also requires me to have a Totem of Undying in my inventory. And where am I supposed to get them? Well, Pechs might finally come in handy after all...<BR>An item protected with Seal of Persistence cannot be blown up, burned, or otherwise destroyed. It will not dissappear from the world like items left lying around for too long. Furthermore, anyone other than myself who attempts to pick it up will be brutally blinded and burned alive.
 
 research.!PORTAL.text=Examine an entrance to the darkest abyss
 research.!EYES.text=Examine an obelisk who once saw the void
 research.!KEY.text=Examine an artifact that paves your way
 
 # TOOLTIPS
-
 tooltip.kamitesque.key.0=Inscripted Tombstone
 tooltip.kamitesque.key.1=Targetless Compass
 tooltip.kamitesque.key.2=Unfulfilled Order
@@ -117,6 +115,11 @@ tooltip.kamitesque.memory.6.2=§6§o...from the filth that continues to expand..
 tooltip.kamitesque.glyph_tablet=§5§oI have to squint when I look at these inscriptions. As if the very knowledge on them blinds me.
 tooltip.kamitesque.persistent=Persistent
 
+# MESSAGES
 message.kamitesque.reveal=It seems like something has changed.
 message.kamitesque.gaze=Your piercing gaze tears the enemy apart.
 message.kamitesque.persistent=It suddenly flares up with a vile, searing light. Unbearable pain pierces your head, forcing you to loosen your grip.
+
+# ENCHANTMENTS
+enchantment.infusion.KT_THOUSANDYARD=Thousand-Yard Blade
+enchantment.infusion.KT_SHARPEYE=Sharp Eye

@@ -155,11 +155,11 @@ public class KTRecipes {
                         new ItemStack(ItemsTC.pechWand),
                         "ichor",
                         bookProtect,
-                        "plateThaumium",
+                        new ItemStack(ItemsTC.mechanismComplex),
                         bookProtectFire,
                         focusWard,
                         bookProtectBlast,
-                        "plateThaumium",
+                        new ItemStack(ItemsTC.mechanismComplex),
                         bookProtectProj
                 )
         );

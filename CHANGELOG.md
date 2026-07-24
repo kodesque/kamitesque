@@ -1,4 +1,22 @@
 # Kamitesque Changelog
+## 0.0.9-ALPHA
+
+---
+### Added:
+- Persistent item setting mobs on fire
+- Custom persistent item entity render
+- Custom persistent item entity movement logic
+- Seal of Persistence sounds on use
+- Seal of Persistence FX on use
+### Changed:
+- Seal of Persistence texture
+- Seal of Persistence required use time: 60 -> 20 ticks
+- Seal of Persistence use price: XP + warp -> totem of undying + warping
+- Seal of Persistence craft: thaumium plate -> complex mechanism
+### Fixed:
+- Persistent item mob pickup prevention not working
+- Seal of Persistence still activating when an item is already persistent
+- Persistence tooltip covering up enchantments
 ## 0.0.8-ALPHA
 
 ---

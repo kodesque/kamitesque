@@ -10,5 +10,17 @@
     "sounds": [
       { "name": "kamitesque:blazing", "stream": false }
     ]
+  },
+  "stamping": {
+    "category": "players",
+    "sounds": [
+      { "name": "kamitesque:stamping", "stream": false }
+    ]
+  },
+  "persistence": {
+    "category": "players",
+    "sounds": [
+      { "name": "kamitesque:persistence", "stream": false }
+    ]
   }
 }

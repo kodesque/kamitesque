@@ -1,6 +1,9 @@
 package kamitesque.events.back;
 
-import kamitesque.init.*;
+import kamitesque.init.KTBlocks;
+import kamitesque.init.KTItems;
+import kamitesque.init.KTRecipes;
+import kamitesque.init.KTSounds;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
@@ -20,6 +23,7 @@ public class RegistryEvents {
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         KTItems.initItems(event.getRegistry());
+
     }
 
     @SubscribeEvent

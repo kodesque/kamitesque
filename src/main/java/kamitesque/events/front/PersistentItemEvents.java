@@ -3,15 +3,15 @@ package kamitesque.events.front;
 import kamitesque.common.entities.EntityItemPersistent;
 import kamitesque.init.KTItems;
 import kamitesque.root.Main;
+import kamitesque.util.PersistentUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderItem;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
@@ -24,7 +24,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import thaumcraft.common.lib.potions.PotionSunScorned;
 
 @Mod.EventBusSubscriber
 public class PersistentItemEvents {
@@ -52,11 +51,9 @@ public class PersistentItemEvents {
                             old.getItem()
                             );
 
-            replacement.motionY = (double)0.1F;
-            replacement.motionX = (double)0.0F;
-            replacement.motionZ = (double)0.0F;
-
-            replacement.setDefaultPickupDelay();
+            replacement.motionY = old.motionY;
+            replacement.motionX = old.motionX;
+            replacement.motionZ = old.motionZ;
 
             event.setCanceled(true);
 
@@ -65,7 +62,7 @@ public class PersistentItemEvents {
 
 
     @SubscribeEvent
-    public static void updatePersistent(LivingEvent.LivingUpdateEvent event) {
+    public static void holdPersistentMob(LivingEvent.LivingUpdateEvent event) {
         EntityLivingBase entity = event.getEntityLiving();
         ItemStack stack = entity.getHeldItemMainhand();
 
@@ -77,6 +74,7 @@ public class PersistentItemEvents {
         if (stack.getTagCompound() != null) {
             if (stack.getTagCompound().hasKey("kamitesque.persistent")) {
 
+                entity.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, ItemStack.EMPTY);
                 entity.entityDropItem(stack, 0);
             }
         }
@@ -84,7 +82,7 @@ public class PersistentItemEvents {
     }
 
     @SubscribeEvent
-    public static void holdPersistent(TickEvent.PlayerTickEvent event) {
+    public static void holdPersistentPlayer(TickEvent.PlayerTickEvent event) {
 
         EntityPlayer player = event.player;
 
@@ -106,33 +104,14 @@ public class PersistentItemEvents {
                         player.inventory.setInventorySlotContents(i, ItemStack.EMPTY);
                         player.entityDropItem(stack, 0);
 
-                        punish(player);
+                        PersistentUtils.punish(player);
                     }
                 }
             }
     }
 
-    public static void punish(EntityPlayer player) {
-
-        if (player.isPotionActive(PotionSunScorned.instance) && player.isPotionActive(MobEffects.BLINDNESS) && player.isPotionActive(MobEffects.NAUSEA)) {
-            return;
-        }
-
-            player.sendStatusMessage(new TextComponentTranslation("message" + "." + Main.MODID + "." + "persistent")
-                            .setStyle(new Style()
-                                    .setItalic(true)
-                                    .setColor(TextFormatting.DARK_PURPLE)),
-                    false);
-
-            player.setFire(5);
-            player.addPotionEffect(new PotionEffect(PotionSunScorned.instance, 100));
-            player.addPotionEffect(new PotionEffect(MobEffects.BLINDNESS, 100));
-            player.addPotionEffect(new PotionEffect(MobEffects.NAUSEA, 100));
-
-    }
-
     @SubscribeEvent
-    public static void renderAugmentTooltip (ItemTooltipEvent event) {
+    public static void renderPersistentTooltip(ItemTooltipEvent event) {
             ItemStack stack = event.getItemStack();
             NBTTagCompound nbt = stack.getTagCompound();
 
@@ -146,12 +125,16 @@ public class PersistentItemEvents {
         .setColor(TextFormatting.GOLD))
         .getFormattedText());
 
+            if (!event.getToolTip().get(2).isEmpty()) {
+                event.getToolTip().add(2, "");
+            }
+
 
     }
 
     @SideOnly(Side.CLIENT)
     @SubscribeEvent
-    public static void renderPersistenceSealTooltip(RenderTooltipEvent.PostText event) {
+    public static void renderPersistentTooltip2(RenderTooltipEvent.PostText event) {
 
         ItemStack stack = event.getStack();
 

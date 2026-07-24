@@ -1,6 +1,6 @@
 package kamitesque.common.tiles;
 
-import kamitesque.client.fx.FXIchorflame;
+import kamitesque.client.fx.FXDispatcherInternal;
 import kamitesque.init.KTSounds;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.SoundCategory;
@@ -27,7 +27,7 @@ public class TileIchorflameNitor extends TileNitor {
 
             IBlockState state = this.world.getBlockState(this.getPos());
             for (int i = 0; i < 2; i++){
-                FXIchorflame.drawNitorFlames(
+                FXDispatcherInternal.drawNitorFlames(
                         this.pos.getX() + 0.5 + this.world.rand.nextGaussian() * 0.125,
                         this.pos.getY() + 0.45 + this.world.rand.nextGaussian() * 0.125,
                         this.pos.getZ() + 0.5 + this.world.rand.nextGaussian() * 0.125,

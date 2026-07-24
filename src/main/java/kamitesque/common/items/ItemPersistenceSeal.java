@@ -1,26 +1,27 @@
 package kamitesque.common.items;
 
+import com.invadermonky.thaumicapi.api.ThaumicAPI;
+import kamitesque.client.fx.FXDispatcherInternal;
 import kamitesque.common.templates.ItemKTBase;
 import kamitesque.init.KTItems;
+import kamitesque.init.KTSounds;
 import kamitesque.root.Main;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.Items;
 import net.minecraft.item.EnumAction;
 import net.minecraft.item.IItemPropertyGetter;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.ActionResult;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.*;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import thaumcraft.api.capabilities.IPlayerWarp;
-import thaumcraft.api.capabilities.ThaumcraftCapabilities;
 
 import javax.annotation.Nullable;
+import java.awt.*;
 
 public class ItemPersistenceSeal extends ItemKTBase {
 
@@ -34,15 +35,9 @@ public class ItemPersistenceSeal extends ItemKTBase {
 
                     @SideOnly(Side.CLIENT)
                     @Override
-                    public float apply(ItemStack stack,
-                                       @Nullable World world,
-                                       @Nullable EntityLivingBase entity) {
+                    public float apply(ItemStack stack, @Nullable World world, @Nullable EntityLivingBase entity) {
 
-                        return entity != null
-                                && entity.isHandActive()
-                                && entity.getActiveItemStack() == stack
-                                ? 1.0F
-                                : 0.0F;
+                        return entity != null && entity.isHandActive() && entity.getActiveItemStack() == stack ? 1.0F : 0.0F;
                     }
                 }
         );
@@ -65,22 +60,26 @@ public class ItemPersistenceSeal extends ItemKTBase {
             EnumHand hand) {
 
         ItemStack stack = player.getHeldItem(hand);
+        boolean pass = false;
 
-        if (hand.equals(EnumHand.OFF_HAND)) {
-            return new ActionResult<>(
-                    EnumActionResult.FAIL,
-                    stack
-            );
+        if (!player.isCreative()) {
+
+            for (int i = 0; i < player.inventory.getSizeInventory(); i++) {
+                if (player.inventory.getStackInSlot(i).getItem().equals(Items.TOTEM_OF_UNDYING)) {
+                    pass = true;
+                }
+            }
+        } else {
+            pass = true;
         }
 
-        if (player.getHeldItemOffhand().isEmpty() || player.getHeldItemOffhand().getItem().equals(KTItems.persistence_seal)) {
-            return new ActionResult<>(
-                    EnumActionResult.FAIL,
-                    stack
-            );
-        }
+        if (hand.equals(EnumHand.OFF_HAND)
+                || player.getHeldItemOffhand().isEmpty()
+                || player.getHeldItemOffhand().getItem().equals(KTItems.persistence_seal)
+                || (player.getHeldItemOffhand().getTagCompound() != null && player.getHeldItemOffhand().getTagCompound().hasKey("kamitesque.persistent"))
+                || player.getHeldItemOffhand().getItem() instanceof ItemBlock
+                || !pass) {
 
-        if (player.getHeldItemOffhand().getItem() instanceof ItemBlock) {
             return new ActionResult<>(
                     EnumActionResult.FAIL,
                     stack
@@ -96,6 +95,43 @@ public class ItemPersistenceSeal extends ItemKTBase {
     }
 
     @Override
+    public void onUsingTick(ItemStack stack, EntityLivingBase player, int count) {
+
+        float volume = 0.1F + (float)(((stack.getMaxItemUseDuration() - count) / 20.0F));
+
+        if (count != 0 && count % 10 == 0) {
+            player.world.playSound(
+                    null,
+                    player.posX,
+                    player.posY,
+                    player.posZ,
+                    KTSounds.stamping,
+                    SoundCategory.PLAYERS,
+                    volume,
+                    1.0F
+            );
+
+            for (int i = 0; i < 4; i++) {
+
+                Vec3d look = player.getLookVec();
+
+                FXDispatcherInternal.blockRunes(
+                        player.posX - 0.5 + look.x * 0.5,
+                        player.posY + 1.0,
+                        player.posZ - 0.5 + look.z * 0.5,
+                        Color.ORANGE.getRed() + player.world.rand.nextFloat() * 0.7f,
+                        Color.ORANGE.getGreen(),
+                        Color.ORANGE.getBlue(),
+                        15,
+                        0.03f,
+                        player.world
+                );
+            }
+        }
+
+    }
+
+    @Override
     public void onPlayerStoppedUsing(
             ItemStack stack,
             World world,
@@ -104,29 +140,53 @@ public class ItemPersistenceSeal extends ItemKTBase {
 
         if (entity instanceof EntityPlayer) {
 
+            EntityPlayer player = (EntityPlayer)entity;
+
             int usedTime = getMaxItemUseDuration(stack) - timeLeft;
 
-            if (!world.isRemote && usedTime >= 60) {
+            boolean pass = false;
 
-                NBTTagCompound nbt = entity.getHeldItemOffhand().getTagCompound() != null ? entity.getHeldItemOffhand().getTagCompound() : new NBTTagCompound();
+            if (usedTime >= 20) {
 
-                nbt.setBoolean("kamitesque.persistent", true);
-                nbt.setUniqueId("kamitesque.persistent.owner", entity.getUniqueID());
+                if (!player.isCreative()) {
 
-                entity.getHeldItemOffhand().setTagCompound(nbt);
-
-                ((EntityPlayer)entity).addExperienceLevel(-15);
-
-                if (entity.hasCapability(ThaumcraftCapabilities.WARP, null)) {
-                    IPlayerWarp cap = entity.getCapability(ThaumcraftCapabilities.WARP, null);
-                    cap.add(IPlayerWarp.EnumWarpType.NORMAL, 10);
+                        for (int i = 0; i < player.inventory.getSizeInventory(); i++) {
+                            if (player.inventory.getStackInSlot(i).getItem().equals(Items.TOTEM_OF_UNDYING)) {
+                                ItemStack totem = player.inventory.getStackInSlot(i);
+                                totem.shrink(1);
+                                pass = true;
+                            }
+                        }
+                    } else {
+                    pass = true;
+                }
                 }
 
-                ((EntityPlayer)entity).getCooldownTracker().setCooldown(this, 600);
+            if (!pass) {return;}
+
+            entity.world.playSound(
+                    null,
+                    entity.posX,
+                    entity.posY,
+                    entity.posZ,
+                    KTSounds.persistence,
+                    SoundCategory.PLAYERS,
+                    1.0F,
+                    1.0F
+            );
+
+            NBTTagCompound nbt = entity.getHeldItemOffhand().getTagCompound() != null ? entity.getHeldItemOffhand().getTagCompound() : new NBTTagCompound();
+            nbt.setBoolean("kamitesque.persistent", true);
+            nbt.setUniqueId("kamitesque.persistent.owner", entity.getUniqueID());
+            entity.getHeldItemOffhand().setTagCompound(nbt);
+
+            ThaumicAPI.addWarpingToStack(entity.getHeldItemOffhand(), 1);
+
+            ((EntityPlayer)entity).getCooldownTracker().setCooldown(this, 600);
 
             }
         }
     }
 
 
-}
+

@@ -127,7 +127,7 @@
         {
             "key": "KT_PERSISTENCE",
             "name": "research.KT_PERSISTENCE.title",
-            "icons": [ "kamitesque:textures/research/r_persistence.png"],
+            "icons": [ "kamitesque:textures/items/persistence_seal_charge.png"],
             "category": "ZENITH",
             "parents": [ "KT_MATERIALBRANCH", "FOCUS_WARD", "~KAMI_ETERNAL_INFUSION"],
             "meta": [ "HIDDEN"],

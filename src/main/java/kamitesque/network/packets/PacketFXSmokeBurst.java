@@ -1,7 +1,7 @@
 package kamitesque.network.packets;
 
 import io.netty.buffer.ByteBuf;
-import kamitesque.client.fx.FXSmokeBurst;
+import kamitesque.client.fx.FXDispatcherInternal;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
@@ -51,7 +51,7 @@ public class PacketFXSmokeBurst implements IMessage, IMessageHandler<PacketFXSmo
             }
 
             for (int i = 0; i < 33; i++) {
-                FXSmokeBurst.drawSmokeBurst(
+                FXDispatcherInternal.drawSmokeBurst(
                         message.x,
                         message.y,
                         message.z,
