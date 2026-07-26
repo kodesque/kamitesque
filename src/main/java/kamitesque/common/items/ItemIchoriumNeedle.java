@@ -1,9 +1,9 @@
 package kamitesque.common.items;
 
 import kamitesque.common.templates.ItemKTBase;
-import kamitesque.events.front.BanishedEntityEvents;
 import kamitesque.network.packets.KTNetwork;
 import kamitesque.network.packets.PacketFXSmokeBurst;
+import kamitesque.util.BanishUtils;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
@@ -31,7 +31,7 @@ public class ItemIchoriumNeedle extends ItemKTBase implements IWarpingGear {
 
         if (!attacker.world.isRemote) {
 
-            if (target instanceof EntityPlayer || BanishedEntityEvents.isBanished(target)) {
+            if (target instanceof EntityPlayer || BanishUtils.isBanished(target)) {
                 return false;
             }
 

@@ -22,9 +22,11 @@ import thaumcraft.api.blocks.BlocksTC;
 import thaumcraft.api.casters.FocusPackage;
 import thaumcraft.api.crafting.CrucibleRecipe;
 import thaumcraft.api.crafting.InfusionRecipe;
+import thaumcraft.api.crafting.IngredientNBTTC;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.items.casters.ItemFocus;
+import thaumcraft.common.lib.crafting.InfusionEnchantmentRecipe;
 import thecodex6824.thaumicaugmentation.api.TABlocks;
 import thecodex6824.thaumicaugmentation.api.TAItems;
 import thecodex6824.thaumicaugmentation.common.item.foci.FocusEffectWard;
@@ -164,6 +166,25 @@ public class KTRecipes {
                 )
         );
 
+        initInfusionEnchantments();
+
+    }
+
+    private static void initInfusionEnchantments() {
+        InfusionEnchantmentRecipe IETHOUSANDYARD = new InfusionEnchantmentRecipe(KTEnchants.IETHOUSANDYARD, (new AspectList()).add(Aspect.AVERSION, 120).add(Aspect.MOTION, 120).add(Aspect.ELDRITCH, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(ItemsTC.handMirror), new ItemStack(Items.CHORUS_FRUIT_POPPED)});
+
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD"), IETHOUSANDYARD);
+        ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD_FAKE"), new InfusionEnchantmentRecipe(IETHOUSANDYARD, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));
+
+        InfusionEnchantmentRecipe IESHARPEYE = new InfusionEnchantmentRecipe(KTEnchants.IESHARPEYE, (new AspectList()).add(Aspect.SENSES, 120).add(Aspect.ENERGY, 120).add(Aspect.ORDER, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(Items.FERMENTED_SPIDER_EYE), new ItemStack(ItemsTC.goggles)});
+
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IESHARPEYE"), IESHARPEYE);
+        ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IESHARPEYE_FAKE"), new InfusionEnchantmentRecipe(IESHARPEYE, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));
+
+        InfusionEnchantmentRecipe IEALLFRONTS = new InfusionEnchantmentRecipe(KTEnchants.IEALLFRONTS, (new AspectList()).add(Aspect.PROTECT, 120).add(Aspect.DEATH, 120).add(Aspect.EXCHANGE, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(ItemsTC.modules, 1, 1), new ItemStack(ItemsTC.crimsonBlade)});
+
+        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IEALLFRONTS"), IEALLFRONTS);
+        ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IEALLFRONTS_FAKE"), new InfusionEnchantmentRecipe(IEALLFRONTS, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));
     }
 
     public static void initCrucible() {
@@ -173,7 +194,7 @@ public class KTRecipes {
                 new CrucibleRecipe("KT_ICHORFLAME",
                         new ItemStack(KTBlocks.ichorflame_nitor, 4),
                         new ItemStack(ModItemsKAMI.ICHOR),
-                        new AspectList().merge(Aspect.ALCHEMY, 30).merge(Aspect.AVERSION, 30).merge(Aspect.SENSES, 30))
+                        new AspectList().merge(Aspect.ALCHEMY, 16).merge(Aspect.AVERSION, 16).merge(Aspect.SENSES, 16))
         );
 
         ThaumcraftApi.addCrucibleRecipe(
@@ -181,7 +202,7 @@ public class KTRecipes {
                 new CrucibleRecipe("KT_CRYSTALCLUSTER",
                         new ItemStack(KTItems.crystal_cluster),
                         new ItemStack(TABlocks.STRANGE_CRYSTAL),
-                        new AspectList().merge(Aspect.ORDER, 20).merge(Aspect.CRYSTAL, 20))
+                        new AspectList().merge(Aspect.ORDER, 30).merge(Aspect.CRYSTAL, 30))
         );
 
         ThaumcraftApi.addCrucibleRecipe(
@@ -189,7 +210,7 @@ public class KTRecipes {
                 new CrucibleRecipe("KT_ANCIENTS",
                         new ItemStack(KTItems.pure_shard),
                         new ItemStack(TABlocks.STRANGE_CRYSTAL),
-                        new AspectList().merge(Aspect.ENTROPY, 20))
+                        new AspectList().merge(Aspect.ENTROPY, 15))
         );
 
         ThaumcraftApi.addCrucibleRecipe(

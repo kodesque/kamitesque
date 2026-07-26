@@ -89,7 +89,7 @@
             "category": "ZENITH",
             "parents": [ "KT_SPACEBRANCH" ],
             "meta": [ "HIDDEN"],
-            "location": [ -4,6 ],
+            "location": [ -2,4 ],
 
             "stages": [
                 {
@@ -141,6 +141,66 @@
                     "text": "research.KT_PERSISTENCE.text.stage.2",
                     "required_knowledge":["THEORY;INFUSION;1", "THEORY;AUROMANCY;1"],
                     "recipes": ["kamitesque:persistence_seal"]
+                }
+            ]
+        },
+        {
+            "key": "KT_THOUSANDYARD_ENCHANT",
+            "name": "research.KT_THOUSANDYARD_ENCHANT.title",
+            "icons": [ "kamitesque:textures/research/r_thousandyard.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN", "ROUND"],
+            "location": [ -4,8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_THOUSANDYARD_ENCHANT.text.stage.1"
+                },
+                {
+                    "text": "research.KT_THOUSANDYARD_ENCHANT.text.stage.2",
+                    "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'aversio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'desiderium'}]}"],
+                    "recipes": ["kamitesque:IETHOUSANDYARD_FAKE"]
+                }
+            ]
+        },
+        {
+            "key": "KT_SHARPEYE_ENCHANT",
+            "name": "research.KT_SHARPEYE_ENCHANT.title",
+            "icons": [ "kamitesque:textures/research/r_sharpeye.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN", "ROUND"],
+            "location": [ -5,6 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_SHARPEYE_ENCHANT.text.stage.1"
+                },
+                {
+                    "text": "research.KT_SHARPEYE_ENCHANT.text.stage.2",
+                    "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'lux'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'vinculum'}]}"],
+                    "recipes": ["kamitesque:IESHARPEYE_FAKE"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ALLFRONTS_ENCHANT",
+            "name": "research.KT_ALLFRONTS_ENCHANT.title",
+            "icons": [ "kamitesque:textures/research/r_allfronts.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN", "ROUND"],
+            "location": [ -4,4 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ALLFRONTS_ENCHANT.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ALLFRONTS_ENCHANT.text.stage.2",
+                    "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'vacuos'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'ignis'}]}"],
+                    "recipes": ["kamitesque:IEALLFRONTS_FAKE"]
                 }
             ]
         }

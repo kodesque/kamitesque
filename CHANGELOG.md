@@ -1,4 +1,11 @@
 # Kamitesque Changelog
+## 0.1.0-ALPHA
+
+---
+### Added:
+- Infusion Enchantment: All Fronts
+- Infusion Enchantment: Sharp Eye
+- Infusion Enchantment: Thousand-Yard Strike
 ## 0.0.9-ALPHA
 
 ---
