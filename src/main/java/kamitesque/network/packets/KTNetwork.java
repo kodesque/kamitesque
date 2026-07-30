@@ -15,5 +15,8 @@ public class KTNetwork {
 
         INSTANCE.registerMessage(PacketFXSmokeBurst.class, PacketFXSmokeBurst.class, id++, Side.CLIENT);
         INSTANCE.registerMessage(PacketParticleDust.class, PacketParticleDust.class, id++, Side.CLIENT);
+
+        INSTANCE.registerMessage(PacketThousandyardUse.class, PacketThousandyardUse.class, id++, Side.SERVER);
+        INSTANCE.registerMessage(PacketSharpeyeUse.class, PacketSharpeyeUse.class, id++, Side.SERVER);
     }
 }

@@ -1,8 +1,6 @@
 package kamitesque.init;
 
-import kamitesque.common.blocks.BlockBedrockRaw;
-import kamitesque.common.blocks.BlockIchorflameNitor;
-import kamitesque.common.blocks.BlockRootCrystal;
+import kamitesque.common.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
@@ -17,6 +15,9 @@ public class KTBlocks {
     public static Block root_crystal;
     public static Block bedrock_raw;
 
+    public static Block portal_end_cut;
+    public static Block portal_nether_cut;
+
     public static List<Block> BLOCKS = new ArrayList<Block>();
 
     public static void initBlocks() {
@@ -24,6 +25,9 @@ public class KTBlocks {
         KTBlocks.ichorflame_nitor = registerBlock(new BlockIchorflameNitor());
         KTBlocks.root_crystal = registerBlock(new BlockRootCrystal());
         KTBlocks.bedrock_raw = registerBlockSpecial(new BlockBedrockRaw());
+
+        KTBlocks.portal_nether_cut = registerBlock(new BlockPortalCut());
+        KTBlocks.portal_end_cut = registerBlock(new BlockEndPortalCut());
     }
 
     private static Block registerBlock(Block block, ItemBlock itemBlock) {

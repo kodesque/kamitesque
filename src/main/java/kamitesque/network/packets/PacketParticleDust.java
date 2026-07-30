@@ -18,8 +18,7 @@ public class PacketParticleDust implements IMessage, IMessageHandler<PacketParti
     private int numberOfParticles;
     private IBlockState state;
 
-    public PacketParticleDust() {
-    }
+    public PacketParticleDust() {}
 
     public PacketParticleDust(double xCoord, double yCoord, double zCoord,
                               int numberOfParticles,

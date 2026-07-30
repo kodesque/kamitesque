@@ -15,8 +15,7 @@ public class PacketFXSmokeBurst implements IMessage, IMessageHandler<PacketFXSmo
     private double z;
     private int color;
 
-    public PacketFXSmokeBurst() {
-    }
+    public PacketFXSmokeBurst() {}
 
     public PacketFXSmokeBurst(double x, double y, double z, int color) {
         this.x = x;

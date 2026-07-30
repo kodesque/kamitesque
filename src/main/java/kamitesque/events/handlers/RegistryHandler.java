@@ -1,4 +1,4 @@
-package kamitesque.events.back;
+package kamitesque.events.handlers;
 
 import kamitesque.init.KTBlocks;
 import kamitesque.init.KTItems;
@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber
-public class RegistryEvents {
+public class RegistryHandler {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {

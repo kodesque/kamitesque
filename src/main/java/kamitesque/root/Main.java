@@ -28,7 +28,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Main {
     public static final String MODID = "kamitesque";
     public static final String NAME = "Kamitesque";
-    public static final String VERSION = "0.1.0-ALPHA";
+    public static final String VERSION = "0.1.1-ALPHA";
 
     @SidedProxy(clientSide = "kamitesque.network.proxy.ClientProxy", serverSide = "kamitesque.network.proxy.CommonProxy")
     public static CommonProxy proxy;

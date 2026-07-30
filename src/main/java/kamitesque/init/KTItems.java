@@ -25,6 +25,8 @@ public class KTItems {
     public static Item ichorium_hoe;
     public static Item awakened_ichorium_hoe;
 
+    public static Item dimensional_cutter;
+
     public static Item crystal_cluster;
 
     /* "vortex", "wings" */
@@ -47,6 +49,11 @@ public class KTItems {
         iForgeRegistry.register(ichorium_needle = new ItemIchoriumNeedle("ichorium_needle"));
         iForgeRegistry.register(persistence_seal = new ItemPersistenceSeal("persistence_seal"));
         iForgeRegistry.register(crystal_cluster = new ItemKTBase("crystal_cluster"));
+
+        iForgeRegistry.register(ichorium_hoe = new ItemIchoriumHoe("ichorium_hoe"));
+        iForgeRegistry.register(awakened_ichorium_hoe = new ItemAwakenedHoe("awakened_ichorium_hoe"));
+
+        iForgeRegistry.register(dimensional_cutter = new ItemCutter("dimensional_cutter"));
 
         iForgeRegistry.register(debug = new ItemDebug("debug", "vortex", "wings"));
 

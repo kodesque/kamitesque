@@ -1,6 +1,6 @@
 package kamitesque.common.entities;
 
-import kamitesque.util.PersistentUtils;
+import kamitesque.events.PersistenceEvents;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.item.EntityItem;
@@ -40,7 +40,7 @@ public class EntityItemPersistent extends EntityItem {
         if (this.getItem().getTagCompound() != null && this.getItem().getTagCompound().hasKey("kamitesque.persistent")) {
             if (!this.getItem().getTagCompound().getUniqueId("kamitesque.persistent.owner").equals(entityIn.getUniqueID())) {
 
-                PersistentUtils.punish(entityIn);
+                PersistenceEvents.punish(entityIn);
                 return;
             }
         }
@@ -69,7 +69,7 @@ public class EntityItemPersistent extends EntityItem {
 
             if (!entities.isEmpty()) {
                 for (Entity entity : entities) {
-                    if (entity instanceof EntityLiving && !(entity instanceof EntityPlayer)) {
+                    if (entity instanceof EntityLiving) {
                         ((EntityLiving)entity).setCanPickUpLoot(false);
 
                         if (entity instanceof IMob) {

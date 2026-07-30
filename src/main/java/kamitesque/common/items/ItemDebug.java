@@ -4,6 +4,7 @@ import kamitesque.common.templates.ItemKTBase;
 import kamitesque.init.KTBlocks;
 import kamitesque.init.KTItems;
 import mod.emt.kami.Kami;
+import mod.emt.kami.utils.helpers.ItemHelper;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -19,11 +20,12 @@ public class ItemDebug extends ItemKTBase {
 
         items.add(new ItemStack (KTItems.augment_eye));
         items.add(new ItemStack (KTItems.persistence_seal));
-        items.add(new ItemStack (KTItems.pure_shard));
-        items.add(new ItemStack (KTItems.crystal_cluster));
 
         items.add(new ItemStack (KTItems.seal_printed));
         items.add(new ItemStack (KTItems.glyph_tablet));
+
+        items.add(new ItemStack (KTItems.pure_shard));
+        items.add(new ItemStack (KTItems.crystal_cluster));
 
         items.add(new ItemStack (KTItems.augment_discharger));
         items.add(new ItemStack (KTItems.cerebral_pearls));
@@ -34,6 +36,17 @@ public class ItemDebug extends ItemKTBase {
 
         items.add(new ItemStack (KTItems.root_seed));
         items.add(new ItemStack (KTBlocks.root_crystal));
+
+        items.add(new ItemStack (KTBlocks.portal_nether_cut));
+        items.add(new ItemStack (KTBlocks.portal_end_cut));
+
+        ItemStack ichorium_hoe = new ItemStack(KTItems.ichorium_hoe);
+        ItemHelper.setUnbreakable(ichorium_hoe);
+        ItemStack awakened_ichorium_hoe = new ItemStack(KTItems.awakened_ichorium_hoe);
+        ItemHelper.setUnbreakable(awakened_ichorium_hoe);
+
+        items.add(ichorium_hoe);
+        items.add(awakened_ichorium_hoe);
 
     }
 }

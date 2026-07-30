@@ -1,7 +1,6 @@
-package kamitesque.events.front;
+package kamitesque.events;
 
 import kamitesque.common.items.ItemAidedEye;
-import kamitesque.init.KTItems;
 import kamitesque.root.Main;
 import kamitesque.util.NBTManager;
 import net.minecraft.entity.Entity;
@@ -13,29 +12,21 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.text.Style;
-import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
-import net.minecraftforge.event.entity.player.ItemTooltipEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import thaumcraft.common.items.tools.ItemThaumometer;
 import thaumcraft.common.lib.SoundsTC;
 import thaumcraft.common.lib.utils.EntityUtils;
 import thecodex6824.thaumicaugmentation.api.impetus.ImpetusAPI;
 import thecodex6824.thaumicaugmentation.common.item.ItemEldritchLockKey;
 
-import java.util.List;
-
-@Mod.EventBusSubscriber
-public class AidedEyeEvents {
+public class ScannerAugmentEvents {
 
     public static final int gazeCost = 20;
     public static final int memoryCost = 10;
 
-    @SubscribeEvent
-    public static void useSpecialAbility (PlayerInteractEvent.RightClickItem event) {
+    public static void onAidedEyeAbilityUse(PlayerInteractEvent.RightClickItem event) {
 
         if (event.getEntityPlayer().isSneaking()) {
             if (event.getEntityPlayer().getHeldItemMainhand().getItem() instanceof ItemThaumometer) {
@@ -71,8 +62,7 @@ public class AidedEyeEvents {
     }
 
 
-    @SubscribeEvent
-    public static void addMemory (PlayerInteractEvent.RightClickItem event) {
+    public static void onAidedEyeMemoryAdd(PlayerInteractEvent.RightClickItem event) {
 
         if (event.getWorld().isRemote) return;
 
@@ -129,41 +119,6 @@ public class AidedEyeEvents {
 
 
                 }
-            }
-        }
-    }
-
-    @SubscribeEvent
-    public static void renderAugmentTooltip (ItemTooltipEvent event) {
-        List<String> tips = event.getToolTip();
-        ItemStack stack = event.getItemStack();
-
-        if (stack.getItem() instanceof ItemThaumometer && NBTManager.has(stack, NBTManager.EnumGroups.AUGMENT)) {
-            tips.add(1,
-                    new TextComponentString((new ItemStack(KTItems.augment_eye)).getDisplayName())
-                            .setStyle(new Style()
-                                    .setColor(TextFormatting.DARK_PURPLE)
-                                    .setItalic(true))
-                            .getFormattedText());
-        }
-    }
-
-    @SubscribeEvent
-    public static void renderMemoryTooltip (ItemTooltipEvent event) {
-        List<String> tips = event.getToolTip();
-        ItemStack stack = event.getItemStack();
-
-        if (stack.getItem() instanceof ItemEldritchLockKey) {
-
-            if (NBTManager.has(stack, NBTManager.EnumGroups.MEMORY)) {
-                tips.add(1, new TextComponentTranslation("tooltip" + "." + Main.MODID + "." + "memory" + "." + NBTManager.get(stack, NBTManager.EnumGroups.MEMORY, NBTManager.EnumGroups.Memory.MAIN) + "." + NBTManager.get(stack, NBTManager.EnumGroups.MEMORY, NBTManager.EnumGroups.Memory.SUB)).getFormattedText());
-                tips.remove(2);
-            }
-        } else if (stack.getItem().equals(KTItems.seal_printed)) {
-            if (NBTManager.has(stack, NBTManager.EnumGroups.MEMORY)) {
-                tips.add(1, new TextComponentTranslation("tooltip" + "." + Main.MODID + "." + "memory" + "." + NBTManager.get(stack, NBTManager.EnumGroups.MEMORY, NBTManager.EnumGroups.Memory.MAIN) + "." + NBTManager.get(stack, NBTManager.EnumGroups.MEMORY, NBTManager.EnumGroups.Memory.SUB)).getFormattedText());
-            } else {
-                tips.add(1, new TextComponentTranslation("tooltip" + "." + Main.MODID + "." + "memory" + "." + "null").getFormattedText());
             }
         }
     }

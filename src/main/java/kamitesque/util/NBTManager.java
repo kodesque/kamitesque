@@ -14,7 +14,7 @@ public class NBTManager {
 
         Class<?> getClazz();
 
-        /* intended to use when "0" doesn't necessarily mean nothing, e.g translation means */
+        /* intended to use when "0" doesn't necessarily mean nothing, e.g. translation means */
 
         boolean isSpecialCase();
     }

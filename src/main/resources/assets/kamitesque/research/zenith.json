@@ -17,6 +17,46 @@
             ]
         },
         {
+            "key": "KT_ICHORIUMHOE",
+            "name": "research.KT_ICHORIUMHOE.title",
+            "icons": [ "kamitesque:ichorium_hoe;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KAMI_ICHORIUM_TOOLS"],
+            "meta": [ "HIDDEN" ],
+            "location": [ 2,-6 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ICHORIUMHOE.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ICHORIUMHOE.text.stage.2",
+                    "required_knowledge": ["OBSERVATION;ELDRITCH;2", "THEORY;ARTIFICE;2"],
+                    "recipes": ["kamitesque:ichorium_hoe"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ICHORIUMHOE_AWAKENED",
+            "name": "research.KT_ICHORIUMHOE_AWAKENED.title",
+            "icons": [ "kamitesque:awakened_ichorium_hoe;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_ICHORIUMHOE", "~ELEMENTALTOOLS" ],
+            "meta": [ "HIDDEN" ],
+            "location": [ 2,-8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ICHORIUMHOE_AWAKENED.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ICHORIUMHOE.text.stage.2",
+                    "required_knowledge":["THEORY;ELDRITCH;2", "THEORY;INFUSION;2", "THEORY;ARTIFICE;2"],
+                    "recipes": ["kamitesque:awakened_ichorium_hoe"]
+                }
+            ]
+        },
+        {
             "key": "KT_ENERGYBRANCH",
             "name": "research.KT_ENERGYBRANCH.title",
             "icons": [ "kamitesque:textures/research/r_energy.png"],

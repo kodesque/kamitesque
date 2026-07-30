@@ -1,4 +1,4 @@
-package kamitesque.events.front;
+package kamitesque.events;
 
 import kamitesque.init.KTSounds;
 import kamitesque.network.packets.KTNetwork;
@@ -11,16 +11,12 @@ import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.SoundCategory;
 import net.minecraftforge.event.entity.living.LivingEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import thaumcraft.common.lib.SoundsTC;
 
-@Mod.EventBusSubscriber
 public class BanishedEntityEvents {
 
-    @SubscribeEvent
-    public static void updateBanish(LivingEvent.LivingUpdateEvent event) {
+    public static void onBanishUpdate(LivingEvent.LivingUpdateEvent event) {
 
         Entity entity = event.getEntity();
         Minecraft mc = Minecraft.getMinecraft();

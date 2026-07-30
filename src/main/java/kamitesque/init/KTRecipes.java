@@ -5,6 +5,7 @@ import kamitesque.common.recipes.RecipeAugmentRemove;
 import kamitesque.common.recipes.RecipeSealPrint;
 import kamitesque.root.Main;
 import mod.emt.kami.registry.ModItemsKAMI;
+import mod.emt.kami.utils.helpers.ItemHelper;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.init.Enchantments;
 import net.minecraft.init.Items;
@@ -20,10 +21,7 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.blocks.BlocksTC;
 import thaumcraft.api.casters.FocusPackage;
-import thaumcraft.api.crafting.CrucibleRecipe;
-import thaumcraft.api.crafting.InfusionRecipe;
-import thaumcraft.api.crafting.IngredientNBTTC;
-import thaumcraft.api.crafting.ShapedArcaneRecipe;
+import thaumcraft.api.crafting.*;
 import thaumcraft.api.items.ItemsTC;
 import thaumcraft.common.items.casters.ItemFocus;
 import thaumcraft.common.lib.crafting.InfusionEnchantmentRecipe;
@@ -84,6 +82,26 @@ public class KTRecipes {
                         "gemDiamond",
                         'C',
                         new ItemStack(KTItems.pure_shard)
+                )
+        );
+
+        ItemStack ichorium_hoe = new ItemStack(KTItems.ichorium_hoe);
+
+        ThaumcraftApi.addArcaneCraftingRecipe(
+                new ResourceLocation("kamitesque:ichorium_hoe"),
+                new ShapedArcaneRecipe(
+                        baseGroup,
+                        "KT_ICHORIUMHOE",
+                        250,
+                        new AspectList().add(Aspect.ENTROPY, 8),
+                        ichorium_hoe,
+                        "II ",
+                        "S  ",
+                        "S  ",
+                        'I',
+                        new ItemStack(ModItemsKAMI.ICHORIUM_INGOT),
+                        'S',
+                        new ItemStack(ModItemsKAMI.BLESSED_SILVERWOOD_ROD)
                 )
         );
 
@@ -166,12 +184,33 @@ public class KTRecipes {
                 )
         );
 
+        ItemStack awakened_ichorium_hoe = new ItemStack(KTItems.awakened_ichorium_hoe);
+        ItemHelper.setUnbreakable(awakened_ichorium_hoe);
+
+        ThaumcraftApi.addInfusionCraftingRecipe(
+                new ResourceLocation("kamitesque:awakened_ichorium_hoe"),
+                new InfusionRecipe("KT_ICHORIUMHOE_AWAKENED",
+                        awakened_ichorium_hoe,
+                        10,
+                        new AspectList().add(Aspect.PLANT, 500).add(Aspect.LIFE, 500).add(Aspect.BEAST, 500).add(Aspect.EARTH, 500).add(Aspect.DESIRE, 500),
+                        new ItemStack(KTItems.ichorium_hoe),
+                        new ItemStack(ItemsTC.primordialPearl),
+                        new ItemStack(Items.NETHER_STAR),
+                        new ItemStack(ItemsTC.primordialPearl),
+                        new ItemStack(Items.NETHER_STAR),
+                        new ItemStack(ItemsTC.primordialPearl),
+                        new ItemStack(Items.NETHER_STAR),
+                        new ItemStack(ItemsTC.primordialPearl),
+                        new ItemStack(Items.NETHER_STAR)
+                )
+        );
+
         initInfusionEnchantments();
 
     }
 
     private static void initInfusionEnchantments() {
-        InfusionEnchantmentRecipe IETHOUSANDYARD = new InfusionEnchantmentRecipe(KTEnchants.IETHOUSANDYARD, (new AspectList()).add(Aspect.AVERSION, 120).add(Aspect.MOTION, 120).add(Aspect.ELDRITCH, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(ItemsTC.handMirror), new ItemStack(Items.CHORUS_FRUIT_POPPED)});
+        InfusionEnchantmentRecipe IETHOUSANDYARD = new InfusionEnchantmentRecipe(KTEnchants.IETHOUSANDYARD, (new AspectList()).add(Aspect.AVERSION, 120).add(Aspect.MOTION, 120).add(Aspect.ELDRITCH, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(BlocksTC.mirror), new ItemStack(Items.CHORUS_FRUIT_POPPED)});
 
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD"), IETHOUSANDYARD);
         ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD_FAKE"), new InfusionEnchantmentRecipe(IETHOUSANDYARD, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));

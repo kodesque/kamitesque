@@ -1,4 +1,13 @@
 # Kamitesque Changelog
+## 0.1.1-ALPHA
+
+---
+### Changed:
+- Thousand-Yard Strike recipe: hand mirror -> magic mirror
+- Reorganized event handling
+### Fixed:
+- Thousand-Yard Strike & Sharp Eye not working at all
+- Sharp Eye crashing the game with stackoverflow
 ## 0.1.0-ALPHA
 
 ---
@@ -19,7 +28,7 @@
 - Seal of Persistence texture
 - Seal of Persistence required use time: 60 -> 20 ticks
 - Seal of Persistence use price: XP + warp -> totem of undying + warping
-- Seal of Persistence craft: thaumium plate -> complex mechanism
+- Seal of Persistence recipe: thaumium plate -> complex mechanism
 ### Fixed:
 - Persistent item mob pickup prevention not working
 - Seal of Persistence still activating when an item is already persistent

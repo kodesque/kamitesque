@@ -18,11 +18,19 @@ item.kamitesque.glyph_tablet.name=Reconstructed Tablet
 item.kamitesque.ichorium_needle.name=Ichorium Needle of the Voidbanisher
 item.kamitesque.persistence_seal.name=Seal of Persistence
 
+item.kamitesque.ichorium_hoe.name=Ichorium Hoe
+item.kamitesque.awakened_ichorium_hoe.name=Awakened Ichorium Hoe
+
+item.kamitesque.dimensional_cutter.name=Dimensional Cutter
+
 #BLOCKS
 
 tile.kamitesque.ichorflame_nitor.name=Nichor
 tile.kamitesque.root_crystal.name=Root Crystal
 tile.kamitesque.bedrock_raw.name=Raw Bedrock
+
+tile.kamitesque.portal_nether_cut.name=Nether Portal Piece
+tile.kamitesque.portal_end_cut.name=End Portal Piece
 
 #RESEARCHES
 research.KT_ANCIENTS.title=The Lost Knowledge
@@ -50,7 +58,6 @@ research.KT_ICHORIUMNEEDLE.text.stage.1=Although Ichor armor renders me almost i
 research.KT_ICHORIUMNEEDLE.text.stage.2=A tiny needle crafted from bone coated in Ichor. It turns out this material can not only warp local space but also transport living beings to almost anywhere in the world - even when fashioned into such crude tools.<BR>This "Needle of the Voidbanisher" possesses a specific property: upon striking any living target, it instantly hurls it into the space beneath the Overworld - far enough away for the Void to tear them apart immediately.<BR>Clearly, this cannot be considered an ultimate weapon; at my level of progression, opponents are valued primarily for the resources they yield, and the needle prevents that. Then again, it has a different purpose - one it fulfills admirably.<BR>I forgot to mention: despite being made of Ichor, the item breaks upon use. Or rather... it vanishes into the Void along with the target. Oops!
 
 research.KT_CRYSTALCLUSTER.title=Crystal Purification
-
 research.KT_CRYSTALCLUSTER.text.stage.1=The crystals found in the Outer Lands are a vital and valuable resource for the most promising research.<BR>However, the fact that this "ore" does not occur in the Overworld makes hunting for it quite difficult - difficult enough that a 1:1 conversion rate feels like highway robbery.<BR>I have applied the metal cluster creation principle I already know to produce a cluster of this strange crystal. The cost in Aspects is higher, and I require *Vitreous* instead of *Metallum*, but it should be worth it.
 
 research.KT_ENERGYBRANCH.title=Energy Potential
@@ -75,7 +82,7 @@ research.KT_PERSISTENCE.text.stage.2=I already had all the necessary substances 
 research.KT_ALLFRONTS_ENCHANT.title=Infusion Enchantment: All Fronts
 research.KT_ALLFRONTS_ENCHANT.title.subtitle=[KMT] One against an army
 research.KT_ALLFRONTS_ENCHANT.text.stage.1=My sword already boasts a fairly wide attack radius, yet one thing has always bothered me: I never know what's happening behind my back. I can't see whoever might be slowly creeping up on me to sink their teeth into my flesh or blow up my house...<BR>Ichor will come to my rescue once again, won't it? I just need the right infusion enchantment.
-research.KT_ALLFRONTS_ENCHANT.text.stage.2=There it is.<BR>The "All Fronts" enchantment allows me to strike in a 360-degree radius around myself, regardless of where I'm looking. Now, I'll never find myself surrounded.<BR>What's more, it apparently has another interesting feature...<BR>If a lone enemy approaches me, the sword strikes immediately—even when I'm not holding it! It's not a full-fledged automatic defense, since it goes into cooldown right after, but it's still a very peculiar effect.
+research.KT_ALLFRONTS_ENCHANT.text.stage.2=There it is.<BR>The "All Fronts" enchantment allows me to strike in a 360-degree radius around myself, regardless of where I'm looking. Now, I'll never find myself surrounded.<BR>What's more, it apparently has another interesting feature...<BR>If a lone enemy approaches me, the sword strikes immediately - even when I'm not holding it! It's not a full-fledged automatic defense, since it goes into cooldown right after, but it's still a very peculiar effect.
 
 research.KT_SHARPEYE_ENCHANT.title=Infusion Enchantment: Sharp Eye
 research.KT_SHARPEYE_ENCHANT.title.subtitle=[KMT] Perfect flyswatter
@@ -130,10 +137,14 @@ tooltip.kamitesque.memory.6.2=§6§o...from the filth that continues to expand..
 tooltip.kamitesque.glyph_tablet=§5§oI have to squint when I look at these inscriptions. As if the very knowledge on them blinds me.
 tooltip.kamitesque.persistent=Persistent
 
+tooltip.kamitesque.tool.conversion_mode.0=Extraction
+tooltip.kamitesque.tool.conversion_mode.1=Mutation
+tooltip.kamitesque.tool.conversion_mode.2=Galvanization
+tooltip.kamitesque.tool.conversion_mode.3=Elimination
+
 # MESSAGES
 message.kamitesque.reveal=It seems like something has changed.
 message.kamitesque.gaze=Your piercing gaze tears the enemy apart.
-message.kamitesque.persistent=It suddenly flares up with a vile, searing light. Unbearable pain pierces your head, forcing you to loosen your grip.
 
 # ENCHANTMENTS
 enchantment.infusion.KT_THOUSANDYARD=Thousand-Yard Strike
