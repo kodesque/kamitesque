@@ -27,11 +27,7 @@
 
             "stages": [
                 {
-                    "text": "research.KT_ICHORIUMHOE.text.stage.1"
-                },
-                {
-                    "text": "research.KT_ICHORIUMHOE.text.stage.2",
-                    "required_knowledge": ["OBSERVATION;ELDRITCH;2", "THEORY;ARTIFICE;2"],
+                    "text": "research.KT_ICHORIUMHOE.text.stage.1",
                     "recipes": ["kamitesque:ichorium_hoe"]
                 }
             ]
@@ -50,7 +46,7 @@
                     "text": "research.KT_ICHORIUMHOE_AWAKENED.text.stage.1"
                 },
                 {
-                    "text": "research.KT_ICHORIUMHOE.text.stage.2",
+                    "text": "research.KT_ICHORIUMHOE_AWAKENED.text.stage.2",
                     "required_knowledge":["THEORY;ELDRITCH;2", "THEORY;INFUSION;2", "THEORY;ARTIFICE;2"],
                     "recipes": ["kamitesque:awakened_ichorium_hoe"]
                 }

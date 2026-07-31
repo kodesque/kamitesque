@@ -45,20 +45,6 @@ public class ItemKTBase extends Item implements IThaumcraftItems {
         return super.getUnlocalizedNameInefficiently(itemStack);
     }
 
-//    @Override
-//    public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
-        //        if (tab == Main.TABTCA || tab == CreativeTabs.SEARCH) {
-        //            if (!this.getHasSubtypes()) {
-        //                super.getSubItems(tab, items);
-        //            }
-        //            else {
-        //                for (int meta = 0; meta < this.VARIANTS.length; ++meta) {
-        //                    items.add(new ItemStack(this, 1, meta));
-        //                }
-        //            }
-        //        }
-//    }
-
     @Override
     public Item getItem() {
         return this;

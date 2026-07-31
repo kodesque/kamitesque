@@ -5,6 +5,8 @@ import kamitesque.init.KTResearch;
 import kamitesque.init.KTTiles;
 import kamitesque.network.packets.KTNetwork;
 import kamitesque.network.proxy.CommonProxy;
+import kamitesque.util.HoeCache;
+import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -15,7 +17,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Main.MODID, dependencies =
         "required-after:thaumcraft;" +
         "required-after:thaumicaugmentation;" +
-        "required-after:kami;" +
+        "after:kami;" +
         "after:new-crimson-revelations;" +
         "after:isorropia;" +
         "after:thaumictinkerer;" +
@@ -28,7 +30,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Main {
     public static final String MODID = "kamitesque";
     public static final String NAME = "Kamitesque";
-    public static final String VERSION = "0.1.1-ALPHA";
+    public static final String VERSION = "0.1.2-ALPHA";
 
     @SidedProxy(clientSide = "kamitesque.network.proxy.ClientProxy", serverSide = "kamitesque.network.proxy.CommonProxy")
     public static CommonProxy proxy;
@@ -38,6 +40,8 @@ public class Main {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+
+        checkDependencies();
 
         KTNetwork.preInitPackets();
         KTTiles.preInitTiles();
@@ -56,5 +60,16 @@ public class Main {
     }
 
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {}
+    public void postInit(FMLPostInitializationEvent event) {
+
+        HoeCache.fillHoeCache();
+
+    }
+
+    private void checkDependencies() {
+        if (!Loader.isModLoaded("kami") && !Loader.isModLoaded("thaumictinkerer")
+        ) {
+            throw new MissingKamiAddonException();
+        }
+    }
 }

@@ -5,7 +5,6 @@ import kamitesque.init.KTItems;
 import kamitesque.util.HoeCache;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.world.BlockEvent;
 
@@ -17,8 +16,10 @@ public class AwakenedHoeEvents {
         EntityPlayer player = event.getHarvester();
         if (player == null) return;
 
+        if (player.world.isRemote) return;
+
         ItemStack stack = player.getHeldItemMainhand();
-        Block block = event.getWorld().getBlockState(event.getPos()).getBlock();
+        Block block = event.getState().getBlock();
 
         List<ItemStack> drops = event.getDrops();
         int fortune = event.getFortuneLevel();
@@ -32,25 +33,11 @@ public class AwakenedHoeEvents {
 
                                 HoeCache.DataBundle bundle = HoeCache.galvanize_drops.get(i);
 
-                                if (player.world.rand.nextFloat() == bundle.chance) {
+                                if (player.world.rand.nextFloat() < bundle.chance) {
 
                                     int amount = player.world.rand.nextInt(bundle.minAmount, bundle.maxAmount);
 
-                                    ItemStack original = drops.getFirst();
-                                    ItemStack modified = drops.getFirst();
-
-                                    for (int x = 0; x < drops.size(); i++) {
-                                        Item type = drops.getFirst().getItem();
-
-                                        if (drops.get(x).getItem().equals(type)) {
-                                            modified.grow(drops.get(x).getCount());
-                                        }
-                                    }
-
-                                    drops.remove(original);
-                                    modified.shrink(amount);
-                                    drops.add(modified);
-
+                                    drops.clear();
                                     drops.add(new ItemStack(bundle.item, amount));
                                     drops.add(HoeCache.getSpecialDrop(block, fortune, player.world.rand));
 

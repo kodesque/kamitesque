@@ -1,4 +1,11 @@
 # Kamitesque Changelog
+## 0.1.2-ALPHA
+
+---
+### Added:
+- Ichorium Hoe/Awakened Ichorium Hoe & corresponding research
+### Changed:
+- KAMI: Reborn can be now replaced with Thaumic Tinkerer Unofficial (no craft/research support yet)
 ## 0.1.1-ALPHA
 
 ---

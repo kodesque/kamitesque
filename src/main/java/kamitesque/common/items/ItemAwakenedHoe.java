@@ -1,6 +1,12 @@
 package kamitesque.common.items;
 
+import kamitesque.util.HoeCache;
 import mod.emt.kami.registry.ModSoundsKAMI;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockSapling;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -13,7 +19,12 @@ import net.minecraft.util.text.Style;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class ItemAwakenedHoe extends ItemIchoriumHoe {
 
@@ -21,59 +32,59 @@ public class ItemAwakenedHoe extends ItemIchoriumHoe {
         super(name, variants);
 
         this.addPropertyOverride(new ResourceLocation("conversion_mode"), (stack, worldIn, entityIn) -> (float) ItemAwakenedHoe.EnumConversionMode.getMode(stack).ordinal());
-
-//        this.addPropertyOverride(
-//                new ResourceLocation(Main.MODID, "extracting"),
-//                new IItemPropertyGetter() {
-//
-//                    @SideOnly(Side.CLIENT)
-//                    @Override
-//                    public float apply(ItemStack stack, @Nullable World world, @Nullable EntityLivingBase entity) {
-//
-//                        return entity != null && entity.isHandActive() && entity.getActiveItemStack() == stack ? 1.0F : 0.0F;
-//                    }
-//                }
-//        );
     }
 
-//    public int getMaxItemUseDuration(ItemStack stack) {
-//        return 3600;
-//    }
-//
-//    public EnumAction getItemUseAction(ItemStack stack) {
-//        return EnumAction.BOW;
-//    }
-
     public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        super.onItemUse(player, worldIn, pos, hand, facing, hitX, hitY, hitZ);
+
         ItemStack itemstack = player.getHeldItem(hand);
 
         EnumConversionMode current = EnumConversionMode.getMode(itemstack);
+        Block block = worldIn.getBlockState(pos).getBlock();
 
-        if (current.equals(EnumConversionMode.EXTRACT)) {
+        if (worldIn.isRemote) {
+            return EnumActionResult.FAIL;
+        }
 
-        } else if (current.equals(EnumConversionMode.MUTATE)) {
+        if (current.equals(EnumConversionMode.MUTATE)) {
+            if (block instanceof BlockSapling || block.getRegistryName().getPath().contains("sapling")) {
 
+                worldIn.setBlockState(pos, HoeCache.getRandomSapling(worldIn.rand));
+
+                return EnumActionResult.SUCCESS;
+            }
+        }
+
+        if (current.equals(EnumConversionMode.NORMAL)) {
+            super.onItemUse(player, worldIn, pos, hand, facing, hitX, hitY, hitZ);
+            return EnumActionResult.SUCCESS;
         }
 
         return null;
     }
 
     public boolean itemInteractionForEntity(ItemStack stack, EntityPlayer playerIn, EntityLivingBase target, EnumHand hand) {
-        ItemStack itemstack = playerIn.getHeldItem(hand);
-        EnumConversionMode current = EnumConversionMode.getMode(itemstack);
+        EnumConversionMode current = EnumConversionMode.getMode(stack);
+
+        if (playerIn.world.isRemote) return false;
 
         if (current.equals(EnumConversionMode.ELIMINATE)) {
             if (target instanceof EntityLivingBase && !target.getHeldItemMainhand().isEmpty()) {
 
-                float chance = target instanceof EntityPlayer ? 0.1F : 0.5F;
+                float chance = target instanceof EntityPlayer ? 0.05F : 0.3F;
 
-                if (target.world.rand.nextFloat() == chance) {
-                    target.replaceItemInInventory(EntityEquipmentSlot.MAINHAND.getSlotIndex(), ItemStack.EMPTY);
-                    target.entityDropItem(stack, 0);
+                if (target.world.rand.nextFloat() < chance) {
+                    ItemStack held = target.getHeldItemMainhand();
 
-                    playerIn.getCooldownTracker().setCooldown(this, 600);
+                    target.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, ItemStack.EMPTY);
+                    target.entityDropItem(held, 0);
+                    if (target instanceof EntityLiving) {
+                        ((EntityLiving)target).setCanPickUpLoot(false);
+                    }
+                    return true;
                 }
+
+                playerIn.getCooldownTracker().setCooldown(this, 600);
+                return true;
             }
         }
 
@@ -81,13 +92,12 @@ public class ItemAwakenedHoe extends ItemIchoriumHoe {
     }
 
 
-
     public @NotNull ActionResult<ItemStack> onItemRightClick(@NotNull World world, @NotNull EntityPlayer player, @NotNull EnumHand hand) {
         ItemStack heldStack = player.getHeldItem(hand);
         if (player.isSneaking()) {
             ItemAwakenedHoe.EnumConversionMode mode = ItemAwakenedHoe.EnumConversionMode.getMode(heldStack).nextMode();
             ItemAwakenedHoe.EnumConversionMode.setMode(heldStack, mode);
-            world.playSound((EntityPlayer)null, player.getPosition(), ModSoundsKAMI.ITEM_ICHOR_TOGGLE.getSoundEvent(), SoundCategory.PLAYERS, 1.0F, 1.5F);
+            world.playSound((EntityPlayer) null, player.getPosition(), ModSoundsKAMI.ITEM_ICHOR_TOGGLE.getSoundEvent(), SoundCategory.PLAYERS, 1.0F, 1.5F);
             player.sendStatusMessage((new TextComponentTranslation("tooltip.kamitesque.tool.conversion_mode." + mode, new Object[0])).setStyle((new Style()).setColor(mode.getTextColor())), true);
         } else if (hand == EnumHand.MAIN_HAND) {
             player.setActiveHand(hand);
@@ -96,11 +106,17 @@ public class ItemAwakenedHoe extends ItemIchoriumHoe {
         return new ActionResult(EnumActionResult.SUCCESS, heldStack);
     }
 
+    @SideOnly(Side.CLIENT)
+    public void addInformation(@NotNull ItemStack stack, @Nullable World worldIn, @NotNull List<String> tooltip, @NotNull ITooltipFlag flagIn) {
+        ItemAwakenedHoe.EnumConversionMode mode = ItemAwakenedHoe.EnumConversionMode.getMode(stack);
+        tooltip.add(mode.getTextColor() + I18n.format("tooltip.kamitesque.tool.conversion_mode." + mode, new Object[0]));
+    }
+
     public enum EnumConversionMode {
-        EXTRACT(TextFormatting.GRAY),
-        MUTATE(TextFormatting.BLUE),
+        NORMAL(TextFormatting.GRAY),
+        MUTATE(TextFormatting.DARK_RED),
         GALVANIZE(TextFormatting.DARK_GREEN),
-        ELIMINATE(TextFormatting.DARK_RED);
+        ELIMINATE(TextFormatting.BLUE);
 
         private final TextFormatting textColor;
 

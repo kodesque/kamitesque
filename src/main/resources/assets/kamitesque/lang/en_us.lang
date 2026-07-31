@@ -19,7 +19,7 @@ item.kamitesque.ichorium_needle.name=Ichorium Needle of the Voidbanisher
 item.kamitesque.persistence_seal.name=Seal of Persistence
 
 item.kamitesque.ichorium_hoe.name=Ichorium Hoe
-item.kamitesque.awakened_ichorium_hoe.name=Awakened Ichorium Hoe
+item.kamitesque.awakened_ichorium_hoe.name=Ichorium Hoe of the Conjurer
 
 item.kamitesque.dimensional_cutter.name=Dimensional Cutter
 
@@ -94,6 +94,15 @@ research.KT_THOUSANDYARD_ENCHANT.title.subtitle=[KMT] Armchair warrior
 research.KT_THOUSANDYARD_ENCHANT.text.stage.1=One problem I constantly face in combat is the need to ram and attack the enemy at point-blank range. I lack sufficiently powerful ranged weapons - and even those consume ammunition, unlike my always-ready blade.<BR>I am considering an infusion enchantment that could remedy this shortcoming.
 research.KT_THOUSANDYARD_ENCHANT.text.stage.2=What a stroke of luck!<BR>The "Thousand-Yard Strike"- as I've named it - does something truly remarkable: I can now be at almost any distance from an opponent and simply strike in their direction. The ichor bound within the enchantment warps the space before me, delivering the strike's kinetic energy directly into the victim's body.<BR>This does as well work through walls.
 
+research.KT_ICHORIUMHOE.title=Ichorium Hoe
+research.KT_ICHORIUMHOE.title.subtitle=[KMT] Just for show?
+research.KT_ICHORIUMHOE.text.stage.1=I almost forgot - the hoe.<BR>An Ichorium hoe, right. I mean, anyone would call that a waste of resources. Why spend Ichorium ingots on a tool like that?<BR>Well, I'll just leave this entry here, because there are no structural obstacles to forging the hoe.<BR>Yet, it's a rather foolish idea.
+
+research.KT_ICHORIUMHOE_AWAKENED.title=Ichorium Hoe of the Conjurer
+research.KT_ICHORIUMHOE_AWAKENED.title.subtitle=[KMT] Dark horse
+research.KT_ICHORIUMHOE_AWAKENED.text.stage.1=Well, I'm almost ready to take back what I said.It seems like there can be a way to actually justify using those two ingots for a soil-tilling tool.<BR>I can "awaken" the Ichorium Hoe, imbuing it with some rather useful properties.
+research.KT_ICHORIUMHOE_AWAKENED.text.stage.2="Ichorium Hoe of the Conjurer" - has a nice ring to it, doesn't it?<BR>The beauty of this little gem is that it features several modes, each vastly different from the last. A kind of a multitool.<PAGE>Mutation<DIV>The "trick" here is that by waving the tool over any sapling, I can transform it into any other type. This makes gathering rare wood varieties - which used to require long expeditions - much easier.<BR>The only catch is that I have absolutely no control over the outcome, so luck plays a major role when hunting for a specific plant.<PAGE>Galvanization<DIV>With a dash of electrochemistry, the hoe gains the ability to coat certain fruits in a thin layer of gold.<BR>Breaking blocks of melon, mature carrots, or oak leaves yields glistering melon, golden carrots, and golden apples, respectively. The success rate, however, isn't 100%.<BR>Also, if an item has the "Fortune" enchantment applied to it, I can obtain apples of a much better variety with it...<PAGE>Elimination<DIV>A combat mode - who would have thought?<BR>By switching the hoe to its blue gemstone setting, I can rip weapons right out of my opponents' hands. Like the previous mode, this doesn't happen every single time. Furthermore, after attempting to disarm a foe - regardless of success - the hoe enters a 60-second cooldown.<BR>This does work on players as well.<PAGE>Unset<DIV>In this mode, the tool functions like any other hoe, with no additional effects.
+
 research.!PORTAL.text=Examine an entrance to the darkest abyss
 research.!EYES.text=Examine an obelisk who once saw the void
 research.!KEY.text=Examine an artifact that paves your way
@@ -137,10 +146,10 @@ tooltip.kamitesque.memory.6.2=§6§o...from the filth that continues to expand..
 tooltip.kamitesque.glyph_tablet=§5§oI have to squint when I look at these inscriptions. As if the very knowledge on them blinds me.
 tooltip.kamitesque.persistent=Persistent
 
-tooltip.kamitesque.tool.conversion_mode.0=Extraction
-tooltip.kamitesque.tool.conversion_mode.1=Mutation
-tooltip.kamitesque.tool.conversion_mode.2=Galvanization
-tooltip.kamitesque.tool.conversion_mode.3=Elimination
+tooltip.kamitesque.tool.conversion_mode.normal=Unset
+tooltip.kamitesque.tool.conversion_mode.mutate=Mutation
+tooltip.kamitesque.tool.conversion_mode.galvanize=Galvanization
+tooltip.kamitesque.tool.conversion_mode.eliminate=Elimination
 
 # MESSAGES
 message.kamitesque.reveal=It seems like something has changed.
