@@ -67,9 +67,9 @@ public class Main {
     }
 
     private void checkDependencies() {
-        if (!Loader.isModLoaded("kami") && !Loader.isModLoaded("thaumictinkerer")
-        ) {
-            throw new MissingKamiAddonException();
-        }
+//        if (!Loader.isModLoaded("kami") && !Loader.isModLoaded("thaumictinkerer")
+//        ) {
+//            throw new MissingKamiAddonException();
+//        }
     }
 }

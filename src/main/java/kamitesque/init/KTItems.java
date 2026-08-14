@@ -23,7 +23,7 @@ public class KTItems {
     public static Item reinforced_phial;
     public static Item unstable_phial;
 
-    public static Item ichorium_needle;
+    public static Item ichorium_claw;
     public static Item persistence_seal;
     public static Item ichorium_hoe;
     public static Item awakened_ichorium_hoe;
@@ -49,7 +49,7 @@ public class KTItems {
         iForgeRegistry.register(seal_printed = new ItemKTBase("seal_printed", "tablet", "sigil", "tome", "blade"));
         iForgeRegistry.register(glyph_tablet = new ItemGlyphTablet("glyph_tablet"));
 
-        iForgeRegistry.register(ichorium_needle = new ItemIchoriumNeedle("ichorium_needle"));
+        iForgeRegistry.register(ichorium_claw = new ItemIchoriumClaw("ichorium_claw"));
         iForgeRegistry.register(persistence_seal = new ItemPersistenceSeal("persistence_seal"));
         iForgeRegistry.register(crystal_cluster = new ItemKTBase("crystal_cluster"));
 
@@ -60,7 +60,7 @@ public class KTItems {
         iForgeRegistry.register(reinforced_phial = new ItemReinforcedPhial("reinforced_phial", "empty", "nether", "end"));
         iForgeRegistry.register(unstable_phial = new ItemUnstablePhial("unstable_phial", "empty", "nether", "end"));
 
-        iForgeRegistry.register(boots_mutable = new ItemBootsMutable("boots_mutable", "boots", "ring"));
+//        iForgeRegistry.register(boots_mutable = new ItemBootsMutable("boots_mutable", "boots", "ring"));
 
         iForgeRegistry.register(debug = new ItemDebug("debug", "vortex", "wings"));
 

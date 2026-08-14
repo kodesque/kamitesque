@@ -131,7 +131,7 @@ public class ItemPersistenceSeal extends ItemKTBase {
     }
 
     public @NotNull IRarity getForgeRarity(@NotNull ItemStack stack) {
-        return EnumRarity.EPIC;
+        return EnumRarity.UNCOMMON;
     }
 
     @Override

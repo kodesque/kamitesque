@@ -53,8 +53,6 @@ public class InfusionEnchantmentEvents {
 
     public static void onAllfrontsCacheTick(TickEvent.WorldTickEvent event) {
 
-//        if (event.world.isRemote) {return;}
-
         if (event.world.getWorldTime() % 20 == 0 && !IECache.remoteDamageList.isEmpty()) {
             IECache.remoteDamageList.clear();
         }
@@ -140,7 +138,7 @@ public class InfusionEnchantmentEvents {
 
         if (EnumInfusionEnchantment.getInfusionEnchantmentLevel(stack, KTEnchants.IETHOUSANDYARD) > 0) {
 
-            KTNetwork.INSTANCE.sendToServer(new PacketThousandyardUse(1.0, 100.0, 0.0f, false));
+            KTNetwork.INSTANCE.sendToServer(new PacketThousandyardUse(1.0, 20.0, 0.0f, false));
 
         }
     }

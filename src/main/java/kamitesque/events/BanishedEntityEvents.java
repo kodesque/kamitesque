@@ -58,7 +58,7 @@ public class BanishedEntityEvents {
 
             }
 
-            if (entity.world.getWorldTime() % 20 == 0) {
+            if (entity.world.getWorldTime() % 40 == 0) {
 
                 entity.world.playSound (
                         null,

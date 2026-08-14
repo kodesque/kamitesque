@@ -10,11 +10,12 @@ item.kamitesque.crystal_cluster.name=Crystal Cluster
 
 item.kamitesque.augment_eye.name=Aided Eye Augment
 item.kamitesque.reinforced_phial.name=Reinforced Phial
+item.kamitesque.unstable_phial.name=Reinforced Phial
 
 item.kamitesque.seal_printed.name=Printed Seal
 item.kamitesque.glyph_tablet.name=Reconstructed Tablet
 
-item.kamitesque.ichorium_needle.name=Ichorium Needle of the Voidbanisher
+item.kamitesque.ichorium_claw.name=Ichorium Claw of the Voidbanisher
 item.kamitesque.persistence_seal.name=Seal of Persistence
 
 item.kamitesque.ichorium_hoe.name=Ichorium Hoe
@@ -28,8 +29,8 @@ tile.kamitesque.ichorflame_nitor.name=Nichor
 tile.kamitesque.root_crystal.name=Root Crystal
 tile.kamitesque.bedrock_raw.name=Raw Bedrock
 
-tile.kamitesque.portal_nether_cut.name=Nether Portal
-tile.kamitesque.portal_end_cut.name=End Portal
+tile.kamitesque.portal_nether_cut.name=Localized Nether Portal
+tile.kamitesque.portal_end_cut.name=Localized End Portal
 
 tile.kamitesque.soft_obsidian.name=Soft Obsidian
 
@@ -48,15 +49,13 @@ research.KT_BASE.text.stage.1=Ever since I crafted the Awakened Ichorium, I beli
 
 research.KT_ICHORFLAME.title=Ichorflame
 research.KT_ICHORFLAME.title.subtitle=[KMT] Rather expensive toy
-
 research.KT_ICHORFLAME.text.stage.1=While studying the properties of the substance I call Ichor, I noticed an interesting feature that had previously escaped my attention.<BR>The Ichor's energy potential is immense, yet the balance of aspects within it prevents the substance from heating up and detonating in my pocket.<BR>On the other hand, disrupting it is quite simple - and I already have a theory on how to achieve that. The main thing is to ensure my own safety.
 research.KT_ICHORFLAME.text.stage.2=This isn't quite the result I was counting on. I did manage to shift the balance somewhat, but... what's this? A Nitor?<BR>Well... looks like not every product of thaumaturgy has to defy the laws of physics or drive one mad.<BR>Be that it is may, now I have a massive flame - twice the size of ordinary Nitor, shimmering with seemingly infinite amount of colors.
 
-research.KT_ICHORIUMNEEDLE.title=Ichorium Needle of the Voidbanisher
-research.KT_ICHORIUMNEEDLE.title.subtitle=[KMT] No more than a mosquito bite
-
-research.KT_ICHORIUMNEEDLE.text.stage.1=Although Ichor armor renders me almost immune to any external irritants, this world still does contain threats that could cause me considerable trouble.<BR>The very occult nature of Thaumaturgy contributes to this; one cannot always predict what godforsaken monstrosity might emerge from a given experiment.<BR>Clearly, for a researcher of my caliber, wasting one's nerves on trifles is simply undignified. At times, I wish I had something at my disposal capable of banishing an assailant to the darkest corner of reality—a place from which they would most certainly never return.
-research.KT_ICHORIUMNEEDLE.text.stage.2=A tiny needle crafted from bone coated in Ichor. It turns out this material can not only warp local space but also transport living beings to almost anywhere in the world - even when fashioned into such crude tools.<BR>This "Needle of the Voidbanisher" possesses a specific property: upon striking any living target, it instantly hurls it into the space beneath the Overworld - far enough away for the Void to tear them apart immediately.<BR>Clearly, this cannot be considered an ultimate weapon; at my level of progression, opponents are valued primarily for the resources they yield, and the needle prevents that. Then again, it has a different purpose - one it fulfills admirably.<BR>I forgot to mention: despite being made of Ichor, the item breaks upon use. Or rather... it vanishes into the Void along with the target. Oops!
+research.KT_ICHORIUMCLAW.title=Ichorium Claw of the Voidbanisher
+research.KT_ICHORIUMCLAW.title.subtitle=[KMT] No more than a mosquito bite
+research.KT_ICHORIUMCLAW.text.stage.1=Although Ichor armor renders me almost immune to any external irritants, this world still does contain threats that could cause me considerable trouble.<BR>The very occult nature of Thaumaturgy contributes to this; one cannot always predict what godforsaken monstrosity might emerge from a given experiment.<BR>Clearly, for a researcher of my caliber, wasting one's nerves on trifles is simply undignified. At times, I wish I had something at my disposal capable of banishing an assailant to the darkest corner of reality—a place from which they would most certainly never return.
+research.KT_ICHORIUMCLAW.text.stage.2=A tiny claw crafted from bone coated in Ichor. It turns out this material can not only warp local space but also transport living beings to almost anywhere in the world - even when fashioned into such crude tools.<BR>This "Claw of the Voidbanisher" possesses a specific property: upon striking any living target, it instantly hurls it into the space beneath the Overworld - far enough away for the Void to tear them apart immediately.<BR>Clearly, this cannot be considered an ultimate weapon; at my level of progression, opponents are valued primarily for the resources they yield, and the claw prevents that. Then again, it has a different purpose - one it fulfills admirably.<BR>I forgot to mention: despite being made of Ichor, the item breaks upon use. Or rather... it vanishes into the Void along with the target. Oops!
 
 research.KT_CRYSTALCLUSTER.title=Crystal Purification
 research.KT_CRYSTALCLUSTER.text.stage.1=The crystals found in the Outer Lands are a vital and valuable resource for the most promising research.<BR>However, the fact that this "ore" does not occur in the Overworld makes hunting for it quite difficult - difficult enough that a 1:1 conversion rate feels like highway robbery.<BR>I have applied the metal cluster creation principle I already know to produce a cluster of this strange crystal. The cost in Aspects is higher, and I require *Vitreous* instead of *Metallum*, but it should be worth it.
@@ -88,12 +87,12 @@ research.KT_ALLFRONTS_ENCHANT.text.stage.2=There it is.<BR>The "All Fronts" ench
 research.KT_SHARPEYE_ENCHANT.title=Infusion Enchantment: Sharp Eye
 research.KT_SHARPEYE_ENCHANT.title.subtitle=[KMT] Perfect flyswatter
 research.KT_SHARPEYE_ENCHANT.text.stage.1=Damn it! Another target moving too fast! I'm swinging my sword like a madman, but I just can't land a hit.<BR>Maybe some kind of infusion enchantment could solve my problem?
-research.KT_SHARPEYE_ENCHANT.text.stage.2=Excellent.<BR>The first sword strike, enchanted with "Sharp Eye", places a sort of mark on the enemy. After that initial hit, I don't even need to aim; in fact I can simply flail at the air around me, and every strike will be redirected toward that scum who can't seem to stay still for a second.<BR>The mark automatically wears off after a short time or if I deal damage to another opponent.<BR>This does work on players.
+research.KT_SHARPEYE_ENCHANT.text.stage.2=Excellent.<BR>The first sword strike, enchanted with "Sharp Eye", places a sort of mark on the enemy. After that initial hit, I don't even need to aim; in fact I can simply flail at the air around me, and every strike will be redirected toward that scum who can't seem to stay still for a second.<BR>The mark automatically wears off after a short time or if I deal damage to another opponent.
 
 research.KT_THOUSANDYARD_ENCHANT.title=Infusion Enchantment: Thousand-Yard Strike
 research.KT_THOUSANDYARD_ENCHANT.title.subtitle=[KMT] Armchair warrior
 research.KT_THOUSANDYARD_ENCHANT.text.stage.1=One problem I constantly face in combat is the need to ram and attack the enemy at point-blank range. I lack sufficiently powerful ranged weapons - and even those consume ammunition, unlike my always-ready blade.<BR>I am considering an infusion enchantment that could remedy this shortcoming.
-research.KT_THOUSANDYARD_ENCHANT.text.stage.2=What a stroke of luck!<BR>The "Thousand-Yard Strike"- as I've named it - does something truly remarkable: I can now be at almost any distance from an opponent and simply strike in their direction. The ichor bound within the enchantment warps the space before me, delivering the strike's kinetic energy directly into the victim's body.<BR>This does as well work through walls.
+research.KT_THOUSANDYARD_ENCHANT.text.stage.2=What a stroke of luck!<BR>The "Thousand-Yard Strike"- as I've named it - does something truly remarkable: I can now be at almost any distance from an opponent and simply strike in their direction. The ichor bound within the enchantment warps the space before me, delivering the strike's kinetic energy directly into the victim's body.
 
 research.KT_ICHORIUMHOE.title=Ichorium Hoe
 research.KT_ICHORIUMHOE.title.subtitle=[KMT] Just for show?
@@ -105,8 +104,12 @@ research.KT_ICHORIUMHOE_AWAKENED.text.stage.1=Well, I'm almost ready to take bac
 research.KT_ICHORIUMHOE_AWAKENED.text.stage.2="Ichorium Hoe of the Conjurer" - has a nice ring to it, doesn't it?<BR>The beauty of this little gem is that it features several modes, each vastly different from the last. A kind of a multitool.<PAGE>Mutation<DIV>The "trick" here is that by waving the tool over any sapling, I can transform it into any other type. This makes gathering rare wood varieties - which used to require long expeditions - much easier.<BR>The only catch is that I have absolutely no control over the outcome, so luck plays a major role when hunting for a specific plant.<PAGE>Galvanization<DIV>With a dash of electrochemistry, the hoe gains the ability to coat certain fruits in a thin layer of gold.<BR>Breaking blocks of melon, mature carrots, or oak leaves yields glistering melon, golden carrots, and golden apples, respectively. The success rate, however, isn't 100%.<BR>Also, if an item has the "Fortune" enchantment applied to it, I can obtain apples of a much better variety with it...<PAGE>Elimination<DIV>A combat mode - who would have thought?<BR>By switching the hoe to its blue gemstone setting, I can rip weapons right out of my opponents' hands. Like the previous mode, this doesn't happen every single time. Furthermore, after attempting to disarm a foe - regardless of success - the hoe enters a 60-second cooldown.<BR>This does work on players as well.<PAGE>Unset<DIV>In this mode, the tool functions like any other hoe, with no additional effects.
 
 research.KT_PORTALCUTTER.title=Dimensional Cutter
-research.KT_PORTALCUTTER.title.subtitle=[KMT] I might not have a brain, but I have an idea
-research.KT_PORTALCUTTER.text.stage.1=
+research.KT_PORTALCUTTER.title.subtitle=[KMT] The way is clear
+research.KT_PORTALCUTTER.text.stage.1=Portals, portals, portals... I consider it a miracle—or a blessing—that I can construct gateways between dimensions, unlike the other sentient beings of this world who spend their entire lives confined to it, unable to glimpse what lies beyond.<BR>For all their convenience, portals have obvious downsides, the main one being their complete immobility. This fact negates, for instance, the Nether's handy ability to shorten distances in the Overworld and facilitate travel across vast stretches.<BR>I dream - I mean, I plan ß to invent a way to "cut out" a piece of that purple matter and take it with me on my travels.
+research.KT_PORTALCUTTER.text.stage.2=To an uninitiated layman, a "Dimensional Cutter" might appear to be nothing more than a pair of funky shears covered in Ichorium and fitted with a Silverwood handle. Yet, to a thaumaturge, it is clearly something far more significant.<BR>To use this tool, I must first acquire several Fortified Phials—the recipe for which I have also documented on this page. Sturdy armor is also advisable, given the inherently volatile nature of the process.<BR>Next, I must aim the cutter at a portal—experiments have shown it works on both Nether and End gateways—and hold it steady for several seconds. Upon release, an explosion and a surge of Flux will occur, damaging the portal frame.<BR>With a Nether portal, some obsidian blocks are permanently destroyed, while others... soften. This peculiar outcome likely stems from the breakdown of the material's crystalline structure under the influence of unstable portal energy.<BR>Softened obsidian cannot be mined; breaking it yields only a few Void Seeds and yet more Flux.<BR>The End portal behaves differently; its frame appears to be composed of materials I have yet to study - materials that resist the destructive effects of portal energy. Instead, the Eyes of Ender set into the frame's sockets are partially destroyed and partially "sprouted." It's... a disgusting sight, to put it mildly.<BR>Anyway, the result is a collection of charged phials. These have two applications. I can infuse the energy within them into Fortified Glass, causing a standalone portal block to form in that space, separate from the frame. Alternatively, I can simply pour the energy onto the ground, creating what is known as a "Portal Rift." I described it in a subsequent study.<PAGE><DIV>Although the results of this research were impressive, I wanted to make one adjustment - or rather, an improvement. By tossing a charged reinforced vial into a cauldron containing a specific set of aspects, I destabilized the portal energy within it. After further experimentation, I ended up with a jar that crumbles to dust the moment it is used, yet instantly transports me to the desired dimension - without the need for any blocks or rifts.
+
+research.KT_PORTALRIFT.title=Portal Rifts
+research.KT_PORTALRIFT.text.stage.1=I am well acquainted with flux rifts. They appear in areas of heavy aura pollution, connecting the upper world to the Void, and yield Void Seeds and Primordial Pearls when destroyed. But what is *this*?<BR>It seems that rifts can vary greatly in nature. Severing an active portal causes its fabric to warp and fold in completely random ways until it reaches a state of relative equilibrium—no longer requiring an obsidian frame or any other structure.<BR>Why do I say "relative"? Well, while portal rifts don't inflict direct physical damage upon contact—transporting me to another dimension instead—they can still trigger various unpleasant Warp events.<BR>Furthermore, the teleportation itself is hardly a pleasant experience. No portal is created at my destination; I might end up hovering over lava or embedded in solid rock. Before making the jump, I should drink a Fire Resistance potion and bring along some sturdy pickaxes.<BR>However, as always, there is a solution to these problems. I can use standard rift machinery to stabilize and expand portal rifts, neutralizing their volatile nature. I should not, however, attempt to place them in Fortified Jars; these metaspatial devices irreversibly damage the portal's structure, turning it into an ordinary flux rift.
 
 research.!PORTAL.text=Examine an entrance to the darkest abyss
 research.!EYES.text=Examine an obelisk who once saw the void
@@ -157,11 +160,13 @@ tooltip.kamitesque.tool.conversion_mode.galvanize=Galvanization
 tooltip.kamitesque.tool.conversion_mode.eliminate=Elimination
 
 tooltip.kamitesque.unstable=Unstable
-tooltip.kamitesque.portal=Portal
+tooltip.kamitesque.portal.nether=Nether Portal
+tooltip.kamitesque.portal.end=End Portal
 
 # MESSAGES
 message.kamitesque.reveal=It seems like something has changed.
 message.kamitesque.gaze=Your piercing gaze tears the enemy apart.
+message.kamitesque.persistent=It suddenly flares up with a vile, searing light. Unbearable pain pierces your head, forcing you to loosen your grip.
 
 # ENCHANTMENTS
 enchantment.infusion.KT_THOUSANDYARD=Thousand-Yard Strike

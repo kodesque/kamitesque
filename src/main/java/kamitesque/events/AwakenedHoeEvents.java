@@ -6,7 +6,11 @@ import kamitesque.util.HoeCache;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.SoundCategory;
 import net.minecraftforge.event.world.BlockEvent;
+import thaumcraft.client.fx.FXDispatcher;
+import thaumcraft.common.lib.SoundsTC;
 
 import java.util.List;
 
@@ -40,6 +44,12 @@ public class AwakenedHoeEvents {
                                     drops.clear();
                                     drops.add(new ItemStack(bundle.item, amount));
                                     drops.add(HoeCache.getSpecialDrop(block, fortune, player.world.rand));
+
+                                    player.playSound(
+                                            SoundsTC.crystal,
+                                            1.0F,
+                                            1.0F
+                                    );
 
                                     return;
                                 }

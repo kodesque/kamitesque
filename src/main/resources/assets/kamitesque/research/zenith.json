@@ -119,9 +119,9 @@
             ]
         },
         {
-            "key": "KT_ICHORIUMNEEDLE",
-            "name": "research.KT_ICHORIUMNEEDLE.title",
-            "icons": [ "kamitesque:ichorium_needle;1;0"],
+            "key": "KT_ICHORIUMCLAW",
+            "name": "research.KT_ICHORIUMCLAW.title",
+            "icons": [ "kamitesque:ichorium_claw;1;0"],
             "category": "ZENITH",
             "parents": [ "KT_SPACEBRANCH" ],
             "meta": [ "HIDDEN"],
@@ -129,13 +129,13 @@
 
             "stages": [
                 {
-                    "text": "research.KT_ICHORIUMNEEDLE.text.stage.1"
+                    "text": "research.KT_ICHORIUMCLAW.text.stage.1"
                 },
                 {
-                    "text": "research.KT_ICHORIUMNEEDLE.text.stage.2",
+                    "text": "research.KT_ICHORIUMCLAW.text.stage.2",
                     "required_knowledge":["THEORY;INFUSION;1"],
                     "required_research": ["!PORTAL"],
-                    "recipes": ["kamitesque:ichorium_needle"]
+                    "recipes": ["kamitesque:ichorium_claw"]
                 }
             ]
         },
@@ -246,6 +246,7 @@
             "icons": [ "kamitesque:dimensional_cutter;1;0"],
             "category": "ZENITH",
             "parents": [ "KT_SPACEBRANCH"],
+            "siblings": ["KT_PORTALRIFT"],
             "meta": [ "HIDDEN" ],
             "location": [ -2,8 ],
 
@@ -255,6 +256,7 @@
                 },
                 {
                     "text": "research.KT_PORTALCUTTER.text.stage.2",
+                    "required_knowledge":["OBSERVATION;INFUSION;2", "THEORY;INFUSION;2"],
                     "recipes": ["kamitesque:dimensional_cutter", "kamitesque:reinforced_phial", "kamitesque:unstable_phial", "kamitesque:unstable_phial-1"]
                 }
             ]

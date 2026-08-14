@@ -30,7 +30,7 @@ public class ItemDebug extends ItemKTBase {
 
         items.add(new ItemStack (KTBlocks.ichorflame_nitor));
 
-        items.add(new ItemStack (KTItems.ichorium_needle));
+        items.add(new ItemStack (KTItems.ichorium_claw));
 
         items.add(new ItemStack (KTItems.root_seed));
         items.add(new ItemStack (KTBlocks.root_crystal));

@@ -88,10 +88,6 @@ public class ItemBootsMutable extends ItemVoidBoots implements IThaumcraftItems 
     public void onArmorTick(@NotNull World world, @NotNull EntityPlayer player, @NotNull ItemStack itemStack) {
         if (player.isEntityAlive()) {
             if (this.armorType.equals(EntityEquipmentSlot.FEET)) {
-                NBTTagCompound nbt = itemStack.getTagCompound();
-
-                if (nbt != null && nbt.hasKey("kamitesque.toggle")) {
-                    if (nbt.getBoolean("kamitesque.toggle")) {
 
                         if (world.getWorldTime() % 5 == 0) {
 
@@ -110,9 +106,6 @@ public class ItemBootsMutable extends ItemVoidBoots implements IThaumcraftItems 
 
                                     }
                                 }
-                            }
-
-                        }
 
                     }
                 }

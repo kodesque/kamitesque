@@ -1,6 +1,7 @@
 package kamitesque.common.items;
 
 import kamitesque.common.templates.ItemKTBase;
+import kamitesque.common.world.TeleporterGateless;
 import kamitesque.init.KTItems;
 import kamitesque.root.Main;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,6 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.DimensionType;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import org.jetbrains.annotations.NotNull;
 
 public class ItemUnstablePhial extends ItemKTBase {
@@ -30,18 +32,18 @@ public class ItemUnstablePhial extends ItemKTBase {
         switch (meta) {
             case 1: {
                 dimension = -1;
+                player.changeDimension(dimension, new TeleporterGateless((WorldServer) player.world));
                 break;
             }
             case 2: {
                 dimension = 1;
+                player.changeDimension(dimension);
                 break;
             }
             default: {
                 return EnumActionResult.FAIL;
             }
         }
-
-        player.changeDimension(dimension);
 
         player.playSound(
                 SoundEvents.BLOCK_GLASS_BREAK,
@@ -63,7 +65,6 @@ public class ItemUnstablePhial extends ItemKTBase {
     public @NotNull String getItemStackDisplayName(ItemStack stack) {
 
         int meta = stack.getMetadata();
-        int type = 0;
 
         if (meta == 0) {
             return super.getItemStackDisplayName(new ItemStack(this));
@@ -73,20 +74,17 @@ public class ItemUnstablePhial extends ItemKTBase {
         String portalBit = new TextComponentTranslation( "tooltip." + Main.MODID + ".portal").getFormattedText();
         String unstableBit = new TextComponentTranslation( "tooltip." + Main.MODID + ".unstable").getFormattedText();
 
-
         switch (stack.getMetadata()) {
             case 1: {
-                type = -1;
+                portalBit = new TextComponentTranslation("tooltip." + Main.MODID + ".portal.nether").getFormattedText();
                 break;
             }
             case 2: {
-                type = 1;
+                portalBit = new TextComponentTranslation("tooltip." + Main.MODID + ".portal.end").getFormattedText();
                 break;
             }
         }
 
-        String dimBit = DimensionType.getById(type).getName();
-
-        return baseBit + ": " + unstableBit + " " + dimBit + " " + portalBit;
+        return baseBit + ": " + unstableBit + " " + portalBit;
     }
 }

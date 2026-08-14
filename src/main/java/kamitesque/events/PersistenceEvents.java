@@ -111,6 +111,7 @@ public class PersistenceEvents {
                     player.entityDropItem(stack, 0);
 
                     PersistenceEvents.punish(player);
+                    break;
                 }
             }
         }

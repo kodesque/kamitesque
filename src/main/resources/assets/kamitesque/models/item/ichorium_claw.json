@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "kamitesque:items/ichorium_claw"
+    }
+}

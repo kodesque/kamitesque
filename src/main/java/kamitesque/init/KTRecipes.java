@@ -96,8 +96,8 @@ public class KTRecipes {
                         new AspectList().add(Aspect.ENTROPY, 8),
                         ichorium_hoe,
                         "II ",
-                        "S  ",
-                        "S  ",
+                        " S ",
+                        " S ",
                         'I',
                         new ItemStack(ModItemsKAMI.ICHORIUM_INGOT),
                         'S',
@@ -157,9 +157,9 @@ public class KTRecipes {
         );
 
         ThaumcraftApi.addInfusionCraftingRecipe(
-                new ResourceLocation("kamitesque:ichorium_needle"),
-                new InfusionRecipe("KT_ICHORIUMNEEDLE",
-                        new ItemStack (KTItems.ichorium_needle),
+                new ResourceLocation("kamitesque:ichorium_claw"),
+                new InfusionRecipe("KT_ICHORIUMCLAW",
+                        new ItemStack (KTItems.ichorium_claw),
                         5,
                         new AspectList().add(Aspect.DARKNESS, 16).add(Aspect.TRAP, 16),
                         new ItemStack(Items.BONE),

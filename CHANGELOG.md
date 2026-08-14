@@ -5,14 +5,20 @@
 ### Added:
 - Dimensional Cutter & corresponding research
 - Portal Rifts
-- Portal Pieces
-- Intangible Boots & corresponding research
-
+- Localized Portals
+- Awakened Ichorium Hoe sounds on use
+- Russian translation
+### Changed:
+- Ichorium Needle -> Ichorium Claw
+- Thousand-Yard Strike radius: 100 -> 20
 ### Fixed:
 - Fortune enchantment being not applicable for Ichorium Hoe
-
+- Persistent item dupe on interaction with non-owner player
+- Ichorium Claw model
+- Overlapping banish sounds
 ### Removed:
 - Unused items, content for future updates
+- Ichorium Claw ability to banish bosses
 ## 0.1.2-ALPHA
 
 ---

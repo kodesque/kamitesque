@@ -1,20 +1,20 @@
 package kamitesque.common.entities;
 
+import kamitesque.common.world.TeleporterGateless;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
-import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraft.world.WorldServer;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import thaumcraft.client.fx.FXDispatcher;
 import thaumcraft.common.entities.EntityFluxRift;
@@ -30,9 +30,8 @@ public class EntityPortalRift extends EntityFluxRift {
 
     public static final String id = "portal_rift";
 
-    private int dimension_id;
-    private static final DataParameter<Integer> DIMENSION =
-            EntityDataManager.createKey(EntityPortalRift.class, DataSerializers.VARINT);
+    private int dimensionId;
+    public final String dimensionIdKey = "dimensionId";
 
     public EntityPortalRift(World par1World) {
         super(par1World);
@@ -40,16 +39,15 @@ public class EntityPortalRift extends EntityFluxRift {
 
     public EntityPortalRift(World par1World, int dimension_id) {
         super(par1World);
-        this.dimension_id = dimension_id;
+        this.dimensionId = dimension_id;
     }
 
     protected void entityInit() {
         super.func_70088_a();
-        this.getDataManager().register(DIMENSION, 0);
     }
 
     public int getDimension() {
-        return this.dimension_id;
+        return this.dimensionId;
     }
 
     public void onUpdate() {
@@ -71,17 +69,6 @@ public class EntityPortalRift extends EntityFluxRift {
                     if (!this.world.isAirBlock(p) && bs.getBlockHardness(this.world, p) >= 0.0F && bs.getBlock().canCollideCheck(bs, false)) {
                         this.world.playEvent((EntityPlayer)null, 2001, p, Block.getStateId(this.world.getBlockState(p)));
                         this.world.setBlockToAir(p);
-                    }
-                }
-
-                for(Entity e : EntityUtils.getEntitiesInRange(this.getEntityWorld(), v1.x, v1.y, v1.z, this, Entity.class, (double)0.5F)) {
-                    if (!e.isDead && (!(e instanceof EntityPlayer) || !((EntityPlayer)e).isCreative())) {
-                        try {
-                            e.attackEntityFrom(DamageSource.OUT_OF_WORLD, 2.0F);
-                            if (e instanceof EntityItem) {
-                                e.setDead();
-                            }
-                        } catch (Exception var9) {}
                     }
                 }
             }
@@ -136,9 +123,17 @@ public class EntityPortalRift extends EntityFluxRift {
     }
 
     public void onCollideWithPlayer(EntityPlayer entityIn) {
+        if (entityIn.world.isRemote) {return;}
         if (entityIn instanceof EntityPlayer) {
-            EntityPlayer player = (EntityPlayer)entityIn;
-            player.changeDimension(this.dimension_id);
+            EntityPlayer player = entityIn;
+
+            if (this.dimensionId != 0) {
+                if (this.dimensionId == -1) {
+                    player.changeDimension(this.dimensionId, new TeleporterGateless((WorldServer) entityIn.world));
+                } else {
+                    player.changeDimension(this.dimensionId);
+                }
+            }
         }
     }
 
@@ -148,5 +143,15 @@ public class EntityPortalRift extends EntityFluxRift {
         List<EntityLivingBase> list = EntityUtils.getEntitiesInRange(this.world, this.posX, this.posY, this.posZ, this, EntityLivingBase.class, (double)32.0F);
 
         this.setDead();
+    }
+
+    public void func_70014_b(NBTTagCompound nbttagcompound) {
+        super.func_70014_b(nbttagcompound);
+        nbttagcompound.setInteger(this.dimensionIdKey, this.dimensionId);
+    }
+
+    public void func_70037_a(NBTTagCompound nbttagcompound) {
+        super.func_70037_a(nbttagcompound);
+        this.dimensionId = nbttagcompound.getInteger(this.dimensionIdKey);
     }
 }

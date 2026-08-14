@@ -53,7 +53,7 @@ public class ItemReinforcedPhial extends ItemKTBase {
             world.destroyBlock(pos, false);
             world.setBlockState(pos, block.getDefaultState());
         } else {
-            EntityFluxRift rift = new EntityPortalRift(world, dimension);
+            EntityPortalRift rift = new EntityPortalRift(world, dimension);
             BlockPos offset = pos.offset(facing);
             Vec3d position = new Vec3d((double)offset.getX() + (double)0.5F, (double)offset.getY() + (double)0.5F, (double)offset.getZ() + (double)0.5F);
             rift.setRiftSeed(world.rand.nextInt());
@@ -73,29 +73,26 @@ public class ItemReinforcedPhial extends ItemKTBase {
     public @NotNull String getItemStackDisplayName(ItemStack stack) {
 
         int meta = stack.getMetadata();
-        int type = 0;
 
         if (meta == 0) {
             return super.getItemStackDisplayName(stack);
         }
 
         String baseBit = super.getItemStackDisplayName(stack);
-        String portalBit = new TextComponentTranslation( "tooltip." + Main.MODID + ".portal").getFormattedText();
+        String portalBit = null;
 
         switch (stack.getMetadata()) {
             case 1: {
-                type = -1;
+                portalBit = new TextComponentTranslation("tooltip." + Main.MODID + ".portal.nether").getFormattedText();
                 break;
             }
             case 2: {
-                type = 1;
+                portalBit = new TextComponentTranslation("tooltip." + Main.MODID + ".portal.end").getFormattedText();
                 break;
             }
         }
 
-        String dimBit = DimensionType.getById(type).getName();
-
-        return baseBit + ": " + " " + dimBit + " " + portalBit;
+        return baseBit + ": " + portalBit;
     }
 
 }

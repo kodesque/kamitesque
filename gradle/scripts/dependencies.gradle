@@ -51,6 +51,7 @@ dependencies {
 
     runtimeOnly('curse.maven:expanded-events-1396395:8204032')
     runtimeOnly('curse.maven:had-enough-items-557549:7515497')
+    runtimeOnly('curse.maven:thaumic-jei-285492:5646810')
 //    runtimeOnly('curse.maven:thaumic-information-1590952:8405531')
 //    runtimeOnly('curse.maven:thaumcraftfix-1069346:7288369')
     runtimeOnly('curse.maven:thaumictweaker-1341797:7523519')

@@ -23,6 +23,8 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import thaumcraft.client.fx.FXDispatcher;
+import thaumcraft.common.lib.SoundsTC;
 
 import java.util.List;
 
@@ -49,6 +51,17 @@ public class ItemAwakenedHoe extends ItemIchoriumHoe {
             if (block instanceof BlockSapling || block.getRegistryName().getPath().contains("sapling")) {
 
                 worldIn.setBlockState(pos, HoeCache.getRandomSapling(worldIn.rand));
+
+                worldIn.playSound(
+                        null,
+                        pos.getX(),
+                        pos.getY(),
+                        pos.getZ(),
+                        SoundsTC.wand,
+                        SoundCategory.BLOCKS,
+                        1.0F,
+                        1.0F
+                );
 
                 return EnumActionResult.SUCCESS;
             }
@@ -80,6 +93,18 @@ public class ItemAwakenedHoe extends ItemIchoriumHoe {
                     if (target instanceof EntityLiving) {
                         ((EntityLiving)target).setCanPickUpLoot(false);
                     }
+
+                    playerIn.world.playSound(
+                            null,
+                            target.posX,
+                            target.posY,
+                            target.posZ,
+                            SoundsTC.hhoff,
+                            SoundCategory.BLOCKS,
+                            1.0F,
+                            1.0F
+                    );
+
                     return true;
                 }
 
