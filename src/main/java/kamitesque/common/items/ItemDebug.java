@@ -27,18 +27,12 @@ public class ItemDebug extends ItemKTBase {
         items.add(new ItemStack (KTItems.pure_shard));
         items.add(new ItemStack (KTItems.crystal_cluster));
 
-        items.add(new ItemStack (KTItems.augment_discharger));
-        items.add(new ItemStack (KTItems.cerebral_pearls));
-
         items.add(new ItemStack (KTBlocks.ichorflame_nitor));
 
         items.add(new ItemStack (KTItems.ichorium_needle));
 
         items.add(new ItemStack (KTItems.root_seed));
         items.add(new ItemStack (KTBlocks.root_crystal));
-
-        items.add(new ItemStack (KTBlocks.portal_nether_cut));
-        items.add(new ItemStack (KTBlocks.portal_end_cut));
 
         ItemStack ichorium_hoe = new ItemStack(KTItems.ichorium_hoe);
         ItemHelper.setUnbreakable(ichorium_hoe);
@@ -47,6 +41,11 @@ public class ItemDebug extends ItemKTBase {
 
         items.add(ichorium_hoe);
         items.add(awakened_ichorium_hoe);
+
+        items.add(new ItemStack(KTItems.dimensional_cutter));
+        items.add(new ItemStack(KTItems.reinforced_phial));
+        items.add(new ItemStack(KTItems.reinforced_phial, 1, 1));
+        items.add(new ItemStack(KTItems.reinforced_phial, 1, 2));
 
     }
 }

@@ -104,7 +104,7 @@
             "category": "ZENITH",
             "parents": [ "KT_ENERGYBRANCH" ],
             "meta": [ "HIDDEN"],
-            "location": [ 2,8 ],
+            "location": [ 3,7 ],
 
             "stages": [
                 {
@@ -167,7 +167,7 @@
             "category": "ZENITH",
             "parents": [ "KT_MATERIALBRANCH", "FOCUS_WARD", "~KAMI_ETERNAL_INFUSION"],
             "meta": [ "HIDDEN"],
-            "location": [ -1,8 ],
+            "location": [ 1,8 ],
 
             "stages": [
                 {
@@ -237,6 +237,40 @@
                     "text": "research.KT_ALLFRONTS_ENCHANT.text.stage.2",
                     "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'vacuos'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'ignis'}]}"],
                     "recipes": ["kamitesque:IEALLFRONTS_FAKE"]
+                }
+            ]
+        },
+        {
+            "key": "KT_PORTALCUTTER",
+            "name": "research.KT_PORTALCUTTER.title",
+            "icons": [ "kamitesque:dimensional_cutter;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN" ],
+            "location": [ -2,8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_PORTALCUTTER.text.stage.1"
+                },
+                {
+                    "text": "research.KT_PORTALCUTTER.text.stage.2",
+                    "recipes": ["kamitesque:dimensional_cutter", "kamitesque:reinforced_phial", "kamitesque:unstable_phial", "kamitesque:unstable_phial-1"]
+                }
+            ]
+        },
+        {
+            "key": "KT_PORTALRIFT",
+            "name": "research.KT_PORTALRIFT.title",
+            "icons": [ "kamitesque:textures/research/r_portalrift.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_PORTALCUTTER"],
+            "meta": [ "HIDDEN", "ROUND" ],
+            "location": [ -2,10 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_PORTALRIFT.text.stage.1"
                 }
             ]
         }

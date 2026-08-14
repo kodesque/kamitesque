@@ -14,6 +14,7 @@ public class KTBlocks {
     public static Block ichorflame_nitor;
     public static Block root_crystal;
     public static Block bedrock_raw;
+    public static Block obisian_soft;
 
     public static Block portal_end_cut;
     public static Block portal_nether_cut;
@@ -25,9 +26,10 @@ public class KTBlocks {
         KTBlocks.ichorflame_nitor = registerBlock(new BlockIchorflameNitor());
         KTBlocks.root_crystal = registerBlock(new BlockRootCrystal());
         KTBlocks.bedrock_raw = registerBlockSpecial(new BlockBedrockRaw());
+        KTBlocks.obisian_soft = registerBlockSpecial(new BlockObsidianSoft());
 
-        KTBlocks.portal_nether_cut = registerBlock(new BlockPortalCut());
-        KTBlocks.portal_end_cut = registerBlock(new BlockEndPortalCut());
+        KTBlocks.portal_nether_cut = registerBlockSpecial(new BlockPortalCut());
+        KTBlocks.portal_end_cut = registerBlockSpecial(new BlockEndPortalCut());
     }
 
     private static Block registerBlock(Block block, ItemBlock itemBlock) {

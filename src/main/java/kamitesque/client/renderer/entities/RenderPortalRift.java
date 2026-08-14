@@ -1,6 +1,7 @@
 package kamitesque.client.renderer.entities;
 
 import com.sasmaster.glelwjgl.java.CoreGLE;
+import kamitesque.common.entities.EntityPortalRift;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -14,15 +15,15 @@ import org.lwjgl.opengl.GL11;
 import thaumcraft.client.lib.ender.ShaderCallback;
 import thaumcraft.client.lib.ender.ShaderHelper;
 import thaumcraft.client.renderers.entity.RenderFluxRift;
-import thaumcraft.common.entities.EntityFluxRift;
 import thaumcraft.common.lib.utils.EntityUtils;
 
 public class RenderPortalRift extends RenderFluxRift {
     private final ShaderCallback shaderCallback;
-    private static final ResourceLocation portalTexture = new ResourceLocation("textures/blocks/portal.png");
+    private static final ResourceLocation netherPath = new ResourceLocation("kamitesque:textures/entity/rift_nether.png");
+    private static final ResourceLocation endPath = new ResourceLocation("kamitesque:textures/entity/rift_end.png");
     CoreGLE gle = new CoreGLE();
 
-    public RenderPortalRift(RenderManager rm, ShaderCallback shaderCallback) {
+    public RenderPortalRift(RenderManager rm) {
         super(rm);
         this.shadowSize = 0.0F;
         this.shaderCallback = new ShaderCallback() {
@@ -37,11 +38,26 @@ public class RenderPortalRift extends RenderFluxRift {
     }
 
     public void doRender(Entity entity, double x, double y, double z, float yaw, float pt) {
-        EntityFluxRift rift = (EntityFluxRift)entity;
+        EntityPortalRift rift = (EntityPortalRift)entity;
         boolean goggles = EntityUtils.hasGoggles(Minecraft.getMinecraft().player);
         GL11.glPushMatrix();
-        this.bindTexture(portalTexture);
-        ShaderHelper.useShader(ShaderHelper.endShader, this.shaderCallback);
+
+        int dim = rift.getDimension();
+        switch(dim) {
+            case 1: {
+                this.bindTexture(netherPath);
+                break;
+            }
+            case -1: {
+                this.bindTexture(endPath);
+                break;
+            }
+            default: {
+                this.bindTexture(netherPath);
+                break;
+            }
+        }
+
         float amp = 1.0F;
         float stab = MathHelper.clamp(1.0F - rift.getRiftStability() / 50.0F, 0.0F, 1.5F);
         GL11.glEnable(3042);
@@ -94,7 +110,6 @@ public class RenderPortalRift extends RenderFluxRift {
             }
         }
 
-        GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
         GL11.glBlendFunc(770, 771);
         GL11.glDisable(3042);
         ShaderHelper.releaseShader();

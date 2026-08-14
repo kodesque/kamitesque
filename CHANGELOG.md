@@ -1,4 +1,15 @@
 # Kamitesque Changelog
+## 0.1.3-ALPHA
+
+---
+### Added:
+- Dimensional Cutter & corresponding research
+- Portal Rifts
+- Portal Pieces
+- Intangible Boots & corresponding research
+
+### Removed:
+- Unused items, content for future updates
 ## 0.1.2-ALPHA
 
 ---

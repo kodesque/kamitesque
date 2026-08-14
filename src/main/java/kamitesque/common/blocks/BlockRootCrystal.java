@@ -25,7 +25,7 @@ import thaumcraft.common.lib.SoundsTC;
 @SuppressWarnings("deprecation")
 public class BlockRootCrystal extends BlockKTTile implements IBlockFacing {
 
-    public static String id = "root_crystal";
+    public static final String id = "root_crystal";
 
     public static PropertyBool IS_GROWING = PropertyBool.create("growing");
 

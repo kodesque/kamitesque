@@ -1,6 +1,7 @@
 package kamitesque.init;
 
 import kamitesque.common.entities.EntityItemPersistent;
+import kamitesque.common.entities.EntityPortalRift;
 import kamitesque.root.Main;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
@@ -20,6 +21,16 @@ public class KTEntities {
         EntityRegistry.registerModEntity(new ResourceLocation(Main.MODID, EntityItemPersistent.id),
                 EntityItemPersistent.class,
                 EntityItemPersistent.id,
+                id++,
+                Main.instance,
+                64,
+                20,
+                true
+        );
+
+        EntityRegistry.registerModEntity(new ResourceLocation(Main.MODID, EntityPortalRift.id),
+                EntityPortalRift.class,
+                EntityPortalRift.id,
                 id++,
                 Main.instance,
                 64,

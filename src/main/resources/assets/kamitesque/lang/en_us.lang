@@ -7,10 +7,9 @@ item.kamitesque.debug.name=Icon
 item.kamitesque.pure_shard.name=Pure Shard
 item.kamitesque.root_seed.name=Root Crystal Seed
 item.kamitesque.crystal_cluster.name=Crystal Cluster
-item.kamitesque.cerebral_pearls.name=Cerebral Pearls
 
 item.kamitesque.augment_eye.name=Aided Eye Augment
-item.kamitesque.augment_discharger.name=Discharger Augment
+item.kamitesque.reinforced_phial.name=Reinforced Phial
 
 item.kamitesque.seal_printed.name=Printed Seal
 item.kamitesque.glyph_tablet.name=Reconstructed Tablet
@@ -29,10 +28,12 @@ tile.kamitesque.ichorflame_nitor.name=Nichor
 tile.kamitesque.root_crystal.name=Root Crystal
 tile.kamitesque.bedrock_raw.name=Raw Bedrock
 
-tile.kamitesque.portal_nether_cut.name=Nether Portal Piece
-tile.kamitesque.portal_end_cut.name=End Portal Piece
+tile.kamitesque.portal_nether_cut.name=Nether Portal
+tile.kamitesque.portal_end_cut.name=End Portal
 
-#RESEARCHES
+tile.kamitesque.soft_obsidian.name=Soft Obsidian
+
+#RESEARCH
 research.KT_ANCIENTS.title=The Lost Knowledge
 research.KT_ANCIENTS.title.subtitle=[KMT] Is it future or is it past?
 
@@ -46,7 +47,7 @@ research.KT_BASE.title.subtitle=[KMT] Beyond the limit of beyond the limit
 research.KT_BASE.text.stage.1=Ever since I crafted the Awakened Ichorium, I believed I had reached the apogee - that there was a definitive limit, a maximum beyond which further progress was simply impossible. <BR>But now, with the discovery of Ancient materials, I see a gap in my research.<BR>When deriving the Ichor formula, I relied on brute force. Nether Stars and Primal Pearls are incredibly potent when used in tandem; that is precisely what led me to the mistaken belief that I had reached the terminal limit.<BR>Yet, the engineering potential of this armor has not been fully realized. Imagine what more could be achieved if every single detail were meticulously refined with new technology in mind.
 
 research.KT_ICHORFLAME.title=Ichorflame
-research.KT_ICHORFLAME.title.subtitle=[KMT] A rather expensive toy
+research.KT_ICHORFLAME.title.subtitle=[KMT] Rather expensive toy
 
 research.KT_ICHORFLAME.text.stage.1=While studying the properties of the substance I call Ichor, I noticed an interesting feature that had previously escaped my attention.<BR>The Ichor's energy potential is immense, yet the balance of aspects within it prevents the substance from heating up and detonating in my pocket.<BR>On the other hand, disrupting it is quite simple - and I already have a theory on how to achieve that. The main thing is to ensure my own safety.
 research.KT_ICHORFLAME.text.stage.2=This isn't quite the result I was counting on. I did manage to shift the balance somewhat, but... what's this? A Nitor?<BR>Well... looks like not every product of thaumaturgy has to defy the laws of physics or drive one mad.<BR>Be that it is may, now I have a massive flame - twice the size of ordinary Nitor, shimmering with seemingly infinite amount of colors.
@@ -61,7 +62,7 @@ research.KT_CRYSTALCLUSTER.title=Crystal Purification
 research.KT_CRYSTALCLUSTER.text.stage.1=The crystals found in the Outer Lands are a vital and valuable resource for the most promising research.<BR>However, the fact that this "ore" does not occur in the Overworld makes hunting for it quite difficult - difficult enough that a 1:1 conversion rate feels like highway robbery.<BR>I have applied the metal cluster creation principle I already know to produce a cluster of this strange crystal. The cost in Aspects is higher, and I require *Vitreous* instead of *Metallum*, but it should be worth it.
 
 research.KT_ENERGYBRANCH.title=Energy Potential
-research.KT_ENERGYBRANCH.text.stage.1=This branch of research will focus on the possibility of modifying ichor to enable the direct utilization of the energy from the primordial pearls contained within it.<BR>It also encompasses any theories involving the use of ichor as a working fluid in various devices.
+research.KT_ENERGYBRANCH.text.stage.1=This branch of research will focus on the possibility of modifying ichor to enable the direct utilization of the energy from the primordial pearls contained within it.
 
 research.KT_MATERIALBRANCH.title=Structural Properties
 research.KT_MATERIALBRANCH.text.stage.1=This branch of research will focus on the properties of ichor itself as a structural material, as well as its potential applications - including the creation of alloys, composites, electronic components, and advanced protective plating for heavy-duty armor.
@@ -102,6 +103,10 @@ research.KT_ICHORIUMHOE_AWAKENED.title=Ichorium Hoe of the Conjurer
 research.KT_ICHORIUMHOE_AWAKENED.title.subtitle=[KMT] Dark horse
 research.KT_ICHORIUMHOE_AWAKENED.text.stage.1=Well, I'm almost ready to take back what I said.It seems like there can be a way to actually justify using those two ingots for a soil-tilling tool.<BR>I can "awaken" the Ichorium Hoe, imbuing it with some rather useful properties.
 research.KT_ICHORIUMHOE_AWAKENED.text.stage.2="Ichorium Hoe of the Conjurer" - has a nice ring to it, doesn't it?<BR>The beauty of this little gem is that it features several modes, each vastly different from the last. A kind of a multitool.<PAGE>Mutation<DIV>The "trick" here is that by waving the tool over any sapling, I can transform it into any other type. This makes gathering rare wood varieties - which used to require long expeditions - much easier.<BR>The only catch is that I have absolutely no control over the outcome, so luck plays a major role when hunting for a specific plant.<PAGE>Galvanization<DIV>With a dash of electrochemistry, the hoe gains the ability to coat certain fruits in a thin layer of gold.<BR>Breaking blocks of melon, mature carrots, or oak leaves yields glistering melon, golden carrots, and golden apples, respectively. The success rate, however, isn't 100%.<BR>Also, if an item has the "Fortune" enchantment applied to it, I can obtain apples of a much better variety with it...<PAGE>Elimination<DIV>A combat mode - who would have thought?<BR>By switching the hoe to its blue gemstone setting, I can rip weapons right out of my opponents' hands. Like the previous mode, this doesn't happen every single time. Furthermore, after attempting to disarm a foe - regardless of success - the hoe enters a 60-second cooldown.<BR>This does work on players as well.<PAGE>Unset<DIV>In this mode, the tool functions like any other hoe, with no additional effects.
+
+research.KT_PORTALCUTTER.title=Dimensional Cutter
+research.KT_PORTALCUTTER.title.subtitle=[KMT] I might not have a brain, but I have an idea
+research.KT_PORTALCUTTER.text.stage.1=
 
 research.!PORTAL.text=Examine an entrance to the darkest abyss
 research.!EYES.text=Examine an obelisk who once saw the void
@@ -150,6 +155,9 @@ tooltip.kamitesque.tool.conversion_mode.normal=Unset
 tooltip.kamitesque.tool.conversion_mode.mutate=Mutation
 tooltip.kamitesque.tool.conversion_mode.galvanize=Galvanization
 tooltip.kamitesque.tool.conversion_mode.eliminate=Elimination
+
+tooltip.kamitesque.unstable=Unstable
+tooltip.kamitesque.portal=Portal
 
 # MESSAGES
 message.kamitesque.reveal=It seems like something has changed.

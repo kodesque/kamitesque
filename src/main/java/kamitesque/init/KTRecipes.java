@@ -105,6 +105,25 @@ public class KTRecipes {
                 )
         );
 
+        ThaumcraftApi.addArcaneCraftingRecipe(
+                new ResourceLocation("kamitesque:reinforced_phial"),
+                new ShapelessArcaneRecipe(
+                        baseGroup,
+                        "KT_PORTALCUTTER",
+                        50,
+                        null,
+                        new ItemStack(KTItems.reinforced_phial, 3),
+                        new Object[] {
+                                new ItemStack(ItemsTC.phial),
+                                new ItemStack(ItemsTC.phial),
+                                new ItemStack(ItemsTC.phial),
+                                new ItemStack(ItemsTC.plate, 1, 3),
+                                new ItemStack(TAItems.MATERIAL, 1, 1),
+                                new ItemStack(ModItemsKAMI.ICHORIUM_NUGGET)
+                        }
+                )
+        );
+
     }
 
     public static void initInfusion() {
@@ -205,6 +224,24 @@ public class KTRecipes {
                 )
         );
 
+        ThaumcraftApi.addInfusionCraftingRecipe(
+                new ResourceLocation("kamitesque:dimensional_cutter"),
+                new InfusionRecipe("KT_PORTALCUTTER",
+                        new ItemStack(KTItems.dimensional_cutter),
+                        8,
+                        new AspectList().add(Aspect.FLUX, 250).add(Aspect.MAGIC, 250).add(Aspect.TRAP, 250).add(Aspect.ORDER, 250),
+                        new ItemStack(Items.SHEARS),
+                        new ItemStack(ItemsTC.causalityCollapser),
+                        new ItemStack(ItemsTC.primordialPearl),
+                        new ItemStack(ItemsTC.causalityCollapser),
+                        new ItemStack(ModItemsKAMI.ICHORIUM_INGOT),
+                        new ItemStack(ItemsTC.salisMundus),
+                        new ItemStack(ModItemsKAMI.BLESSED_SILVERWOOD_ROD),
+                        new ItemStack(ItemsTC.salisMundus),
+                        new ItemStack(ModItemsKAMI.ICHORIUM_INGOT)
+                )
+        );
+
         initInfusionEnchantments();
 
     }
@@ -258,6 +295,21 @@ public class KTRecipes {
                         new ItemStack(KTBlocks.root_crystal),
                         new ItemStack(KTItems.root_seed),
                         new AspectList().merge(Aspect.LIFE, 16).merge(Aspect.CRAFT, 16).merge(Aspect.ELDRITCH, 16))
+        );
+
+        ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:unstable_phial"),
+                new CrucibleRecipe("KT_PORTALCUTTER",
+                        new ItemStack(KTItems.unstable_phial, 1, 1),
+                        new ItemStack(KTItems.reinforced_phial, 1, 1),
+                        new AspectList().merge(Aspect.ENTROPY, 16).merge(Aspect.MOTION, 16).merge(Aspect.FLUX, 16))
+        );
+        ThaumcraftApi.addCrucibleRecipe(
+                new ResourceLocation("kamitesque:unstable_phial-1"),
+                new CrucibleRecipe("KT_PORTALCUTTER",
+                        new ItemStack(KTItems.unstable_phial, 1, 2),
+                        new ItemStack(KTItems.reinforced_phial, 1, 2),
+                        new AspectList().merge(Aspect.ENTROPY, 16).merge(Aspect.MOTION, 16).merge(Aspect.FLUX, 16))
         );
 
     }
