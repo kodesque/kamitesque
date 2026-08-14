@@ -1,0 +1,1758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <resourceExtensions>
+      <entry name=".+\.(properties|xml|html|dtd|tld)" />
+      <entry name=".+\.(gif|png|jpeg|jpg)" />
+    </resourceExtensions>
+    <wildcardResourcePatterns>
+      <entry name="!?*.class" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.java" />
+    </wildcardResourcePatterns>
+    <bytecodeTargetLevel target="25" />
+  </component>
+  <component name="CopyrightManager" default="">
+    <module2copyright />
+  </component>
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="true" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+  <component name="GradleUISettings">
+    <setting name="root" />
+  </component>
+  <component name="GradleUISettings2">
+    <setting name="root" />
+  </component>
+  <component name="IdProvider" IDEtalkID="11DA1DB66DD62DDA1ED602B7079FE97C" />
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf8" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kamitesque-clr.main" options="" />
+    </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" />
+    <option name="OPTION_SCOPE" value="protected" />
+    <option name="OPTION_HIERARCHY" value="true" />
+    <option name="OPTION_NAVIGATOR" value="true" />
+    <option name="OPTION_INDEX" value="true" />
+    <option name="OPTION_SEPARATE_INDEX" value="true" />
+    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
+    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
+    <option name="OPTION_DEPRECATED_LIST" value="true" />
+    <option name="OTHER_OPTIONS" value="" />
+    <option name="HEAP_SIZE" />
+    <option name="LOCALE" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/kamitesque-clr.iml" filepath="$PROJECT_DIR$/kamitesque-clr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kamitesque-clr.main.iml" filepath="$PROJECT_DIR$/kamitesque-clr.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kamitesque-clr.test.iml" filepath="$PROJECT_DIR$/kamitesque-clr.test.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_25" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenRepo" />
+      <option name="name" value="MavenRepo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="forge" />
+      <option name="name" value="forge" />
+      <option name="url" value="https://maven.minecraftforge.net/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="MavenLocal" />
+      <option name="name" value="MavenLocal" />
+      <option name="url" value="file:/$MAVEN_REPOSITORY$" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="cleanroom-org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@6090cc17" />
+      <option name="name" value="cleanroom-org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@6090cc17" />
+      <option name="url" value="https://repo.cleanroommc.com/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="cleanroom-org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@57f6830" />
+      <option name="name" value="cleanroom-org.gradle.api.internal.artifacts.repositories.DefaultMavenArtifactRepository_Decorated@57f6830" />
+      <option name="url" value="https://repo.cleanroommc.com/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="arcseekers" />
+      <option name="name" value="arcseekers" />
+      <option name="url" value="https://maven.arcseekers.com/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="minecraft" />
+      <option name="name" value="minecraft" />
+      <option name="url" value="https://libraries.minecraft.net/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="CurseMaven" />
+      <option name="name" value="CurseMaven" />
+      <option name="url" value="https://cursemaven.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="CleanroomCurseMaven" />
+      <option name="name" value="CleanroomCurseMaven" />
+      <option name="url" value="https://curse.cleanroommc.com" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Modrinth" />
+      <option name="name" value="Modrinth" />
+      <option name="url" value="https://api.modrinth.com/maven" />
+    </remote-repository>
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+  <component name="libraryTable">
+    <library name="Gradle: ca.weblite:java-objc-bridge:1.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="ca.weblite" artifactId="java-objc-bridge" version="1.2" baseVersion="1.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.2/af8ba4c82a8979d07319f74278312af6c1cd61a5/java-objc-bridge-1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.2/37a8830089b0f339f02679da37aa83d189ea8573/java-objc-bridge-1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.cleanroommc:lwjglx:1.0.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.cleanroommc" artifactId="lwjglx" version="1.0.0" baseVersion="1.0.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleanroommc/lwjglx/1.0.0/93108963e367f65effc64f12d8b9acb3a0bdd20b/lwjglx-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.cleanroommc:lwjglxx:1.1.21" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.cleanroommc" artifactId="lwjglxx" version="1.1.21" baseVersion="1.1.21" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleanroommc/lwjglxx/1.1.21/44128929d78015348bc0228687a42b54d8a2ec82/lwjglxx-1.1.21.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.cleanroommc:sponge-mixin:0.20.12+mixin.0.8.7" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.cleanroommc" artifactId="sponge-mixin" version="0.20.12+mixin.0.8.7" baseVersion="0.20.12+mixin.0.8.7" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleanroommc/sponge-mixin/0.20.12+mixin.0.8.7/5a3dd8dbe6dc8881ad28f3e16d0ff71f2de1e48/sponge-mixin-0.20.12+mixin.0.8.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleanroommc/sponge-mixin/0.20.12+mixin.0.8.7/39b1ed6534f0a960a036336fa046c8587c720c97/sponge-mixin-0.20.12+mixin.0.8.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.cleanroommc:sponge-mixin:0.20.13+mixin.0.8.7" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.cleanroommc" artifactId="sponge-mixin" version="0.20.13+mixin.0.8.7" baseVersion="0.20.13+mixin.0.8.7" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleanroommc/sponge-mixin/0.20.13+mixin.0.8.7/e29e588ef0a34dd003450e6b38e194efc607601a/sponge-mixin-0.20.13+mixin.0.8.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cleanroommc/sponge-mixin/0.20.13+mixin.0.8.7/4a442b6fa14e31295c09248b16da0612f1bcb0f3/sponge-mixin-0.20.13+mixin.0.8.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.github.oshi:oshi-common:7.3.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.github.oshi" artifactId="oshi-common" version="7.3.2" baseVersion="7.3.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-common/7.3.2/52c1631d1e2aff7a78c582622dd05a2b8e78d472/oshi-common-7.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-common/7.3.2/b8024b800ad9bb97905955e7c01ac17f085f670e/oshi-common-7.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.github.oshi:oshi-core-ffm:7.3.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.github.oshi" artifactId="oshi-core-ffm" version="7.3.2" baseVersion="7.3.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core-ffm/7.3.2/65733998074514d3300bfb189a0c3bd0d7a46a61/oshi-core-ffm-7.3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core-ffm/7.3.2/5c5fbdc10b67a6de84f76a5f6b6f902b8bd3bf91/oshi-core-ffm-7.3.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.code.findbugs:jsr305:3.0.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.code.findbugs" artifactId="jsr305" version="3.0.2" baseVersion="3.0.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.code.gson:gson:2.12.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.code.gson" artifactId="gson" version="2.12.1" baseVersion="2.12.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.12.1/4e773a317740b83b43cfc3d652962856041697cb/gson-2.12.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.12.1/972f179bba0f90faccce3873e2f0633a3f0f7d02/gson-2.12.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.code.gson:gson:2.14.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.code.gson" artifactId="gson" version="2.14.0" baseVersion="2.14.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.14.0/efc0e34ede4e3204eaefb84a00e55e8c86634382/gson-2.14.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.14.0/cc6b911babf29b06357fce701395a9c1b5b44b0d/gson-2.14.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.errorprone:error_prone_annotations:2.36.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.errorprone" artifactId="error_prone_annotations" version="2.36.0" baseVersion="2.36.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.36.0/227d4d4957ccc3dc5761bd897e3a0ee587e750a7/error_prone_annotations-2.36.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.36.0/2037dc2e9c13c3be8bfc1f346a02832a77372b4a/error_prone_annotations-2.36.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.guava:failureaccess:1.0.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.guava" artifactId="failureaccess" version="1.0.2" baseVersion="1.0.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/6acdafcf2dfc3b548e59dd3a4b454552aeb6ff65/failureaccess-1.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.guava:guava:33.4.0-jre" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.guava" artifactId="guava" version="33.4.0-jre" baseVersion="33.4.0-jre" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.4.0-jre/3fcc0a259f724c7de54a6a55ea7e26d3d5c0cac/guava-33.4.0-jre.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.4.0-jre/b6fed8019da2fd5dd373f705720121ae730f35f/guava-33.4.0-jre-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.guava:guava:33.6.0-jre" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.guava" artifactId="guava" version="33.6.0-jre" baseVersion="33.6.0-jre" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.6.0-jre/c376b13067cc99a5774403530953f7b05a91e218/guava-33.6.0-jre.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.6.0-jre/2bed5b59739647d36714d9db53746a660db7fdd7/guava-33.6.0-jre-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.guava" artifactId="listenablefuture" version="9999.0-empty-to-avoid-conflict-with-guava" baseVersion="9999.0-empty-to-avoid-conflict-with-guava" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.google.j2objc:j2objc-annotations:3.0.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.google.j2objc" artifactId="j2objc-annotations" version="3.0.0" baseVersion="3.0.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/7399e65dd7e9ff3404f4535b2f017093bdb134c7/j2objc-annotations-3.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/e6e870c6faf70867a723848b036607cd7d389621/j2objc-annotations-3.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.ibm.icu:icu4j:78.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.ibm.icu" artifactId="icu4j" version="78.3" baseVersion="78.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/78.3/6a851a53bb1f25689fc418dcc8935b0d93580adf/icu4j-78.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/78.3/d35cc984f04785c4cdd26a1b28ac0435df56a2b9/icu4j-78.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.mojang:authlib:1.5.25" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.mojang" artifactId="authlib" version="1.5.25" baseVersion="1.5.25" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.25/9834cdf236c22e84b946bba989e2f94ef5897c3c/authlib-1.5.25.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/authlib/1.5.25/18840707f662a3236542716fff61c659584f3e6c/authlib-1.5.25-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.mojang:realms:1.10.22" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.mojang" artifactId="realms" version="1.10.22" baseVersion="1.10.22" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/realms/1.10.22/bd0dccebdf3744c75f1ca20063f16e8f7d5e663f/realms-1.10.22.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: com.mojang:text2speech:1.10.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.mojang" artifactId="text2speech" version="1.10.3" baseVersion="1.10.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/48fd510879dff266c3815947de66e3d4809f8668/text2speech-1.10.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/404339fe43d1011ee046a249b0ec7ae9ce04a834/text2speech-1.10.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.mojang:text2speech:natives-windows:1.10.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.mojang" artifactId="text2speech" version="1.10.3" baseVersion="1.10.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/84a4b856389cc4f485275b1f63497a95a857a443/text2speech-1.10.3-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.10.3/404339fe43d1011ee046a249b0ec7ae9ce04a834/text2speech-1.10.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.paulscode:codecjorbis:20101023" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.paulscode" artifactId="codecjorbis" version="20101023" baseVersion="20101023" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/c73b5636faf089d9f00e8732a829577de25237ee/codecjorbis-20101023.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/codecjorbis/20101023/4ca2436396bc14ebd78b7db1d4e11ca607c8705e/codecjorbis-20101023-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.paulscode:codecwav:20101023" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.paulscode" artifactId="codecwav" version="20101023" baseVersion="20101023" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/12f031cfe88fef5c1dd36c563c0a3a69bd7261da/codecwav-20101023.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/codecwav/20101023/71ec00b9b9c1a6a2c3a8a25f481a23ddb5b21ddb/codecwav-20101023-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.paulscode:libraryjavasound:20101123" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.paulscode" artifactId="libraryjavasound" version="20101123" baseVersion="20101123" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/5c5e304366f75f9eaa2e8cca546a1fb6109348b3/libraryjavasound-20101123.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/libraryjavasound/20101123/945ff5711de27751cf699641d1ea316ba6cf7589/libraryjavasound-20101123-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.paulscode:librarylwjglopenal:20100824" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.paulscode" artifactId="librarylwjglopenal" version="20100824" baseVersion="20100824" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/73e80d0794c39665aec3f62eee88ca91676674ef/librarylwjglopenal-20100824.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/librarylwjglopenal/20100824/ecfc8dac1d41bef748997e4edf563d486923ee1e/librarylwjglopenal-20100824-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.paulscode:soundsystem:20120107" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.paulscode" artifactId="soundsystem" version="20120107" baseVersion="20120107" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/419c05fe9be71f792b2d76cfc9b67f1ed0fec7f6/soundsystem-20120107.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.paulscode/soundsystem/20120107/1b9f4eb11ef11fede7fd76a2e5e8203c2a8adcd/soundsystem-20120107-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: com.sun.istack:istack-commons-runtime:4.2.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="com.sun.istack" artifactId="istack-commons-runtime" version="4.2.0" baseVersion="4.2.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/4.2.0/131351109ff27c4aa0958a988bb273e879687232/istack-commons-runtime-4.2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/4.2.0/42331bd22d9030254d1b6d7ec126db27744ec92e/istack-commons-runtime-4.2.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: commons-codec:commons-codec:1.22.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="commons-codec" artifactId="commons-codec" version="1.22.0" baseVersion="1.22.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.22.0/6b3eb4beb7058c2a638f5f17bcb388649fd339dd/commons-codec-1.22.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.22.0/2fcb8931b90c688d96fa41f330b7dd2d3b9472f1/commons-codec-1.22.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: commons-io:commons-io:2.22.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="commons-io" artifactId="commons-io" version="2.22.0" baseVersion="2.22.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.22.0/5b1e18bc0ad651ed878029d83f88d9c8189fd51e/commons-io-2.22.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.22.0/6becc23ca6cd78d33568418a18cec5b2aa5d435e/commons-io-2.22.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: commons-logging:commons-logging:1.4.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="commons-logging" artifactId="commons-logging" version="1.4.0" baseVersion="1.4.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.4.0/e8f6313365dfa0580e49c58837afc8caa9b4ce05/commons-logging-1.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.4.0/bc029b7dc0fd09c3a0dbc0bc1565cc059ed0d363/commons-logging-1.4.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.github.classgraph:classgraph:4.8.184" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.github.classgraph" artifactId="classgraph" version="4.8.184" baseVersion="4.8.184" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.classgraph/classgraph/4.8.184/a4f7ddec0f831dcf7ec3db32ae2c7e628c89f1a6/classgraph-4.8.184.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.classgraph/classgraph/4.8.184/817d42f4843e85259ce8b9c32c797a79f6f698f5/classgraph-4.8.184-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.github.llamalad7:mixinextras-common:0.5.4" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.github.llamalad7" artifactId="mixinextras-common" version="0.5.4" baseVersion="0.5.4" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-common/0.5.4/626e00b72e3879a07e6653d8015cd3466ff5b75/mixinextras-common-0.5.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.llamalad7/mixinextras-common/0.5.4/fd5d27cff1c8118f5a4a037e7f549b606d117caf/mixinextras-common-0.5.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-buffer:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-buffer" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.2.15.Final/2beb620803bf871cda2dd5d46b8f831e8015dd34/netty-buffer-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.2.15.Final/7bd654d07f4c92c8b1021ae21dfb29713a940384/netty-buffer-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-codec-base:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-codec-base" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-base/4.2.15.Final/e97149fdd5fb04858efa90e314651c8d700dc68b/netty-codec-base-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-base/4.2.15.Final/71e85076eb364b927d6d18cebb557870512e54e5/netty-codec-base-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-codec-compression:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-codec-compression" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-compression/4.2.15.Final/89fc4a20b7ae6af974304b1695405e62c4f9b16d/netty-codec-compression-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-compression/4.2.15.Final/40cee71cebbc7199f94dfe4c29b89fa566edcdff/netty-codec-compression-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-codec-dns:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-codec-dns" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.2.15.Final/3da23523d91eaf8af81d2b9080a61d9b1af0762c/netty-codec-dns-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-dns/4.2.15.Final/29e1d78d0cfd8322bfbd4e2ba21f747b958b49a0/netty-codec-dns-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-codec-http2:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-codec-http2" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.2.15.Final/c70540243427c8c952473f55813c6d459817de42/netty-codec-http2-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http2/4.2.15.Final/488ebdf5eac8289b9611099705a82ef7f1c585ea/netty-codec-http2-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-codec-http:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-codec-http" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.2.15.Final/e611826aa054371bb9a17f27bdb05755a4cac5f0/netty-codec-http-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-http/4.2.15.Final/ba32b3e89ff938b6ff5f2045c5906e5c91710222/netty-codec-http-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-common:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-common" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.2.15.Final/7222492c1af9c2d4d78d521eea340a619e242fda/netty-common-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.2.15.Final/355a9f140aa774b056fb7632f4c8fefc0612afa1/netty-common-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-handler:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-handler" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.2.15.Final/d5344afd1148e3b9927a74be019605ebb0937a93/netty-handler-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.2.15.Final/ae366da643e7df61ed2a0b9f2f00aecdb9875a42/netty-handler-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-resolver-dns:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-resolver-dns" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.2.15.Final/1b3eaebe62b905c780e181b5f3fd18c013ca73a4/netty-resolver-dns-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver-dns/4.2.15.Final/d7e40c4940da9dedcbc29edf2b7bd5dd193c3ce/netty-resolver-dns-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-resolver:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-resolver" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.2.15.Final/b961a16d379b508b473e064ba06842bba280f4e3/netty-resolver-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.2.15.Final/bd4bfe4f715c267c359f1719b743c1af3c42a67e/netty-resolver-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-transport-classes-epoll:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-transport-classes-epoll" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.2.15.Final/44bafba9c9993800e955b365bba4981326f3f3b1/netty-transport-classes-epoll-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.2.15.Final/64349588ed5fefab13165c8091776c9686f43cdb/netty-transport-classes-epoll-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-transport-native-epoll:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-transport-native-epoll" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.2.15.Final/3adace859f3181bf3f27c70c8d317cf9a39a3e0d/netty-transport-native-epoll-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.2.15.Final/2848a6c577e3ef20784fee29217dde76bcbe7a55/netty-transport-native-epoll-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-transport-native-epoll:linux-x86_64:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-transport-native-epoll" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.2.15.Final/ce256127f8ed3f076756f1f4dcb5877d65d1f1c2/netty-transport-native-epoll-4.2.15.Final-linux-x86_64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-epoll/4.2.15.Final/2848a6c577e3ef20784fee29217dde76bcbe7a55/netty-transport-native-epoll-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-transport-native-unix-common:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-transport-native-unix-common" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.2.15.Final/efb6943b4de9e0226a5ac35330f232605424af02/netty-transport-native-unix-common-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.2.15.Final/7de38e9d3e41d53388a66e7e9dbeba805bc70eef/netty-transport-native-unix-common-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-transport-native-unix-common:linux-x86_64:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-transport-native-unix-common" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.2.15.Final/653fb56a1ea10cbbc24bbec3c94dddaa96bf9f1a/netty-transport-native-unix-common-4.2.15.Final-linux-x86_64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.2.15.Final/7de38e9d3e41d53388a66e7e9dbeba805bc70eef/netty-transport-native-unix-common-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: io.netty:netty-transport:4.2.15.Final" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="io.netty" artifactId="netty-transport" version="4.2.15.Final" baseVersion="4.2.15.Final" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.2.15.Final/a000c3a6196ee40207b73ac619dcb339409dd62f/netty-transport-4.2.15.Final.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.2.15.Final/2424761f5140337da4a264d5def6d25081deafcd/netty-transport-4.2.15.Final-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: it.unimi.dsi:fastutil:8.5.18" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="it.unimi.dsi" artifactId="fastutil" version="8.5.18" baseVersion="8.5.18" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.18/a6cff377eecc19c2037bf31568a6d7106b50ba1f/fastutil-8.5.18.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.18/d49bcbf212cca0ba085bff99870a77f2322e0a7/fastutil-8.5.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.activation:jakarta.activation-api:2.1.4" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="jakarta.activation" artifactId="jakarta.activation-api" version="2.1.4" baseVersion="2.1.4" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.4/9e5c2a0d75dde71a0bedc4dbdbe47b78a5dc50f8/jakarta.activation-api-2.1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.4/a37bf73633c6a43e25953074ac6a28a67f0d9305/jakarta.activation-api-2.1.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.annotation:jakarta.annotation-api:3.0.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="jakarta.annotation" artifactId="jakarta.annotation-api" version="3.0.0" baseVersion="3.0.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/3.0.0/54f928fadec906a99d558536756d171917b9d936/jakarta.annotation-api-3.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/3.0.0/ef0c4c613c56afb214f2e810a3a5ef0dc4a1c8f/jakarta.annotation-api-3.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.inject:jakarta.inject-api:2.0.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="jakarta.inject" artifactId="jakarta.inject-api" version="2.0.1" baseVersion="2.0.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.inject/jakarta.inject-api/2.0.1/4c28afe1991a941d7702fe1362c365f0a8641d1e/jakarta.inject-api-2.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.inject/jakarta.inject-api/2.0.1/569d6c5f18d6ff83c82152d1870cf0faf830c594/jakarta.inject-api-2.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:4.0.5" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="jakarta.xml.bind" artifactId="jakarta.xml.bind-api" version="4.0.5" baseVersion="4.0.5" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.5/161811f36cad3c65991502e80317f2f6703361df/jakarta.xml.bind-api-4.0.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.5/d317bbe6ae3ea8307e038a31f394572479bce0bf/jakarta.xml.bind-api-4.0.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: jakarta.xml.ws:jakarta.xml.ws-api:4.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="jakarta.xml.ws" artifactId="jakarta.xml.ws-api" version="4.0.3" baseVersion="4.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.ws/jakarta.xml.ws-api/4.0.3/30b8a7abd7b3958461d8256db31816dd2ae6eb85/jakarta.xml.ws-api-4.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jakarta.xml.ws/jakarta.xml.ws-api/4.0.3/1c89086d7bed0ad11be48bf6fa97036036132d1/jakarta.xml.ws-api-4.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: java3d:vecmath:1.5.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="java3d" artifactId="vecmath" version="1.5.2" baseVersion="1.5.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/79846ba34cbd89e2422d74d53752f993dcc2ccaf/vecmath-1.5.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/java3d/vecmath/1.5.2/42442b23189fbef9353c1751055610b63dd57e85/vecmath-1.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: lzma:lzma:0.0.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="lzma" artifactId="lzma" version="0.0.1" baseVersion="0.0.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/lzma/lzma/0.0.1/521616dc7487b42bef0e803bd2fa3faf668101d7/lzma-0.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: net.java.dev.jna:jna-platform:5.19.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.java.dev.jna" artifactId="jna-platform" version="5.19.1" baseVersion="5.19.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.19.1/d1e54d9231da5ca3fa730d52960deaa555475468/jna-platform-5.19.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.19.1/a1cb04c0e4737d0714da5a991a6b29d50f3e5823/jna-platform-5.19.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.java.dev.jna:jna:5.19.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.java.dev.jna" artifactId="jna" version="5.19.1" baseVersion="5.19.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.19.1/ca303052cd617c1af2e2c8d344c98a706fb63143/jna-5.19.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.19.1/490cced5cbed7e7cec693d5601c195ad87beb480/jna-5.19.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.java.jinput:jinput-platform:natives-windows:2.0.5" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.java.jinput" artifactId="jinput-platform" version="2.0.5" baseVersion="2.0.5" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput-platform/2.0.5/385ee093e01f587f30ee1c8a2ee7d408fd732e16/jinput-platform-2.0.5-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: net.java.jinput:jinput:2.0.10" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.java.jinput" artifactId="jinput" version="2.0.10" baseVersion="2.0.10" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.10/d0a9613a26328720f8055d7b9921e1e5fa6db557/jinput-2.0.10.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.java.jinput/jinput/2.0.10/b04aae4f969b6af121c7a8eb8742b60dac202d3c/jinput-2.0.10-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.lenni0451.commons:unchecked:1.9.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.lenni0451.commons" artifactId="unchecked" version="1.9.2" baseVersion="1.9.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.lenni0451.commons/unchecked/1.9.2/21bc260b57ffdb90348f2e2b8c193308a2778861/unchecked-1.9.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.lenni0451.commons/unchecked/1.9.2/e7daaddcc291a8993ad0642a39c6fb8650119894/unchecked-1.9.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.lenni0451:Reflect:1.6.4" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.lenni0451" artifactId="Reflect" version="1.6.4" baseVersion="1.6.4" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.lenni0451/Reflect/1.6.4/4e167252fee0377fe8e22b862cfa174519c82649/Reflect-1.6.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.lenni0451/Reflect/1.6.4/2ad14aed781c4a73ed4dbb421966d408a0a06686/Reflect-1.6.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.minecraft:minecraft:1.12.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.minecraft" artifactId="minecraft" version="1.12.2" baseVersion="1.12.2" />
+      <ANNOTATIONS>
+        <root url="jar://$APPLICATION_PLUGINS_DIR$/Minecraft Development/lib/resources/externalAnnotations.jar!/" />
+      </ANNOTATIONS>
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/unimined/net/minecraft/minecraft/1.12.2/Cleanroom-FG3/0.5.17-alpha/mcp-stable-39-1.12-searge-1.12.2-20260220.202731/forge-0.5.17-alpha-Cleanroom-FG3+cleanroom-0.5.17-alpha+fixForge+asmFixes-mcp-at+8889549.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: net.sf.jopt-simple:jopt-simple:5.0.4" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.sf.jopt-simple" artifactId="jopt-simple" version="5.0.4" baseVersion="5.0.4" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/950831646d014c9162999019a3cb17d5fc01ac0d/jopt-simple-5.0.4-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.sf.trove4j:core:3.1.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.sf.trove4j" artifactId="core" version="3.1.0" baseVersion="3.1.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/core/3.1.0/5fd0207b685536b29dd65c86f4b3bf89befb885c/core-3.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/core/3.1.0/24f13b6f943bc45fab11850f4e51f2cac8498335/core-3.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: net.sf.trove4j:experimental:3.1.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="net.sf.trove4j" artifactId="experimental" version="3.1.0" baseVersion="3.1.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/experimental/3.1.0/7ae04bc42178c53a30d602d0bbd77571cef4ceac/experimental-3.1.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/experimental/3.1.0/a17bea01895d1ae3de8a3840ad9d7b6de0b3d26/experimental-3.1.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.commons:commons-compress:1.28.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.commons" artifactId="commons-compress" version="1.28.0" baseVersion="1.28.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.28.0/e482f2c7a88dac3c497e96aa420b6a769f59c8d7/commons-compress-1.28.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.28.0/35c6f7682cb67429c381953106d89c278428d69a/commons-compress-1.28.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.commons:commons-lang3:3.20.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.commons" artifactId="commons-lang3" version="3.20.0" baseVersion="3.20.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.20.0/65897b3e5731220962e659e001904af3c3cbeba9/commons-lang3-3.20.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.20.0/b454ed6abe94bef0843735fa4496b05c05206cac/commons-lang3-3.20.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.commons:commons-text:1.15.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.commons" artifactId="commons-text" version="1.15.0" baseVersion="1.15.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.15.0/9899093aa40f0199d6c39b131b8f087cdb37e399/commons-text-1.15.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.15.0/7a9a646b26a70bb7e5d3bafa7517e610a8c0fac3/commons-text-1.15.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.httpcomponents.client5:httpclient5:5.6.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.httpcomponents.client5" artifactId="httpclient5" version="5.6.1" baseVersion="5.6.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.client5/httpclient5/5.6.1/b418ba210ace28adf920f1decf64d673953d07cf/httpclient5-5.6.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.client5/httpclient5/5.6.1/22dc316e7d50e72033dd8321ed4b488e9dafab69/httpclient5-5.6.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.httpcomponents.core5:httpcore5-h2:5.4.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.httpcomponents.core5" artifactId="httpcore5-h2" version="5.4.3" baseVersion="5.4.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5-h2/5.4.3/33bcd37d645539d27c65e17420843fd7f6c0ebf4/httpcore5-h2-5.4.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5-h2/5.4.3/1aa18d8e14f58fa2b9da1fce696d3b4bfa3a3fb8/httpcore5-h2-5.4.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.httpcomponents.core5:httpcore5:5.4.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.httpcomponents.core5" artifactId="httpcore5" version="5.4.3" baseVersion="5.4.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5/5.4.3/32a0699fbcb103f5621c00983ee8f5aac080e4a6/httpcore5-5.4.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents.core5/httpcore5/5.4.3/ff6a6074ab23d1d007d05302a4a8d5baeb32a69f/httpcore5-5.4.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.httpcomponents:httpclient:4.5.14" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.httpcomponents" artifactId="httpclient" version="4.5.14" baseVersion="4.5.14" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.14/1194890e6f56ec29177673f2f12d0b8e627dec98/httpclient-4.5.14.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.5.14/14321a360aa0e037c56d4c820747a84954d9196e/httpclient-4.5.14-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.httpcomponents:httpcore:4.4.16" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.httpcomponents" artifactId="httpcore" version="4.4.16" baseVersion="4.4.16" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.16/51cf043c87253c9f58b539c9f7e44c8894223850/httpcore-4.4.16.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.16/229e4c0eae80465381ae02adf61bca5558360777/httpcore-4.4.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.logging.log4j:log4j-api:2.26.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.logging.log4j" artifactId="log4j-api" version="2.26.0" baseVersion="2.26.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.26.0/ad52af0ecf054a7e3f275a2e180ee06d9c490951/log4j-api-2.26.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.26.0/cb19144516299e76c54609315f98e832c9d05577/log4j-api-2.26.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.logging.log4j:log4j-core:2.26.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.logging.log4j" artifactId="log4j-core" version="2.26.0" baseVersion="2.26.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.26.0/d267ca60b27ddb075e0b4e75e7875859717bf85f/log4j-core-2.26.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.26.0/790f244eb3624cd77b756497e055d28495e05c16/log4j-core-2.26.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.logging.log4j:log4j-slf4j2-impl:2.26.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.logging.log4j" artifactId="log4j-slf4j2-impl" version="2.26.0" baseVersion="2.26.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.26.0/668c0f0e813d83f00a7182533aa658ec7e7a0a0d/log4j-slf4j2-impl-2.26.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.26.0/23d2fbfcd99b2aa1b96d5d4b1b1d68d7244409cf/log4j-slf4j2-impl-2.26.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apache.maven:maven-artifact:3.9.16" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apache.maven" artifactId="maven-artifact" version="3.9.16" baseVersion="3.9.16" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.9.16/1176c6579a8a68508c3479ef72d514e71c98ddca/maven-artifact-3.9.16.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.9.16/34fa72c2737890c8b6736ed257e9ffd9638e5fbb/maven-artifact-3.9.16-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.apiguardian:apiguardian-api:1.1.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.apiguardian" artifactId="apiguardian-api" version="1.1.2" baseVersion="1.1.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/e0787a997746ac32639e0bf3cb27af8dce8a3428/apiguardian-api-1.1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.checkerframework:checker-qual:3.43.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.checkerframework" artifactId="checker-qual" version="3.43.0" baseVersion="3.43.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/9425eee39e56b116d2b998b7c2cebcbd11a3c98b/checker-qual-3.43.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/dfd1d5ec59d04e7bd1ad44e74da445b880cfc2e1/checker-qual-3.43.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.glassfish.corba:glassfish-corba-omgapi:5.0.2" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.glassfish.corba" artifactId="glassfish-corba-omgapi" version="5.0.2" baseVersion="5.0.2" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.corba/glassfish-corba-omgapi/5.0.2/5707c4c83d8ec7cf417ef2708fa539ff9204a1f4/glassfish-corba-omgapi-5.0.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.corba/glassfish-corba-omgapi/5.0.2/de476b9c927bf8a22d4194fdc4c45739b6dcac7/glassfish-corba-omgapi-5.0.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.glassfish.jaxb:jaxb-core:4.0.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.glassfish.jaxb" artifactId="jaxb-core" version="4.0.9" baseVersion="4.0.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-core/4.0.9/3f32ec949d109d666fa30994223d1c25a47b105f/jaxb-core-4.0.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-core/4.0.9/cacff882c508b68172fb610cb2e912e192361708/jaxb-core-4.0.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.glassfish.jaxb:jaxb-runtime:4.0.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.glassfish.jaxb" artifactId="jaxb-runtime" version="4.0.9" baseVersion="4.0.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/4.0.9/500c199572538675d2819c938fbafe34935d8d6b/jaxb-runtime-4.0.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/4.0.9/d1ba82dd56bfde80fecd84190efb200b08b0c114/jaxb-runtime-4.0.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.javassist:javassist:3.30.2-GA" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.javassist" artifactId="javassist" version="3.30.2-GA" baseVersion="3.30.2-GA" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.30.2-GA/284580b5e42dfa1b8267058566435d9e93fae7f7/javassist-3.30.2-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.30.2-GA/9fc7ae60f31ef365b07093ba39ab798ded4cd115/javassist-3.30.2-GA-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.jetbrains:annotations:24.0.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.jetbrains" artifactId="annotations" version="24.0.1" baseVersion="24.0.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/13c5c75c4206580aa4d683bffee658caae6c9f43/annotations-24.0.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/2f9be7fbab3157633befe74c684bd3badb28a876/annotations-24.0.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.jline:jline-native:4.1.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.jline" artifactId="jline-native" version="4.1.3" baseVersion="4.1.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jline/jline-native/4.1.3/f8449379e67e4970efcdfdca7de648b71add4279/jline-native-4.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jline/jline-native/4.1.3/ef9a98ab812caa2eb5d9f54fd4af19a619896051/jline-native-4.1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.jline:jline:4.1.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.jline" artifactId="jline" version="4.1.3" baseVersion="4.1.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jline/jline/4.1.3/82988d8680e9f2360c7a876273279026a50b5834/jline-4.1.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jline/jline/4.1.3/8073f62c6f9530a9213c25358f150a1db7d3b871/jline-4.1.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.joml:joml:1.10.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.joml" artifactId="joml" version="1.10.9" baseVersion="1.10.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.9/438e036486bad66b189bff385dd07dea4f74a146/joml-1.10.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.9/f100d496eb78e06518f33bb3282db195d2703500/joml-1.10.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.jspecify:jspecify:1.0.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.jspecify" artifactId="jspecify" version="1.0.0" baseVersion="1.0.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jspecify/jspecify/1.0.0/7425a601c1c7ec76645a78d22b8c6a627edee507/jspecify-1.0.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jspecify/jspecify/1.0.0/f1a67bbcf2f9f282baf3821046563983f16ca9b2/jspecify-1.0.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-api:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-api" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/6.0.3/2e6cfb62db85350179f0408ed5270f7cdf8cefda/junit-jupiter-api-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/6.0.3/281330ce99ad95c2ccc8492503fc5b945e73afb4/junit-jupiter-api-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-engine" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/6.0.3/e26f7e17d06cfc85ba7643b5ad00c87d5f2084dd/junit-jupiter-engine-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/6.0.3/2a30aff0a9a0d97c0728db5b3102658083f4d74b/junit-jupiter-engine-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter-params:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.jupiter" artifactId="junit-jupiter-params" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/6.0.3/6cd3efadd171a3ddd70413868a9c3af988a45907/junit-jupiter-params-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/6.0.3/35ed7e38169e88e750d295b91ae465d18233b829/junit-jupiter-params-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.jupiter:junit-jupiter:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.jupiter" artifactId="junit-jupiter" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/6.0.3/da72f4bc0feccbca639b901ace26e3a62512ebec/junit-jupiter-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/6.0.3/fb559da6cf7a1f9d251462a24fcb14856debea38/junit-jupiter-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.platform:junit-platform-commons:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.platform" artifactId="junit-platform-commons" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/6.0.3/1093a7faa2ba47c28aa83f378d9a2083463bb20c/junit-platform-commons-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/6.0.3/27e4015c025cc02ea68d71b799a84a1508d4f60e/junit-platform-commons-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.platform:junit-platform-engine:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.platform" artifactId="junit-platform-engine" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/6.0.3/101305612e7daa4ce978d3ba73fd02dd4a5f22d9/junit-platform-engine-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/6.0.3/15cd543d3a2c2a9165ef6108b1bd7d31ec6e9356/junit-platform-engine-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.junit.platform:junit-platform-launcher:6.0.3" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.junit.platform" artifactId="junit-platform-launcher" version="6.0.3" baseVersion="6.0.3" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/6.0.3/4a721cdd640ebdaa4c6850f5eee0b0377cf698b0/junit-platform-launcher-6.0.3.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/6.0.3/1fe45dac052ad1139918482204196a29e13b212d/junit-platform-launcher-6.0.3-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-glfw:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-glfw" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/a782b1ddd175c9107bf300fd92920579ea65e2a4/lwjgl-glfw-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/947ab4411813fdad5d541ddcd78df9e58858dc84/lwjgl-glfw-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-glfw:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-glfw" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/196101d96d9b2aa73264a96ae1dc8944a1446cee/lwjgl-glfw-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/947ab4411813fdad5d541ddcd78df9e58858dc84/lwjgl-glfw-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-glfw:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-glfw" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/a48bbdd544f00c88f8906e9d09e3f31bc1c17fac/lwjgl-glfw-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/947ab4411813fdad5d541ddcd78df9e58858dc84/lwjgl-glfw-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-glfw:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-glfw" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/2eb4aa895ea190ba8cf4356f8cea24d3ebb40ea1/lwjgl-glfw-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.4.1/947ab4411813fdad5d541ddcd78df9e58858dc84/lwjgl-glfw-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-jemalloc:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-jemalloc" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/16b663092854fc6adfe0a941e61cae2bb2e437b6/lwjgl-jemalloc-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/44c0e97ab159e7f0087217629ff87ae3283307d0/lwjgl-jemalloc-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-jemalloc" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/662e0926dd990f679e1cfb31d710d22d175bdabc/lwjgl-jemalloc-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/44c0e97ab159e7f0087217629ff87ae3283307d0/lwjgl-jemalloc-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-jemalloc" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/d8cf69e1155df83260f9bbe01944fe91f8ca3955/lwjgl-jemalloc-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/44c0e97ab159e7f0087217629ff87ae3283307d0/lwjgl-jemalloc-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-jemalloc:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-jemalloc" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/70db8048d1aca8a6365f46f9963b8d6cd77b9e94/lwjgl-jemalloc-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.4.1/44c0e97ab159e7f0087217629ff87ae3283307d0/lwjgl-jemalloc-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-openal:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-openal" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/8508bd60589de0539aa465b78fcf838efd07ae9a/lwjgl-openal-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/487c8307e47895e8dab01c0d1f84774f0c26935d/lwjgl-openal-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-openal:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-openal" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/4b996cc3321a807ee34e7ce53aba7fe529dc485a/lwjgl-openal-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/487c8307e47895e8dab01c0d1f84774f0c26935d/lwjgl-openal-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-openal:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-openal" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/9e4bab87e9b89876fa77ea3c19e1b45334b97c10/lwjgl-openal-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/487c8307e47895e8dab01c0d1f84774f0c26935d/lwjgl-openal-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-openal:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-openal" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/8e83fdfdf65c80c9877c6fb6cb645d239ed7638/lwjgl-openal-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.4.1/487c8307e47895e8dab01c0d1f84774f0c26935d/lwjgl-openal-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-opengl:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-opengl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/830412cab823c029cda6b9729f9d2ed36cf79959/lwjgl-opengl-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/b268a69846a185c0f7dad39d90655315a5e22d7c/lwjgl-opengl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-opengl:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-opengl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/4b6a9c5d7d5325312b740d9886087b7292b43bf9/lwjgl-opengl-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/b268a69846a185c0f7dad39d90655315a5e22d7c/lwjgl-opengl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-opengl:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-opengl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/cfd47352b758a0c9f7046de467b103182ec77eb1/lwjgl-opengl-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/b268a69846a185c0f7dad39d90655315a5e22d7c/lwjgl-opengl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-opengl:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-opengl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/617f37ef4e2ffb727bd5e74333e8073ef43ca1ec/lwjgl-opengl-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.4.1/b268a69846a185c0f7dad39d90655315a5e22d7c/lwjgl-opengl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-stb:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-stb" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/f077c3dafc31924fbe8acb0b913f08977ba27f8e/lwjgl-stb-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/6ba89a25de97bb73ac1dfb59d042482866bb929c/lwjgl-stb-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-stb:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-stb" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/7f4c39b3d56c7bae4900ee6e59d8f75432bdb18f/lwjgl-stb-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/6ba89a25de97bb73ac1dfb59d042482866bb929c/lwjgl-stb-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-stb:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-stb" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/e091cd3b25ab7db88f0e34a0d2797dc396a528fa/lwjgl-stb-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/6ba89a25de97bb73ac1dfb59d042482866bb929c/lwjgl-stb-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-stb:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-stb" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/b4e13ece83c228ecf57354639d8555076a989d74/lwjgl-stb-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.4.1/6ba89a25de97bb73ac1dfb59d042482866bb929c/lwjgl-stb-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-tinyfd:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-tinyfd" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/562697d40dbd2ed0424bf24dcf65d51170f81adf/lwjgl-tinyfd-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/419e8f5d842330b762c6900ba42a5fa0ef52589e/lwjgl-tinyfd-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-tinyfd:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-tinyfd" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/9c93b8211856bfe682f3225ccac811e74243f98e/lwjgl-tinyfd-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/419e8f5d842330b762c6900ba42a5fa0ef52589e/lwjgl-tinyfd-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-tinyfd:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-tinyfd" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/f585da74a17695ba38351697712c03784ee1348b/lwjgl-tinyfd-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/419e8f5d842330b762c6900ba42a5fa0ef52589e/lwjgl-tinyfd-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl-tinyfd:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl-tinyfd" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/bdd8c03151cc94460247986f843d134ae8f9406a/lwjgl-tinyfd-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.4.1/419e8f5d842330b762c6900ba42a5fa0ef52589e/lwjgl-tinyfd-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/6105690714874b995aa7812e4f7732a21109276c/lwjgl-3.4.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/424efe3b0b8045fbb68fb888e65726d5e917b23c/lwjgl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl:natives-windows-arm64:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/d1d3a7052da47ccde2a5fdf3a1bd45d801c3157c/lwjgl-3.4.1-natives-windows-arm64.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/424efe3b0b8045fbb68fb888e65726d5e917b23c/lwjgl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl:natives-windows-x86:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/65de43bd52507e108a58247c0da57a50ce3ee6f6/lwjgl-3.4.1-natives-windows-x86.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/424efe3b0b8045fbb68fb888e65726d5e917b23c/lwjgl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl:natives-windows:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/96a217f0428ab73487f114a54179a4f41e851a04/lwjgl-3.4.1-natives-windows.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/424efe3b0b8045fbb68fb888e65726d5e917b23c/lwjgl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.lwjgl:lwjgl:unsafe:3.4.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.lwjgl" artifactId="lwjgl" version="3.4.1" baseVersion="3.4.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/129e06a04f93992cb2a45172435b21fc4b60dd7d/lwjgl-3.4.1-unsafe.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.4.1/424efe3b0b8045fbb68fb888e65726d5e917b23c/lwjgl-3.4.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.openjdk.nashorn:nashorn-core:15.7" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.openjdk.nashorn" artifactId="nashorn-core" version="15.7" baseVersion="15.7" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjdk.nashorn/nashorn-core/15.7/f959627b97cb21316906d3634fecf4ec04016bcd/nashorn-core-15.7.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjdk.nashorn/nashorn-core/15.7/62a74767e92e03875e3905f64a2f4c3617bf5997/nashorn-core-15.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.opentest4j:opentest4j:1.3.0" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.opentest4j" artifactId="opentest4j" version="1.3.0" baseVersion="1.3.0" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/afb8ff23cffb021c56f333953aebfe6e8818568e/opentest4j-1.3.0-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-analysis:9.10.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-analysis" version="9.10.1" baseVersion="9.10.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.10.1/8d49f14d51f632cb1d87c88d1ceaf50db0d8af1b/asm-analysis-9.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.10.1/dc5795b6a72aba9b953aebb3707afff61d34b640/asm-analysis-9.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-analysis:9.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-analysis" version="9.9" baseVersion="9.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.9/bf4fa6e66638851c1cd22c2caea0c3ee5d5f437/asm-analysis-9.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/9.9/3ce67cca2a5bf3d1d271fb13e0011714df6c68e6/asm-analysis-9.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-commons:9.10.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-commons" version="9.10.1" baseVersion="9.10.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.10.1/4229e4c55fd8e01c23f9fe9884075cc628aacc50/asm-commons-9.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.10.1/3925366ce827acc4c6bca218f380a3636e1a0bc2/asm-commons-9.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-commons:9.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-commons" version="9.9" baseVersion="9.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.9/db9165a3bf908ded6b08612d583a15d1d0c7bda0/asm-commons-9.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/9.9/a51d8b4b55baa109a6c4ac1e897820ad638f63d2/asm-commons-9.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-deprecated:7.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-deprecated" version="7.1" baseVersion="7.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-deprecated/7.1/4ad3a41a931f2ef0aa8f8dc5d7c82090d744c1/asm-deprecated-7.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-deprecated/7.1/ded15641c5688b5960fd83abc5d33824798683b7/asm-deprecated-7.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-tree:9.10.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-tree" version="9.10.1" baseVersion="9.10.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.10.1/e244332a17564c1d1572449399a842de35881be2/asm-tree-9.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.10.1/868e297f64cade189fff6600060ae8418b77bb92/asm-tree-9.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-tree:9.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-tree" version="9.9" baseVersion="9.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.9/f8de6eead6d24dd0f45bd065bbe112b2cda6ea21/asm-tree-9.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/9.9/60b736062debb8f627d06fa42b962744b1e1a43a/asm-tree-9.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-util:9.10.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-util" version="9.10.1" baseVersion="9.10.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.10.1/7bb9d450e8d4cbf9f9e04096c44bbfe7fba80b15/asm-util-9.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.10.1/a18ec55bd1dceeb27f5d02e5ae3f9ac76239926e/asm-util-9.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm-util:9.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm-util" version="9.9" baseVersion="9.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.9/42fdfc0508b43807c8078d6e82ecff2ce2112ae8/asm-util-9.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-util/9.9/4e8aceea08c648727bb173f03e6fd31fbdb86289/asm-util-9.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm:9.10.1" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm" version="9.10.1" baseVersion="9.10.1" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.10.1/ada2141c0cc52ee8f5c48cd5fa4ce0e794f22236/asm-9.10.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.10.1/9f9a96aa17fd1113b218fa2dd6c4dc075192aa2e/asm-9.10.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.ow2.asm:asm:9.9" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.ow2.asm" artifactId="asm" version="9.9" baseVersion="9.9" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.9/c29635c8a7afa03d74b33c1884df8abb2b3f3dcc/asm-9.9.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.9/5aa89c77317a704e2e34d117b72756ff1c1530bb/asm-9.9-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.slf4j:slf4j-api:2.0.18" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.slf4j" artifactId="slf4j-api" version="2.0.18" baseVersion="2.0.18" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.18/78a9e7a37cd6360e0b818e86341b24123d28d4df/slf4j-api-2.0.18.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.18/cbef69ca0f760268b2cb46acd30a3f50b98c2af2/slf4j-api-2.0.18-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: org.tukaani:xz:1.12" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="org.tukaani" artifactId="xz" version="1.12" baseVersion="1.12" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.12/bb9703ba3753ab8665f65e6a25b3ddc7b09b1caf/xz-1.12.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.tukaani/xz/1.12/d79b3daa73e22e88d98c5bd833902431c8575ad4/xz-1.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: remapped_curse.maven:baubles-227083:mapped-mcp:2518667" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="baubles-227083" version="2518667" baseVersion="2518667" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/baubles-227083-2518667-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:configanytime-870276:mapped-mcp:5212709" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="configanytime-870276" version="5212709" baseVersion="5212709" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/configanytime-870276-5212709-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:expanded-events-1396395:mapped-mcp:8204032" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="expanded-events-1396395" version="8204032" baseVersion="8204032" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/expanded-events-1396395-8204032-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:fugue-1005815:mapped-mcp:8403977" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="fugue-1005815" version="8403977" baseVersion="8403977" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/fugue-1005815-8403977-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:geckolib-388172:mapped-mcp:4020277" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="geckolib-388172" version="4020277" baseVersion="4020277" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/geckolib-388172-4020277-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:had-enough-items-557549:mapped-mcp:7515497" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="had-enough-items-557549" version="7515497" baseVersion="7515497" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/had-enough-items-557549-7515497-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:kami-reborn-1549296:mapped-mcp:8407097" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="kami-reborn-1549296" version="8407097" baseVersion="8407097" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/kami-reborn-1549296-8407097-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:mixin-booter-419286:mapped-mcp:8397819" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="mixin-booter-419286" version="8397819" baseVersion="8397819" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/mixin-booter-419286-8397819-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:new-crimson-revelations-1025633:mapped-mcp:8139449" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="new-crimson-revelations-1025633" version="8139449" baseVersion="8139449" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/new-crimson-revelations-1025633-8139449-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:planar-artifice-reflected-1549278:mapped-mcp:8377612" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="planar-artifice-reflected-1549278" version="8377612" baseVersion="8377612" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/planar-artifice-reflected-1549278-8377612-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:scalar-1012168:mapped-mcp:7689740" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="scalar-1012168" version="7689740" baseVersion="7689740" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/scalar-1012168-7689740-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumcraft-223628:mapped-mcp:2629023" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumcraft-223628" version="2629023" baseVersion="2629023" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumcraft-223628-2629023-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumcraftfix-1069346:mapped-mcp:7288369" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumcraftfix-1069346" version="7288369" baseVersion="7288369" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumcraftfix-1069346-7288369-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumic-attempts-1378341:mapped-mcp:8207361" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumic-attempts-1378341" version="8207361" baseVersion="8207361" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumic-attempts-1378341-8207361-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumic-augmentation-319441:mapped-mcp:6047659" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumic-augmentation-319441" version="6047659" baseVersion="6047659" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumic-augmentation-319441-6047659-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumic-bases-unofficial-293406:mapped-mcp:7582987" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumic-bases-unofficial-293406" version="7582987" baseVersion="7582987" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumic-bases-unofficial-293406-7582987-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumic-information-1590952:mapped-mcp:8405531" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumic-information-1590952" version="8405531" baseVersion="8405531" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumic-information-1590952-8405531-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumic-tinkerer-reborn-1549287:mapped-mcp:8377758" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumic-tinkerer-reborn-1549287" version="8377758" baseVersion="8377758" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumic-tinkerer-reborn-1549287-8377758-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumic-wonders-unofficial-1307741:mapped-mcp:8212971" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumic-wonders-unofficial-1307741" version="8212971" baseVersion="8212971" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumic-wonders-unofficial-1307741-8212971-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumicapi-1533287:mapped-mcp:8304846" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumicapi-1533287" version="8304846" baseVersion="8304846" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumicapi-1533287-8304846-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: remapped_curse.maven:thaumictweaker-1341797:mapped-mcp:7523519" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="remapped_curse.maven" artifactId="thaumictweaker-1341797" version="7523519" baseVersion="7523519" />
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/.gradle/unimined/local/modTransform/thaumictweaker-1341797-7523519-mapped-mcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="Gradle: top.outlands:foundation:0.19.8" type="java-imported" external-system-id="GRADLE">
+      <properties groupId="top.outlands" artifactId="foundation" version="0.19.8" baseVersion="0.19.8" />
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/top.outlands/foundation/0.19.8/fd271376c1a446ce0f41fa1d8a77bc21343ea4dc/foundation-0.19.8.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/top.outlands/foundation/0.19.8/a8b9e72e49cc6aaa58ed2015a755633522b8f07d/foundation-0.19.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+          <settings />
+        </UIState>
+      </state>
+      <state key="Copyright.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+        </UIState>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl>
+              <option name="proportions">
+                <list>
+                  <option value="0.2" />
+                </list>
+              </option>
+            </SplitterProportionsDataImpl>
+          </splitter-proportions>
+          <last-edited>1.6</last-edited>
+        </UIState>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <UIState>
+          <splitter-proportions>
+            <SplitterProportionsDataImpl />
+          </splitter-proportions>
+          <settings />
+        </UIState>
+      </state>
+    </states>
+  </component>
+</project>
