@@ -1,0 +1,60 @@
+{
+  "forge_marker" : 1,
+  "defaults" : {
+    "model" : "kamitesque:root_crystal.obj",
+    "transform": "forge:default-block"
+  },
+  "variants": {
+
+    "normal": {"model": "kamitesque:root_crystal.obj"},
+    "inventory":
+    [
+      {
+        "transform" :
+        {
+          "thirdperson_righthand": {
+            "rotation": [75, 45, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "thirdperson_lefthand": {
+            "rotation": [75, 45, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "firstperson_righthand": {
+            "rotation": [0, -135, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "firstperson_lefthand": {
+            "rotation": [0, -135, 0],
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "ground": {
+            "scale": [0.5, 0.5, 0.5]
+          },
+          "gui": {
+            "rotation": [30, -135, 0],
+            "scale": [0.6, 0.6, 0.6]
+          },
+          "fixed": {
+            "scale": [0.5, 0.5, 0.5]
+          }
+
+        }
+      }
+    ],
+
+    "facing=north,growing=true": { "model": "kamitesque:root_crystal.obj", "x":  90},
+    "facing=south,growing=true": { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 180},
+    "facing=west,growing=true":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 270},
+    "facing=east,growing=true":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 90},
+    "facing=up,growing=true":  { "model": "kamitesque:root_crystal.obj"},
+    "facing=down,growing=true":  { "model": "kamitesque:root_crystal.obj", "x": 180},
+
+    "facing=north,growing=false": { "model": "kamitesque:root_crystal.obj", "x":  90},
+    "facing=south,growing=false": { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 180},
+    "facing=west,growing=false":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 270},
+    "facing=east,growing=false":  { "model": "kamitesque:root_crystal.obj", "x": 90, "y": 90},
+    "facing=up,growing=false":  { "model": "kamitesque:root_crystal.obj"},
+    "facing=down,growing=false":  { "model": "kamitesque:root_crystal.obj", "x": 180}
+  }
+}

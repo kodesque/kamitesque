@@ -1,0 +1,278 @@
+{
+    "entries" :[
+        {
+        "key": "KT_BASE",
+        "name": "research.KT_BASE.title",
+        "icons": [ "kamitesque:textures/research/r_base.png"],
+        "category": "ZENITH",
+        "parents": [ "KT_ANCIENTS" ],
+        "siblings": ["KT_ENERGYBRANCH", "KT_SPACEBRANCH", "KT_MATERIALBRANCH"],
+        "meta": [ "ROUND", "SPIKY", "HIDDEN" ],
+        "location": [ 0,5 ],
+        
+        "stages": [
+                {
+                    "text": "research.KT_BASE.text.stage.1"
+                }
+            ]
+        },
+        {
+            "key": "KT_ICHORIUMHOE",
+            "name": "research.KT_ICHORIUMHOE.title",
+            "icons": [ "kamitesque:ichorium_hoe;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KAMI_ICHORIUM_TOOLS"],
+            "meta": [ "HIDDEN" ],
+            "location": [ 2,-6 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ICHORIUMHOE.text.stage.1",
+                    "recipes": ["kamitesque:ichorium_hoe"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ICHORIUMHOE_AWAKENED",
+            "name": "research.KT_ICHORIUMHOE_AWAKENED.title",
+            "icons": [ "kamitesque:awakened_ichorium_hoe;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_ICHORIUMHOE", "~ELEMENTALTOOLS" ],
+            "meta": [ "HIDDEN" ],
+            "location": [ 2,-8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ICHORIUMHOE_AWAKENED.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ICHORIUMHOE_AWAKENED.text.stage.2",
+                    "required_knowledge":["THEORY;ELDRITCH;2", "THEORY;INFUSION;2", "THEORY;ARTIFICE;2"],
+                    "recipes": ["kamitesque:awakened_ichorium_hoe"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ENERGYBRANCH",
+            "name": "research.KT_ENERGYBRANCH.title",
+            "icons": [ "kamitesque:textures/research/r_energy.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_BASE" ],
+            "meta": [ "ROUND", "HIDDEN"],
+            "location": [ 2,6 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ENERGYBRANCH.text.stage.1"
+                }
+            ]
+        },
+        {
+            "key": "KT_MATERIALBRANCH",
+            "name": "research.KT_MATERIALBRANCH.title",
+            "icons": [ "kamitesque:textures/research/r_material.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_BASE" ],
+            "meta": [ "ROUND", "HIDDEN"],
+            "location": [ 0,7 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_MATERIALBRANCH.text.stage.1"
+                }
+            ]
+        },
+        {
+            "key": "KT_SPACEBRANCH",
+            "name": "research.KT_SPACEBRANCH.title",
+            "icons": [ "kamitesque:textures/research/r_space.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_BASE" ],
+            "meta": [ "ROUND", "HIDDEN"],
+            "location": [ -2,6 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_SPACEBRANCH.text.stage.1"
+                }
+            ]
+        },
+        {
+            "key": "KT_ICHORFLAME",
+            "name": "research.KT_ICHORFLAME.title",
+            "icons": [ "kamitesque:ichorflame_nitor;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_ENERGYBRANCH" ],
+            "meta": [ "HIDDEN"],
+            "location": [ 3,7 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ICHORFLAME.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ICHORFLAME.text.stage.2",
+                    "required_knowledge":["THEORY;AUROMANCY;2"],
+                    "required_item": ["thaumcraft:curio;1;1", "thaumcraft:nugget;1;10"],
+                    "recipes": ["kamitesque:ichorflame_nitor"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ICHORIUMNEEDLE",
+            "name": "research.KT_ICHORIUMNEEDLE.title",
+            "icons": [ "kamitesque:ichorium_needle;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH" ],
+            "meta": [ "HIDDEN"],
+            "location": [ -2,4 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ICHORIUMNEEDLE.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ICHORIUMNEEDLE.text.stage.2",
+                    "required_knowledge":["THEORY;INFUSION;1"],
+                    "required_research": ["!PORTAL"],
+                    "recipes": ["kamitesque:ichorium_needle"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ROOTCRYSTAL",
+            "name": "research.KT_ROOTCRYSTAL.title",
+            "icons": [ "kamitesque:root_crystal;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_MATERIALBRANCH", "CRYSTALFARMER"],
+            "meta": [ "HIDDEN"],
+            "location": [ 0,9 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ROOTCRYSTAL.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ROOTCRYSTAL.text.stage.2",
+                    "required_knowledge":["OBSERVATION;ARTIFICE;1"],
+                    "required_item": ["minecraft:obsidian"],
+                    "recipes": ["kamitesque:root_seed","kamitesque:root_crystal"]
+                }
+            ]
+        },
+        {
+            "key": "KT_PERSISTENCE",
+            "name": "research.KT_PERSISTENCE.title",
+            "icons": [ "kamitesque:textures/items/persistence_seal_charge.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_MATERIALBRANCH", "FOCUS_WARD", "~KAMI_ETERNAL_INFUSION"],
+            "meta": [ "HIDDEN"],
+            "location": [ 1,8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_PERSISTENCE.text.stage.1"
+                },
+                {
+                    "text": "research.KT_PERSISTENCE.text.stage.2",
+                    "required_knowledge":["THEORY;INFUSION;1", "THEORY;AUROMANCY;1"],
+                    "recipes": ["kamitesque:persistence_seal"]
+                }
+            ]
+        },
+        {
+            "key": "KT_THOUSANDYARD_ENCHANT",
+            "name": "research.KT_THOUSANDYARD_ENCHANT.title",
+            "icons": [ "kamitesque:textures/research/r_thousandyard.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN", "ROUND"],
+            "location": [ -4,8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_THOUSANDYARD_ENCHANT.text.stage.1"
+                },
+                {
+                    "text": "research.KT_THOUSANDYARD_ENCHANT.text.stage.2",
+                    "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'aversio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'desiderium'}]}"],
+                    "recipes": ["kamitesque:IETHOUSANDYARD_FAKE"]
+                }
+            ]
+        },
+        {
+            "key": "KT_SHARPEYE_ENCHANT",
+            "name": "research.KT_SHARPEYE_ENCHANT.title",
+            "icons": [ "kamitesque:textures/research/r_sharpeye.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN", "ROUND"],
+            "location": [ -5,6 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_SHARPEYE_ENCHANT.text.stage.1"
+                },
+                {
+                    "text": "research.KT_SHARPEYE_ENCHANT.text.stage.2",
+                    "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'lux'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'vinculum'}]}"],
+                    "recipes": ["kamitesque:IESHARPEYE_FAKE"]
+                }
+            ]
+        },
+        {
+            "key": "KT_ALLFRONTS_ENCHANT",
+            "name": "research.KT_ALLFRONTS_ENCHANT.title",
+            "icons": [ "kamitesque:textures/research/r_allfronts.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN", "ROUND"],
+            "location": [ -4,4 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_ALLFRONTS_ENCHANT.text.stage.1"
+                },
+                {
+                    "text": "research.KT_ALLFRONTS_ENCHANT.text.stage.2",
+                    "required_item": ["thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'praecantatio'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'vacuos'}]}", "thaumcraft:phial;16;0;{Aspects:[{amount:10,key:'ignis'}]}"],
+                    "recipes": ["kamitesque:IEALLFRONTS_FAKE"]
+                }
+            ]
+        },
+        {
+            "key": "KT_PORTALCUTTER",
+            "name": "research.KT_PORTALCUTTER.title",
+            "icons": [ "kamitesque:dimensional_cutter;1;0"],
+            "category": "ZENITH",
+            "parents": [ "KT_SPACEBRANCH"],
+            "meta": [ "HIDDEN" ],
+            "location": [ -2,8 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_PORTALCUTTER.text.stage.1"
+                },
+                {
+                    "text": "research.KT_PORTALCUTTER.text.stage.2",
+                    "recipes": ["kamitesque:dimensional_cutter", "kamitesque:reinforced_phial", "kamitesque:unstable_phial", "kamitesque:unstable_phial-1"]
+                }
+            ]
+        },
+        {
+            "key": "KT_PORTALRIFT",
+            "name": "research.KT_PORTALRIFT.title",
+            "icons": [ "kamitesque:textures/research/r_portalrift.png"],
+            "category": "ZENITH",
+            "parents": [ "KT_PORTALCUTTER"],
+            "meta": [ "HIDDEN", "ROUND" ],
+            "location": [ -2,10 ],
+
+            "stages": [
+                {
+                    "text": "research.KT_PORTALRIFT.text.stage.1"
+                }
+            ]
+        }
+    ]
+}

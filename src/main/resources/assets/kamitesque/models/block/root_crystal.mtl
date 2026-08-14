@@ -1,0 +1,6 @@
+# Made in Blockbench 5.1.5
+newmtl m_ee64d90a-8b1c-506c-802c-0694b8064325
+map_Kd kamitesque:blocks/crystal
+newmtl m_4a73cd30-ba20-ed38-3f71-18e90d05e2bd
+map_Kd kamitesque:blocks/bedrock_raw
+newmtl none

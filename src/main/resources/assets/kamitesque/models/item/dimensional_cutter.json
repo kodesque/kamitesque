@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamitesque:items/dimensional_cutter"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "kamitesque:charging": 1
+            },
+            "model": "kamitesque:item/dimensional_cutter_charge"
+        }
+    ]
+}

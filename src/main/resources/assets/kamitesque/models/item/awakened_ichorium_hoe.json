@@ -1,0 +1,26 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "kamitesque:items/awakened_ichorium_hoe_inactive"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "conversion_mode": 1
+            },
+            "model": "kamitesque:item/awakened_ichorium_hoe_red"
+        },
+        {
+            "predicate": {
+                "conversion_mode": 2
+            },
+            "model": "kamitesque:item/awakened_ichorium_hoe_green"
+        },
+        {
+            "predicate": {
+                "conversion_mode": 3
+            },
+            "model": "kamitesque:item/awakened_ichorium_hoe_blue"
+        }
+    ]
+}

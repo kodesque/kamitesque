@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamitesque:items/dimensional_cutter_charge"
+    }
+}

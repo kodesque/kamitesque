@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "kamitesque:items/persistence_seal"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "kamitesque:charging": 1
+            },
+            "model": "kamitesque:item/persistence_seal_charge"
+        }
+    ]
+}
