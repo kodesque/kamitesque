@@ -17,20 +17,21 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Main.MODID, dependencies =
         "required-after:thaumcraft;" +
         "required-after:thaumicaugmentation;" +
-        "after:kami;" +
-        "after:new-crimson-revelations;" +
-        "after:isorropia;" +
-        "after:thaumictinkerer;" +
-        "after:planarartifice;" +
-        "after:thaumicbases;" +
-        "after:thaumicforever;" +
-        "after:thaumicattempts",
+        "after:kami;"
+//        "after:new-crimson-revelations;" +
+//        "after:isorropia;" +
+//        "after:thaumictinkerer;" +
+//        "after:planarartifice;" +
+//        "after:thaumicbases;" +
+//        "after:thaumicforever;" +
+//        "after:thaumicattempts"
+        ,
         version = Main.VERSION, name = Main.NAME)
 
 public class Main {
     public static final String MODID = "kamitesque";
     public static final String NAME = "Kamitesque";
-    public static final String VERSION = "0.1.2-ALPHA";
+    public static final String VERSION = "0.1.3-BETA";
 
     @SidedProxy(clientSide = "kamitesque.network.proxy.ClientProxy", serverSide = "kamitesque.network.proxy.CommonProxy")
     public static CommonProxy proxy;

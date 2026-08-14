@@ -1,5 +1,5 @@
 # Kamitesque Changelog
-## 0.1.3-ALPHA
+## 0.1.3-BETA
 
 ---
 ### Added:
