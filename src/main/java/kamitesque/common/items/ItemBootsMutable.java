@@ -2,7 +2,6 @@ package kamitesque.common.items;
 
 import kamitesque.init.KTItems;
 import kamitesque.root.Main;
-import mod.emt.kami.registry.ModSoundsKAMI;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.ItemMeshDefinition;
@@ -80,7 +79,7 @@ public class ItemBootsMutable extends ItemVoidBoots implements IThaumcraftItems 
         int meta = stack.getMetadata();
 
         stack.setItemDamage(stack.getMetadata() == 1 ? 0 : 1);
-        world.playSound((EntityPlayer)null, player.getPosition(), ModSoundsKAMI.ITEM_ICHOR_TOGGLE.getSoundEvent(), SoundCategory.PLAYERS, 1.0F, 1.5F);
+//        world.playSound((EntityPlayer)null, player.getPosition(), ModSoundsKAMI.ITEM_ICHOR_TOGGLE.getSoundEvent(), SoundCategory.PLAYERS, 1.0F, 1.5F);
 
         return new ActionResult<>(EnumActionResult.SUCCESS, stack);
     }

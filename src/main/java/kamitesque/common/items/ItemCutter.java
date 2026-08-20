@@ -141,6 +141,7 @@ public class ItemCutter extends ItemKTBase {
                             break;
                         }
                     }
+
                 } else {
                     pass2 = true;
                 }
@@ -166,13 +167,19 @@ public class ItemCutter extends ItemKTBase {
             checkEnd(world, pos, breakChance, convertChance, polluteChance);
 
             int phialCount = player.inventory.getStackInSlot(phialSlot).getCount();
-            int resultCount = Math.min(phialCount, Math.max(world.rand.nextInt(4), 1));
+            int count = Math.max(world.rand.nextInt(4), 1);
+            int resultCount = 0;
 
-            player.inventory.getStackInSlot(phialSlot).shrink(resultCount);
+            if (!player.isCreative()) {
+                resultCount = Math.min(phialCount, count);
+                player.inventory.getStackInSlot(phialSlot).shrink(resultCount);
+            } else {
+                resultCount = count;
+            }
 
             ItemStack toGive = new ItemStack(KTItems.reinforced_phial, resultCount, portalType);
 
-            if (!player.addItemStackToInventory(new ItemStack(KTItems.reinforced_phial, resultCount, portalType))) {
+            if (!player.addItemStackToInventory(toGive)) {
                 player.dropItem(toGive, true);
             }
 

@@ -30,7 +30,6 @@ public class ModEventHandler {
         BanishedEntityEvents.onBanishUpdate(event);
 
         InfusionEnchantmentEvents.onSharpeyeUpdate(event);
-        //don't forget to test this
     }
 
     @SubscribeEvent
@@ -46,14 +45,15 @@ public class ModEventHandler {
     }
 
     @SubscribeEvent
+    @SideOnly(Side.CLIENT)
     public static void onItemTooltip(ItemTooltipEvent event) {
         TooltipEvents.onPersistentTooltipRender(event);
         TooltipEvents.onAugmentTooltipRender(event);
         TooltipEvents.onMemoryTooltipRender(event);
     }
 
-    @SideOnly(Side.CLIENT)
     @SubscribeEvent
+    @SideOnly(Side.CLIENT)
     public static void onRenderTooltip(RenderTooltipEvent.PostText event) {
         TooltipEvents.onPersistentOverlayRender(event);
     }

@@ -1,5 +1,6 @@
 package kamitesque.init;
 
+import kamitesque.root.Main;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
@@ -16,7 +17,12 @@ public class KTResearch {
 
     public static void initResearch() {
 
-        registerResearchLocation(new ResourceLocation("kamitesque:research/zenith"));
+        if (Main.isRebornLoaded()) {
+            registerResearchLocation(new ResourceLocation("kamitesque:research/zenith"));
+        } else if (Main.isUnofficialLoaded()) {
+            registerResearchLocation(new ResourceLocation("kamitesque:research/thaumictinkerer"));
+        }
+
         registerResearchLocation(new ResourceLocation("kamitesque:research/thaumicaugmentation"));
         registerResearchLocation(new ResourceLocation("kamitesque:research/alchemy"));
 

@@ -61,6 +61,8 @@ dependencies {
     implementation('curse.maven:baubles-227083:2518667')
 
     implementation('curse.maven:thaumic-augmentation-319441:6047659')
+
+    // REBORN =>
     implementation('curse.maven:kami-reborn-1549296:8425728')
 
     implementation('curse.maven:thaumicapi-1533287:8304846')
@@ -70,6 +72,9 @@ dependencies {
 //    implementation('curse.maven:planar-artifice-reflected-1549278:8377612')
 //    implementation('curse.maven:new-crimson-revelations-1025633:8139449')
 //    implementation('curse.maven:thaumic-tinkerer-reborn-1549287:8377758')
+
+    //TTU =>
+//    implementation('curse.maven:thaumic-tinkerer-unofficial-965811:7162391')
 
 //    implementation('curse.maven:thaumic-bases-unofficial-293406:7582987')
 //    implementation ':ThaumicForever-7.1.6:0'

@@ -1,4 +1,17 @@
 # Kamitesque Changelog
+## 0.1.4
+
+---
+### Added:
+- Complete Thaumic Tinkerer Unofficial support
+
+### Fixed:
+- Most researches being unobtainable due to a formatting mistake
+- Infusion enchantment researches referring to an incorrect type of phials
+- Lost Knowledge research requiring Thaumic Wonders research
+- Slot 0 of inventory being cleared when Dimension Cutter is used in the creative mode
+- (Crash) Kami checker trying to render screen on server
+- (Crash) Tooltip events trying to render on server
 ## 0.1.3-BETA
 
 ---

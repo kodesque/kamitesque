@@ -11,12 +11,16 @@ public class KTNetwork {
 
     private static int id = 0;
 
-    public static void preInitPackets() {
+    public static void preInitPacketsServer() {
+
+        INSTANCE.registerMessage(PacketThousandyardUse.class, PacketThousandyardUse.class, id++, Side.SERVER);
+        INSTANCE.registerMessage(PacketSharpeyeUse.class, PacketSharpeyeUse.class, id++, Side.SERVER);
+    }
+
+    public static void preInitPacketsClient() {
 
         INSTANCE.registerMessage(PacketFXSmokeBurst.class, PacketFXSmokeBurst.class, id++, Side.CLIENT);
         INSTANCE.registerMessage(PacketParticleDust.class, PacketParticleDust.class, id++, Side.CLIENT);
 
-        INSTANCE.registerMessage(PacketThousandyardUse.class, PacketThousandyardUse.class, id++, Side.SERVER);
-        INSTANCE.registerMessage(PacketSharpeyeUse.class, PacketSharpeyeUse.class, id++, Side.SERVER);
     }
 }

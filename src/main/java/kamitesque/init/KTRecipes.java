@@ -4,8 +4,6 @@ import kamitesque.common.recipes.RecipeAugmentAdd;
 import kamitesque.common.recipes.RecipeAugmentRemove;
 import kamitesque.common.recipes.RecipeSealPrint;
 import kamitesque.root.Main;
-import mod.emt.kami.registry.ModItemsKAMI;
-import mod.emt.kami.utils.helpers.ItemHelper;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.init.Enchantments;
 import net.minecraft.init.Items;
@@ -13,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.nbt.NBTTagByte;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -33,9 +32,9 @@ import java.util.Collections;
 
 public class KTRecipes {
 
-    public static void initWorkbench() {
+    public static final ResourceLocation baseGroup = new ResourceLocation(Main.MODID, "base");
 
-        ResourceLocation baseGroup = new ResourceLocation(Main.MODID, "base");
+    public static void initWorkbench() {
 
         ThaumcraftApi.addArcaneCraftingRecipe(
                 new ResourceLocation("kamitesque:augment_eye"),
@@ -77,31 +76,11 @@ public class KTRecipes {
                         'A',
                         "gemAmber",
                         'I',
-                        "ichor",
+                        ingredientIchor(),
                         'D',
                         "gemDiamond",
                         'C',
                         new ItemStack(KTItems.pure_shard)
-                )
-        );
-
-        ItemStack ichorium_hoe = new ItemStack(KTItems.ichorium_hoe);
-
-        ThaumcraftApi.addArcaneCraftingRecipe(
-                new ResourceLocation("kamitesque:ichorium_hoe"),
-                new ShapedArcaneRecipe(
-                        baseGroup,
-                        "KT_ICHORIUMHOE",
-                        250,
-                        new AspectList().add(Aspect.ENTROPY, 8),
-                        ichorium_hoe,
-                        "II ",
-                        " S ",
-                        " S ",
-                        'I',
-                        new ItemStack(ModItemsKAMI.ICHORIUM_INGOT),
-                        'S',
-                        new ItemStack(ModItemsKAMI.BLESSED_SILVERWOOD_ROD)
                 )
         );
 
@@ -119,8 +98,36 @@ public class KTRecipes {
                                 new ItemStack(ItemsTC.phial),
                                 new ItemStack(ItemsTC.plate, 1, 3),
                                 new ItemStack(TAItems.MATERIAL, 1, 1),
-                                new ItemStack(ModItemsKAMI.ICHORIUM_NUGGET)
+                                "nuggetIchorium"
                         }
+                )
+        );
+
+        ItemStack ichorium_hoe = new ItemStack(KTItems.ichorium_hoe);
+        ItemStack rod = null;
+
+        if (Main.isRebornLoaded()) {
+            rod = GameRegistry.makeItemStack("kami:blessed_silverwood_rod", 0, 1, null);
+
+        } else if (Main.isUnofficialLoaded()) {
+            rod = new ItemStack(BlocksTC.logSilverwood);
+        }
+
+        ThaumcraftApi.addArcaneCraftingRecipe(
+                new ResourceLocation("kamitesque:ichorium_hoe"),
+                new ShapedArcaneRecipe(
+                        baseGroup,
+                        "KT_ICHORIUMHOE",
+                        250,
+                        new AspectList().add(Aspect.ENTROPY, 8),
+                        ichorium_hoe,
+                        "II ",
+                        " S ",
+                        " S ",
+                        'I',
+                        "ingotIchorium",
+                        'S',
+                        rod
                 )
         );
 
@@ -163,7 +170,7 @@ public class KTRecipes {
                         5,
                         new AspectList().add(Aspect.DARKNESS, 16).add(Aspect.TRAP, 16),
                         new ItemStack(Items.BONE),
-                        "ichor",
+                        ingredientIchor(),
                         "ingotGold",
                         new ItemStack(ItemsTC.nuggets, 1, 10),
                         new ItemStack(Items.ENDER_EYE)
@@ -192,7 +199,7 @@ public class KTRecipes {
                         6,
                         new AspectList().add(Aspect.TOOL, 64).add(Aspect.MAGIC, 64),
                         new ItemStack(ItemsTC.pechWand),
-                        "ichor",
+                        ingredientIchor(),
                         bookProtect,
                         new ItemStack(ItemsTC.mechanismComplex),
                         bookProtectFire,
@@ -204,7 +211,10 @@ public class KTRecipes {
         );
 
         ItemStack awakened_ichorium_hoe = new ItemStack(KTItems.awakened_ichorium_hoe);
-        ItemHelper.setUnbreakable(awakened_ichorium_hoe);
+
+        if (Main.isRebornLoaded()) {
+            awakened_ichorium_hoe.setTagInfo("Unbreakable", new NBTTagByte((byte)1));
+        }
 
         ThaumcraftApi.addInfusionCraftingRecipe(
                 new ResourceLocation("kamitesque:awakened_ichorium_hoe"),
@@ -224,43 +234,71 @@ public class KTRecipes {
                 )
         );
 
-        ThaumcraftApi.addInfusionCraftingRecipe(
-                new ResourceLocation("kamitesque:dimensional_cutter"),
-                new InfusionRecipe("KT_PORTALCUTTER",
-                        new ItemStack(KTItems.dimensional_cutter),
-                        8,
-                        new AspectList().add(Aspect.FLUX, 250).add(Aspect.MAGIC, 250).add(Aspect.TRAP, 250).add(Aspect.ORDER, 250),
-                        new ItemStack(Items.SHEARS),
-                        new ItemStack(ItemsTC.causalityCollapser),
-                        new ItemStack(ItemsTC.primordialPearl),
-                        new ItemStack(ItemsTC.causalityCollapser),
-                        new ItemStack(ModItemsKAMI.ICHORIUM_INGOT),
-                        new ItemStack(ItemsTC.salisMundus),
-                        new ItemStack(ModItemsKAMI.BLESSED_SILVERWOOD_ROD),
-                        new ItemStack(ItemsTC.salisMundus),
-                        new ItemStack(ModItemsKAMI.ICHORIUM_INGOT)
-                )
-        );
+        ItemStack rod = null;
+
+        if (Main.isRebornLoaded()) {
+            Item rodSilver = Item.getByNameOrId("kami:blessed_silverwood_rod");
+
+            if (rodSilver != null) {
+                rod = new ItemStack(rodSilver);
+            }
+
+        } else if (Main.isUnofficialLoaded()) {
+            rod = new ItemStack(BlocksTC.logSilverwood);
+        }
+
+        if (rod != null) {
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                    new ResourceLocation("kamitesque:dimensional_cutter"),
+                    new InfusionRecipe("KT_PORTALCUTTER",
+                            new ItemStack(KTItems.dimensional_cutter),
+                            8,
+                            new AspectList().add(Aspect.FLUX, 250).add(Aspect.MAGIC, 250).add(Aspect.TRAP, 250).add(Aspect.ORDER, 250),
+                            new ItemStack(Items.SHEARS),
+                            new ItemStack(ItemsTC.causalityCollapser),
+                            new ItemStack(ItemsTC.primordialPearl),
+                            new ItemStack(ItemsTC.causalityCollapser),
+                            "ingotIchorium",
+                            new ItemStack(ItemsTC.salisMundus),
+                            rod,
+                            new ItemStack(ItemsTC.salisMundus),
+                            "ingotIchorium"
+                    )
+            );
+        }
 
         initInfusionEnchantments();
 
     }
 
     private static void initInfusionEnchantments() {
-        InfusionEnchantmentRecipe IETHOUSANDYARD = new InfusionEnchantmentRecipe(KTEnchants.IETHOUSANDYARD, (new AspectList()).add(Aspect.AVERSION, 120).add(Aspect.MOTION, 120).add(Aspect.ELDRITCH, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(BlocksTC.mirror), new ItemStack(Items.CHORUS_FRUIT_POPPED)});
+        InfusionEnchantmentRecipe IETHOUSANDYARD = new InfusionEnchantmentRecipe(KTEnchants.IETHOUSANDYARD, (new AspectList()).add(Aspect.AVERSION, 120).add(Aspect.MOTION, 120).add(Aspect.ELDRITCH, 120), ingredientIchor(), new ItemStack(BlocksTC.mirror), new ItemStack(Items.CHORUS_FRUIT_POPPED));
 
         ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD"), IETHOUSANDYARD);
-        ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD_FAKE"), new InfusionEnchantmentRecipe(IETHOUSANDYARD, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));
 
-        InfusionEnchantmentRecipe IESHARPEYE = new InfusionEnchantmentRecipe(KTEnchants.IESHARPEYE, (new AspectList()).add(Aspect.SENSES, 120).add(Aspect.ENERGY, 120).add(Aspect.ORDER, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(Items.FERMENTED_SPIDER_EYE), new ItemStack(ItemsTC.goggles)});
+        String sword = null;
 
-        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IESHARPEYE"), IESHARPEYE);
-        ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IESHARPEYE_FAKE"), new InfusionEnchantmentRecipe(IESHARPEYE, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));
+        if (Main.isUnofficialLoaded()) {
+            sword = "thaumictinkerer:ichorium_sword";
+        } else if (Main.isRebornLoaded()) {
+            sword = "kami:ichorium_sword";
+        }
 
-        InfusionEnchantmentRecipe IEALLFRONTS = new InfusionEnchantmentRecipe(KTEnchants.IEALLFRONTS, (new AspectList()).add(Aspect.PROTECT, 120).add(Aspect.DEATH, 120).add(Aspect.EXCHANGE, 120), new Object[]{new IngredientNBTTC(new ItemStack(ModItemsKAMI.ICHOR)), new ItemStack(ItemsTC.modules, 1, 1), new ItemStack(ItemsTC.crimsonBlade)});
+        ItemStack stackSword = GameRegistry.makeItemStack(sword, 0, 1,null);
 
-        ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IEALLFRONTS"), IEALLFRONTS);
-        ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IEALLFRONTS_FAKE"), new InfusionEnchantmentRecipe(IEALLFRONTS, new ItemStack(ModItemsKAMI.ICHORIUM_SWORD)));
+        if (!stackSword.isEmpty()) {
+            ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IETHOUSANDYARD_FAKE"), new InfusionEnchantmentRecipe(IETHOUSANDYARD, stackSword));
+
+            InfusionEnchantmentRecipe IESHARPEYE = new InfusionEnchantmentRecipe(KTEnchants.IESHARPEYE, (new AspectList()).add(Aspect.SENSES, 120).add(Aspect.ENERGY, 120).add(Aspect.ORDER, 120), ingredientIchor(), new ItemStack(Items.FERMENTED_SPIDER_EYE), new ItemStack(ItemsTC.goggles));
+
+            ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IESHARPEYE"), IESHARPEYE);
+            ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IESHARPEYE_FAKE"), new InfusionEnchantmentRecipe(IESHARPEYE, stackSword));
+
+            InfusionEnchantmentRecipe IEALLFRONTS = new InfusionEnchantmentRecipe(KTEnchants.IEALLFRONTS, (new AspectList()).add(Aspect.PROTECT, 120).add(Aspect.DEATH, 120).add(Aspect.EXCHANGE, 120), ingredientIchor(), new ItemStack(ItemsTC.modules, 1, 1), new ItemStack(ItemsTC.crimsonBlade));
+
+            ThaumcraftApi.addInfusionCraftingRecipe(new ResourceLocation("kamitesque:IEALLFRONTS"), IEALLFRONTS);
+            ThaumcraftApi.addFakeCraftingRecipe(new ResourceLocation("kamitesque:IEALLFRONTS_FAKE"), new InfusionEnchantmentRecipe(IEALLFRONTS, stackSword));
+        }
     }
 
     public static void initCrucible() {
@@ -269,7 +307,7 @@ public class KTRecipes {
                 new ResourceLocation("kamitesque:ichorflame_nitor"),
                 new CrucibleRecipe("KT_ICHORFLAME",
                         new ItemStack(KTBlocks.ichorflame_nitor, 4),
-                        new ItemStack(ModItemsKAMI.ICHOR),
+                        ingredientIchor(),
                         new AspectList().merge(Aspect.ALCHEMY, 16).merge(Aspect.AVERSION, 16).merge(Aspect.SENSES, 16))
         );
 
@@ -328,5 +366,19 @@ public class KTRecipes {
                 new ItemStack(KTItems.pure_shard, 2),
                 2
         );
+    }
+
+    public static ItemStack ingredientIchor() {
+
+        String ichor = null;
+        int meta = 0;
+
+        if (Main.isRebornLoaded()) {
+            ichor = "kami:ichor";
+        } else if (Main.isUnofficialLoaded()) {
+            ichor = "thaumictinkerer:kamiresource";
+            meta = 2;
+        }
+        return ichor != null ? GameRegistry.makeItemStack(ichor, meta, 1,null) : ItemStack.EMPTY;
     }
 }

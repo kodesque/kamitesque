@@ -3,10 +3,10 @@ package kamitesque.common.items;
 import kamitesque.common.templates.ItemKTBase;
 import kamitesque.init.KTBlocks;
 import kamitesque.init.KTItems;
-import mod.emt.kami.Kami;
-import mod.emt.kami.utils.helpers.ItemHelper;
+import kamitesque.root.Main;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagByte;
 import net.minecraft.util.NonNullList;
 import org.jetbrains.annotations.NotNull;
 
@@ -17,7 +17,28 @@ public class ItemDebug extends ItemKTBase {
     }
 
     public void getSubItems(CreativeTabs tab, @NotNull NonNullList<ItemStack> items) {
-        if (tab != Kami.tabKAMI && tab != CreativeTabs.SEARCH) return;
+
+        String tabName = null;
+        CreativeTabs tabActual = null;
+
+        if (Main.isRebornLoaded()) {
+            tabName = "KamiTab";
+        } else if (Main.isUnofficialLoaded()) {
+            tabName = "thaumictinkerer";
+        }
+
+        if (tabName == null) return;
+
+        for (CreativeTabs t : CreativeTabs.CREATIVE_TAB_ARRAY) {
+            if (t.getTabLabel().equals(tabName)) {
+                tabActual = t;
+                break;
+            }
+        }
+
+        if (tabActual == null) return;
+
+        if (tab != tabActual && tab != CreativeTabs.SEARCH) return;
 
         items.add(new ItemStack (KTItems.augment_eye));
         items.add(new ItemStack (KTItems.persistence_seal));
@@ -36,9 +57,9 @@ public class ItemDebug extends ItemKTBase {
         items.add(new ItemStack (KTBlocks.root_crystal));
 
         ItemStack ichorium_hoe = new ItemStack(KTItems.ichorium_hoe);
-        ItemHelper.setUnbreakable(ichorium_hoe);
+        ichorium_hoe.setTagInfo("Unbreakable", new NBTTagByte((byte)1));
         ItemStack awakened_ichorium_hoe = new ItemStack(KTItems.awakened_ichorium_hoe);
-        ItemHelper.setUnbreakable(awakened_ichorium_hoe);
+        awakened_ichorium_hoe.setTagInfo("Unbreakable", new NBTTagByte((byte)1));
 
         items.add(ichorium_hoe);
         items.add(awakened_ichorium_hoe);

@@ -19,9 +19,6 @@ public class BanishedEntityEvents {
     public static void onBanishUpdate(LivingEvent.LivingUpdateEvent event) {
 
         Entity entity = event.getEntity();
-        Minecraft mc = Minecraft.getMinecraft();
-        RenderManager renderManager = mc.getRenderManager();
-        Render render = renderManager.getEntityRenderObject(entity);
 
         if (BanishUtils.isBanished(entity)) {
 

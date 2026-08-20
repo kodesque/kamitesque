@@ -1,7 +1,7 @@
 package kamitesque.common.items;
 
+import kamitesque.root.Main;
 import kamitesque.util.HoeCache;
-import mod.emt.kami.registry.ModSoundsKAMI;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;
 import net.minecraft.client.resources.I18n;
@@ -122,7 +122,14 @@ public class ItemAwakenedHoe extends ItemIchoriumHoe {
         if (player.isSneaking()) {
             ItemAwakenedHoe.EnumConversionMode mode = ItemAwakenedHoe.EnumConversionMode.getMode(heldStack).nextMode();
             ItemAwakenedHoe.EnumConversionMode.setMode(heldStack, mode);
-            world.playSound((EntityPlayer) null, player.getPosition(), ModSoundsKAMI.ITEM_ICHOR_TOGGLE.getSoundEvent(), SoundCategory.PLAYERS, 1.0F, 1.5F);
+
+            if (Main.isRebornLoaded()) {
+                SoundEvent event = SoundEvent.REGISTRY.getObject(new ResourceLocation("kami:item.ichor.toggle"));
+                if (event != null) {
+                    world.playSound((EntityPlayer) null, player.getPosition(), event, SoundCategory.PLAYERS, 1.0F, 1.5F);
+                }
+            }
+
             player.sendStatusMessage((new TextComponentTranslation("tooltip.kamitesque.tool.conversion_mode." + mode, new Object[0])).setStyle((new Style()).setColor(mode.getTextColor())), true);
         } else if (hand == EnumHand.MAIN_HAND) {
             player.setActiveHand(hand);

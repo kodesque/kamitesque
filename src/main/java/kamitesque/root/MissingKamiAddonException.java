@@ -16,7 +16,7 @@ public class MissingKamiAddonException extends CustomModLoadingErrorDisplayExcep
 
         errorScreen.drawCenteredString(
                 fontRenderer,
-                TextFormatting.BOLD + "Kamitesque" + TextFormatting.RESET + " requires one of the following mods to run:",
+                TextFormatting.BOLD + "Kamitesque" + TextFormatting.RESET + " requires ONE of the following mods to run:",
                 errorScreen.width / 2,
                 90,
                 0xFFFFFF);

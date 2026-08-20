@@ -2,7 +2,6 @@ package kamitesque.common.items;
 
 import kamitesque.init.KTItems;
 import kamitesque.root.Main;
-import mod.emt.kami.registry.ModItemsKAMI;
 import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
@@ -27,12 +26,14 @@ public class ItemIchoriumHoe extends ItemHoe implements IWarpingGear, IThaumcraf
     protected int[] VARIANTS_META;
 
     public ItemIchoriumHoe(String name, String... variants) {
-        super(ModItemsKAMI.MATERIAL_ICHORIUM);
+        super(Main.isRebornLoaded() ? ToolMaterial.valueOf("ICHORIUM") : ToolMaterial.valueOf("ICHOR"));
 
         this.setRegistryName(Main.MODID, name);
         this.setTranslationKey(Main.MODID + "." + name);
 
         this.setHasSubtypes(variants.length > 1);
+
+        this.setMaxDamage(0);
 
         this.BASE_NAME = name;
         if (variants.length == 0) {
@@ -70,7 +71,7 @@ public class ItemIchoriumHoe extends ItemHoe implements IWarpingGear, IThaumcraf
     }
 
     public int getWarp(ItemStack itemstack, EntityPlayer player) {
-        return 1;
+        return Main.isRebornLoaded() ? 1 : 0;
     }
 
     public boolean canApplyAtEnchantingTable(@NotNull ItemStack stack, @NotNull Enchantment enchantment) {
